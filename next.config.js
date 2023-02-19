@@ -3,6 +3,9 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-}
+  images: {
+    domains: ['trp.utoronto.ca'],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
