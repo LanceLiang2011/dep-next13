@@ -1,4 +1,3 @@
-import FirstParagraph from '@/components/Typograpjy/FirstPara';
 import Paragraph from '@/components/Typograpjy/Paragraph';
 import Title from '@/components/Typograpjy/Title';
 import UnderlineSubtitle from '@/components/Typograpjy/UnderlineSubtitle';
