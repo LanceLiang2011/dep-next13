@@ -1,7 +1,8 @@
 'use client';
-import { Alert, Button, Card } from 'flowbite-react';
-import { type } from 'os';
+import { Alert, Button, Card, Tooltip } from 'flowbite-react';
+import Image from 'next/image';
 import React, { useState } from 'react';
+import debvsed from '../../../../resources/imgs/debed.png';
 
 interface Question {
   id: number;
@@ -42,8 +43,18 @@ export default function InteractiveImg() {
     <main className='pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 text-center'>
       <div className='flex justify-between px-4 mx-auto max-w-screen-xl '>
         <article className='mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert'>
+          <div className='mb-20'>
+            {' '}
+            <h2 className='mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl dark:text-white'>
+              Interactive with images
+            </h2>
+            <Tooltip content='Some interactive mesage'>
+              <Image alt='Deb vs ED' src={debvsed} height={500} width={500} />
+            </Tooltip>
+          </div>
+
           <h2 className='mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl dark:text-white'>
-            Anser following Questions:
+            Anser Questions
           </h2>
           <br />
           {questions.map((question, i) => (
@@ -86,7 +97,7 @@ export default function InteractiveImg() {
           ))}
           <br />
           <h2 className='mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl dark:text-white'>
-            Play following Games:
+            Play Games:
           </h2>
         </article>
       </div>
