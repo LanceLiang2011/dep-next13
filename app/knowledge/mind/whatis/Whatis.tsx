@@ -27,7 +27,6 @@ export default function Whatis() {
           <h2 className='mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl dark:text-white'>
             How is Disordered Eating different from an Eating Disorder?{' '}
           </h2>
-          <br />
           <h3 className='text-2xl font-bold dark:text-white underline decoration-4 decoration-blue-400 dark:decoration-blue-600'>
             How are Eating Disorders Diagnosed?
           </h3>
@@ -169,6 +168,120 @@ export default function Whatis() {
             they are challenged to recognize and process the reality of given
             situations.
           </p>
+          <div
+            className='p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400'
+            role='alert'
+          >
+            <span className='font-medium'>Example:</span> An underweight female
+            looks in the mirror and sees an obese figure.
+          </div>
+          <br />
+          <h2 className='mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl dark:text-white'>
+            The{' '}
+            <span className='text-transparent bg-clip-text bg-gradient-to-r hover:bg-gradient-to-l to-red-600 from-blue-400'>
+              Continuum
+            </span>{' '}
+            of Eating
+          </h2>
+          <p className='my-3 font-light text-gray-600 dark:text-gray-400'>
+            Eating can be viewed on a continuum that spans from healthy eating
+            to disordered eating to eating disorders. Throughout our lives, we
+            can experience fluctuations across the continuum based on our
+            lifestyle, situations, and experiences. Regardless of where an
+            individual falls on the continuum, their experience is as equally
+            important as another and valid and deserving of counselling and
+            support.
+          </p>
+          <br />
+          <h3 className='text-2xl font-bold dark:text-white underline decoration-4 decoration-blue-400 dark:decoration-blue-600'>
+            <span className='text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-blue-400'>
+              Healthy
+            </span>{' '}
+            Eating
+          </h3>
+          <p className='my-3 font-light text-gray-600 dark:text-gray-400'>
+            Healthy eating is different for everybody and depends on an
+            individual&apos;s personal preferences, needs, cultural influences,
+            and body composition. In general, healthy eating involves a balanced
+            diet, a variety of foods, an appropriate calorie intake, and a
+            healthy body weight. Individuals who demonstrate healthy eating
+            behaviours are not preoccupied with their body image and perform
+            regular bouts of exercise. They are{' '}
+            <span className='underline decoration-2 decoration-red-400 dark:decoration-red-600'>
+              more likely{' '}
+            </span>
+            to be intuitive with their body&apos;s needs and eat for
+            nourishment, pleasure, and joy.{' '}
+          </p>
+          <br />
+          <h3 className='text-2xl font-bold dark:text-white underline decoration-4 decoration-blue-400 dark:decoration-blue-600'>
+            <span className='text-transparent bg-clip-text bg-gradient-to-r to-orange-600 from-emerald-400'>
+              Disordered
+            </span>{' '}
+            Eating
+          </h3>
+          <p className='my-3 font-light text-gray-600 dark:text-gray-400'>
+            Individuals who experience disordered eating behaviours express
+            recurring negative preoccupations and associations with food,
+            dieting, exercise, and body image. This can include regular bouts of
+            overeating and undereating, distress caused by body size and image,
+            fixation and obsessiveness around exercise, and an unbalanced
+            irregular diet. Individuals who experience disordered eating can
+            experience a lack of self-worth and associate their food intake with
+            their perception of themselves and others. This most often can
+            result in feelings and shame and guilt.
+          </p>
+          <br />
+          <h3 className='text-2xl font-bold dark:text-white underline decoration-4 decoration-blue-400 dark:decoration-blue-600'>
+            <span className='text-transparent bg-clip-text bg-gradient-to-r to-red-600 from-orange-400'>
+              Eating Disorder
+            </span>{' '}
+          </h3>
+          <p className='my-3 font-light text-gray-600 dark:text-gray-400'>
+            Eating Disorders are a group of serious and complex mental health
+            illnesses that are characterized by persistent disturbances in
+            behaviours, thoughts and attitudes toward foods, eating, and body
+            size. There are conditions that affect an individual&apos;s
+            physical, psychological and social function and are clinically
+            diagnosed. Individuals may experience restrictive eating, food
+            avoidance, binge eating, purging or laxative misuse, and compulsive
+            exercise depending upon their diagnosis. As such, this can result in
+            severe alterations to their physical and mental function and impact
+            their overall quality of life.{' '}
+          </p>
+          <br />
+          <h2 className='mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl dark:text-white'>
+            Importance of Understanding & Taking Action
+          </h2>
+          <p className='my-3 font-light text-gray-600 dark:text-gray-400'>
+            Understanding the influence disordered eating can have on your
+            health and well-being is important as it can lead to further health
+            complications.
+          </p>
+          <p className='mb-3 font-light text-gray-600 dark:text-gray-400'>
+            Disordered eating can have significant long-term health
+            repercussions that can affect individuals physically and mentally.
+            Individuals who demonstrate disordered eating behaviours can be at
+            risk for the development of eating disorders, mood disorders, and
+            other conditions including hypertension, diabetes, heart problems,
+            and digestive issues.
+          </p>
+          <p className='mb-3 font-light text-gray-600 dark:text-gray-400'>
+            It is important to recognize the potential complications of
+            disordered eating before potential problems could escalate. The way
+            we eat and fuel our bodies is critical to our health and well-being
+            therefore it is essential to intervene and use tools and resources
+            to improve our relationship with our body and our mind.
+          </p>
+          <br />
+          <a
+            href='#'
+            type='button'
+            className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
+          >
+            Top
+            <span className='sr-only'>Icon description</span>
+          </a>
         </article>
       </div>
     </main>
