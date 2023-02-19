@@ -182,7 +182,7 @@ export default function Whatis() {
           <br />
           <Title type='h2'>
             The{' '}
-            <span className='text-transparent bg-clip-text bg-gradient-to-r hover:bg-gradient-to-l to-red-600 from-blue-400'>
+            <span className='text-transparent bg-clip-text bg-gradient-to-r hover:bg-gradient-to-l to-red-600 via-yellow-500 from-sky-400'>
               Continuum
             </span>{' '}
             of Eating
