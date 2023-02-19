@@ -22,7 +22,7 @@ const questionsList = [
     answer: null,
     rightAnswer: 2,
     explaination:
-      'Risht answer is A! Here goes explainations and further resources!',
+      'Risht answer is C! Here goes explainations and further resources!',
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ const questionsList = [
     answer: null,
     rightAnswer: 0,
     explaination:
-      'Risht answer is B! Here goes explainations and further resources!',
+      'Risht answer is A! Here goes explainations and further resources!',
   },
 ];
 

@@ -17,7 +17,7 @@ export default function Body() {
           <br />
           <Title type='h2'>How is the Body Composed?</Title>
           <Paragraph>
-            An individual&apos;s body is composed of 3 major factors;{' '}
+            An individual&apos;s body is composed of 3 major factors:{' '}
             <span className='bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300'>
               body fat
             </span>{' '}
