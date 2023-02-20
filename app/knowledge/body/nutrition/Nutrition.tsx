@@ -4,6 +4,7 @@ import UnderlineSubtitle from '@/components/Typograpjy/UnderlineSubtitle';
 import Image from 'next/image';
 import React from 'react';
 import foods from '@/resources/imgs/foods.jpg';
+import Badge from '@/components/Typograpjy/Badge';
 
 export default function Nutrition() {
   return (
@@ -28,53 +29,22 @@ export default function Nutrition() {
             Nutrients are the substances found in food that are necessary for
             growth, maintenance, and repair of our bodies. There are six
             essential classes of nutrients:{' '}
-            <span className='bg-pink-100 text-pink-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-pink-900 dark:text-pink-300'>
-              carbohydrates
-            </span>
-            ,{' '}
-            <span className='bg-purple-100 text-purple-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-300'>
-              proteins
-            </span>
-            ,{' '}
-            <span className='bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300'>
-              fats
-            </span>
-            ,{' '}
-            <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300'>
-              vitamins
-            </span>
-            ,{' '}
-            <span className='bg-gray-100 text-gray-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300'>
-              minerals
-            </span>
-            ,{' '}
-            <span className='bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300'>
-              water
-            </span>
-            .
+            <Badge type='pink'>carbohydrates</Badge>,{' '}
+            <Badge type='purple'>proteins</Badge>,{' '}
+            <Badge type='yellow'>fats</Badge>,{' '}
+            <Badge type='green'>vitamins</Badge>,{' '}
+            <Badge type='dark'>minerals</Badge>,{' '}
+            <Badge type='default'>water</Badge>.
           </Paragraph>
           <Paragraph>
             Each nutrient plays a specific and important role in the body. For
-            example,{' '}
-            <span className='bg-pink-100 text-pink-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-pink-900 dark:text-pink-300'>
-              carbohydrates
-            </span>
-            provide energy,{' '}
-            <span className='bg-purple-100 text-purple-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-300'>
-              proteins
-            </span>
-            build and repair tissues,{' '}
-            <span className='bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300'>
-              fats
-            </span>
+            example, <Badge type='pink'>carbohydrates</Badge>
+            provide energy, <Badge type='purple'>proteins</Badge>
+            build and repair tissues, <Badge type='yellow'>fats</Badge>
             provide insulation and cushioning for organs,{' '}
-            <span className='bg-green-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300'>
-              vitamins
-            </span>
+            <Badge type='green'>vitamins</Badge>
             help regulate chemical processes in the body,{' '}
-            <span className='bg-gray-100 text-gray-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300'>
-              minerals
-            </span>
+            <Badge type='dark'>minerals</Badge>
             help maintain healthy bones and teeth, and water helps regulate body
             temperature and maintain healthy skin.
           </Paragraph>
@@ -99,20 +69,14 @@ export default function Nutrition() {
             bloodstream and transported to cells throughout the body.
           </Paragraph>
           <Paragraph>
-            <span className='bg-pink-100 text-pink-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-pink-900 dark:text-pink-300'>
-              Carbohydrates
-            </span>
+            <Badge type='pink'>Carbohydrates</Badge>
             are the primary source of energy for the body, providing glucose,
             which is used by cells to produce ATP, the molecule responsible for
             energy storage and utilization.{' '}
-            <span className='bg-purple-100 text-purple-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-300'>
-              Proteins
-            </span>
+            <Badge type='purple'>Proteins</Badge>
             are important building blocks for tissues, hormones, and enzymes, as
             well as playing a role in immune system function.{' '}
-            <span className='bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300'>
-              Fats
-            </span>
+            <Badge type='yellow'>Fats</Badge>
             are also an important source of energy and help with the absorption
             of fat-soluble vitamins such as vitamins A, D, E, and K. In
             addition, fats also play a role in insulation and cushioning of
