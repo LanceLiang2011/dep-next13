@@ -109,11 +109,14 @@ export default function Nutrition() {
               Proteins
             </span>
             are important building blocks for tissues, hormones, and enzymes, as
-            well as playing a role in immune system function. foods are also an
-            important source of energy and help with the absorption of
-            fat-soluble vitamins such as vitamins A, D, E, and K. In addition,
-            fats also play a role in insulation and cushioning of organs,
-            hormone production and cell membrane structure.
+            well as playing a role in immune system function.{' '}
+            <span className='bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300'>
+              Fats
+            </span>
+            are also an important source of energy and help with the absorption
+            of fat-soluble vitamins such as vitamins A, D, E, and K. In
+            addition, fats also play a role in insulation and cushioning of
+            organs, hormone production and cell membrane structure.
           </Paragraph>
           <Paragraph>
             <span className='bg-gradient-to-r from-green-100 via-blue-100 to-gray-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300'>
