@@ -4,7 +4,7 @@ import Whatis from './Whatis';
 
 export default function WhatisPage() {
   return (
-    <div className='flex justify-between gap-20'>
+    <div className='flex flex-wrap justify-between gap-20'>
       <Whatis />
       <InteractiveImg />
     </div>

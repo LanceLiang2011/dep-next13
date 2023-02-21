@@ -4,7 +4,7 @@ import Nutrition from './Nutrition';
 
 export default function NutritionPage() {
   return (
-    <div className='flex justify-between gap-20'>
+    <div className='flex flex-wrap justify-between gap-20'>
       <Nutrition />
       <InteractiveImg />
     </div>

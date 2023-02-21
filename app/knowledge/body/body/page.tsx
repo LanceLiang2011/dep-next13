@@ -4,7 +4,7 @@ import InteractiveImg from './InteractiveImg';
 
 export default function BodyPage() {
   return (
-    <div className='flex justify-between gap-20'>
+    <div className='flex flex-wrap justify-between gap-20'>
       <Body />
       <InteractiveImg />
     </div>
