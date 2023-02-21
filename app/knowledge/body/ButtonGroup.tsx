@@ -6,7 +6,6 @@ import React from 'react';
 
 export default function ButtonGroup() {
   const activeSegment = useSelectedLayoutSegment();
-  console.log(activeSegment);
   return (
     <Button.Group className='mb-6 flex gap-6'>
       <Link href='/knowledge/body/body'>

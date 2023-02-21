@@ -2,6 +2,10 @@ import Paragraph from '@/components/Typograpjy/Paragraph';
 import Title from '@/components/Typograpjy/Title';
 import UnderlineSubtitle from '@/components/Typograpjy/UnderlineSubtitle';
 import React from 'react';
+import fat from '@/resources/imgs/fat-cell.png';
+import bone from '@/resources/imgs/bone.png';
+import muscle from '@/resources/imgs/muscle.png';
+import HoverImage from '@/components/UI/HoverImage';
 
 export default function Body() {
   return (
@@ -18,16 +22,24 @@ export default function Body() {
           <Title type='h2'>How is the Body Composed?</Title>
           <Paragraph>
             An individual&apos;s body is composed of 3 major factors:{' '}
-            <span className='bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300'>
-              body fat
-            </span>{' '}
-            <span className='bg-indigo-100 text-indigo-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-indigo-900 dark:text-indigo-300'>
-              bone
-            </span>
+            <HoverImage src={fat}>
+              <span className='bg-yellow-100 text-yellow-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300'>
+                body fat
+              </span>{' '}
+            </HoverImage>
+            <HoverImage src={bone}>
+              {' '}
+              <span className='bg-indigo-100 text-indigo-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-indigo-900 dark:text-indigo-300'>
+                bone
+              </span>
+            </HoverImage>
             , and{' '}
-            <span className='bg-pink-100 text-pink-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-pink-900 dark:text-pink-300'>
-              muscle
-            </span>
+            <HoverImage src={muscle}>
+              {' '}
+              <span className='bg-pink-100 text-pink-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-pink-900 dark:text-pink-300'>
+                muscle
+              </span>
+            </HoverImage>
             . Each person needs to have body fat, bone, and muscle to be able to
             have a functioning body. What can influence these 3 significant
             factors are genetics, age, height, exercise, sex/gender, and

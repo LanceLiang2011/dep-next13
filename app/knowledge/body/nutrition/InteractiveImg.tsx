@@ -70,7 +70,7 @@ export default function InteractiveImg() {
                       ];
                       setQuestions(nextState);
                     }}
-                    key={i}
+                    key={i + j}
                     id={String(i)}
                   >
                     {option}
