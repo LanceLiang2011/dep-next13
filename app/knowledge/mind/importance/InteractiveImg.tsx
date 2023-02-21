@@ -20,9 +20,9 @@ const questionsList = [
     content: 'Here is the detial of the questions!',
     options: ['A. Something', 'B. Something', 'C. Something'],
     answer: null,
-    rightAnswer: 0,
+    rightAnswer: 2,
     explaination:
-      'Risht answer is A! Here goes explainations and further resources!',
+      'Risht answer is C! Here goes explainations and further resources!',
   },
   {
     id: 2,
@@ -30,9 +30,9 @@ const questionsList = [
     content: 'Here is the detial of the questions!',
     options: ['A. Something', 'B. Something', 'C. Something'],
     answer: null,
-    rightAnswer: 1,
+    rightAnswer: 0,
     explaination:
-      'Risht answer is B! Here goes explainations and further resources!',
+      'Risht answer is A! Here goes explainations and further resources!',
   },
 ];
 

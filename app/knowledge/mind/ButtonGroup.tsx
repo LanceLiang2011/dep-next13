@@ -9,13 +9,29 @@ export default function ButtonGroup() {
   return (
     <Button.Group className='mb-6 flex gap-6'>
       <Link href='/knowledge/mind/whatis'>
-        <Button>What is Disordered Eating</Button>
+        <Button
+          color={
+            !activeSegment || activeSegment === 'whatis' ? undefined : 'gray'
+          }
+        >
+          WHAT IS DISORDERED EATING AND THE CONTINUUM OF EATING{' '}
+        </Button>
       </Link>
-      <Link href='/knowledge/mind'>
-        <Button color='gray'>Topic 2</Button>
+      <Link href='/knowledge/mind/whyandhow'>
+        <Button color={activeSegment === 'whyandhow' ? undefined : 'gray'}>
+          {' '}
+          WHY AND HOW PEOPLE ENGAGE IN DISORDERED EATING
+        </Button>
       </Link>
-      <Link href='/knowledge/mind'>
-        <Button color='gray'>Topic 3</Button>
+      <Link href='/knowledge/mind/when'>
+        <Button color={activeSegment === 'when' ? undefined : 'gray'}>
+          WHEN DOES DISORDERED EATING BECOME PROBLEMATIC?
+        </Button>
+      </Link>
+      <Link href='/knowledge/mind/importance'>
+        <Button color={activeSegment === 'importance' ? undefined : 'gray'}>
+          THE IMPORTANCE OF UNDERSTANDING DISORDERED EATING
+        </Button>
       </Link>
     </Button.Group>
   );

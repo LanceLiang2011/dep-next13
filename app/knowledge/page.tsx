@@ -1,10 +1,6 @@
 import React from 'react';
+import HomePage from './HomePage';
 
 export default function Knowledge() {
-  return (
-    <div>
-      Home Page is in the constructing phase. Click Mind or Body button on the
-      left to see contents
-    </div>
-  );
+  return <HomePage />;
 }
