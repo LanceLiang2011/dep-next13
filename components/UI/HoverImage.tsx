@@ -9,6 +9,8 @@ export default function HoverImage({ children, src, ...rest }: any) {
         className='absolute hidden top-0 left-1/2 transform -translate-x-1/2 -translate-y-full'
         src={src}
         alt='Hovered Image'
+        height={60}
+        width={60}
         priority
         {...rest}
       />
