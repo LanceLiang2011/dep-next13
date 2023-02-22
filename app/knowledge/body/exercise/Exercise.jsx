@@ -47,11 +47,11 @@ export default function Exercise() {
             class, exercise is multidimensional and dynamic.{' '}
           </Paragraph>
           <Paragraph>
-            There are three main types of exercise known as strength,
-            cardiovascular and flexibility training that are differentiated by
-            the type of activity they involve and the outcomes they provide to
-            the mind and body. Not all exercise is considered a single type of
-            training and can be considered a combination of multipl types.{' '}
+            The three main types of exercise are strength, cardiovascular, and
+            flexibility training. They differ by the type of activity they
+            involve and the outcomes they provide to the mind and body. Not all
+            exercise is considered a single type of training and can be
+            considered a combination of multiple types.
           </Paragraph>
           <br />
           <ExerciseCompare />
@@ -76,7 +76,7 @@ export default function Exercise() {
                   >
                     Strength Training
                   </th>
-                  <td className='px-6 py-4'>Weighlifting</td>
+                  <td className='px-6 py-4'>Weighlifting, Circuit training </td>
                 </tr>
                 <tr className='bg-white border-b dark:bg-gray-800 dark:border-gray-700'>
                   <th
@@ -161,16 +161,13 @@ export default function Exercise() {
           </form>
           <br />
           <Paragraph>
-            How this looks for one person may be completely different for
-            another. Someone who has a more active lifestyle may lean towards
-            higher intensity activities such as running and circuit training
-            while someone who is less active may incorporate more walking and
-            stretching into their week.{' '}
-          </Paragraph>
-          <Paragraph>
-            Regardless of how they are executed, focusing on the general
-            recommendation is important for achieving and maintaining a healthy
-            body and just as important, a healthy mind.{' '}
+            Once you’ve answered these questions, sit back and look at the
+            various types of exercise and see which ones align with your
+            responses. Performing a variety of types and intensities is
+            important in maintaining and achieving balance in your overall
+            health and well-being. This may take some trial and error, but the
+            more you experiment and try new things the more you will learn about
+            your body and how you respond to it.
           </Paragraph>
           <br />
           <Title type='h2'>Healthy Relationship with Exercise</Title>

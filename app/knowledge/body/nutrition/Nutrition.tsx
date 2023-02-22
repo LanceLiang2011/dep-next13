@@ -13,6 +13,8 @@ export default function Nutrition() {
     <main className='pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900'>
       <div className='flex justify-between px-4 mx-auto max-w-screen-xl '>
         <article className='mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert'>
+          <DESymptomsCheck />
+          <br />
           <Title type='h2'>
             What is{' '}
             <span className='text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400'>
@@ -20,8 +22,6 @@ export default function Nutrition() {
             </span>{' '}
             and why it is important?
           </Title>
-          <DESymptomsCheck />
-          <br />
           <Paragraph>
             Nutrients are the substances found in food that are necessary for
             growth, maintenance, and repair of our bodies. There are six
