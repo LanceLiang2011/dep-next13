@@ -5,21 +5,29 @@ import React from 'react';
 import fat from '@/resources/imgs/fat-cell.png';
 import bone from '@/resources/imgs/bone.png';
 import muscle from '@/resources/imgs/muscle.png';
+import scalegif from '@/resources/imgs/scalegif.gif';
+import scaleHospital from '@/resources/imgs/scaleHospital.jpg';
+import bmivsbody from '@/resources/imgs/bmivsbody.png';
 import HoverImage from '@/components/UI/HoverImage';
+import DESymptomsCheck from './DESymptomsCheck';
+import FatTypeCompare from './FatTypeCompare';
+import Image from 'next/image';
 
 export default function Body() {
   return (
     <main className='pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900'>
       <div className='flex justify-between px-4 mx-auto max-w-screen-xl '>
         <article className='mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert'>
-          <Title>
+          <Title type='h2'>
+            How is the{' '}
             <span className='text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-green-400'>
               Body
             </span>{' '}
-            Section
+            Composed?
           </Title>
           <br />
-          <Title type='h2'>How is the Body Composed?</Title>
+          <DESymptomsCheck />
+          <br />
           <Paragraph>
             An individual&apos;s body is composed of 3 major factors:{' '}
             <HoverImage src={fat}>
@@ -49,28 +57,31 @@ export default function Body() {
             Body fat in society has become a very stigmatized component of an
             individual&apos;s body. Yet, having body fat is important for
             survival . There are 2 types of body fat; non-fat mass and fat mass.
-            Non-fat is essential, and it is within our bones, organs, and
-            muscles. Fat mass is the fat stored within our adipose tissue, used
-            to give us energy and cushion our organs. Having excessive fat mass
-            can cause other health complications, however, having too low of fat
-            mass can also be problematic. Therefore, fat mass should not be
-            looked at as a negative because it is very essential for our
-            survival.{' '}
           </Paragraph>
+          <FatTypeCompare />
+          <br />
           <Paragraph>
-            Muscles allow the body to move and function. Being able to kick a
-            soccer ball or being able to chew food is all done through our
-            muscles. Within our body, muscles weigh more than both types of body
-            fats.
+            Within our body, muscles weigh more than both types of body fats.
           </Paragraph>
           <br />
           <Title type='h2'>Different Measurements of the Body</Title>
           <UnderlineSubtitle>What weight represents</UnderlineSubtitle>
           <Paragraph>
-            Weight is a quick measurement used to represent how much mass an
-            individual is. It does not take into consideration different
-            sections or components of the body.{' '}
+            <HoverImage src={scalegif}>
+              <span className='underline decoration-2 decoration-blue-400 dark:decoration-blue-600'>
+                Weight
+              </span>
+            </HoverImage>{' '}
+            is a quick measurement used to represent how much mass an individual
+            is. It does not take into consideration different sections or
+            components of the body.{' '}
           </Paragraph>
+          <Image
+            src={scaleHospital}
+            height={300}
+            width={300}
+            alt='a scle in hospital'
+          />
           <br />
           <UnderlineSubtitle>What is BMI?</UnderlineSubtitle>
           <Paragraph>
@@ -98,6 +109,12 @@ export default function Body() {
             be a problematic measurement because those who could be considered
             “healthy” might not be reflected within the BMI measurement.{' '}
           </Paragraph>
+          <Image
+            src={bmivsbody}
+            height={250}
+            width={250}
+            alt='a scle in hospital'
+          />
           <Paragraph>
             It is important to remember that BMI can be a useful quick image of
             an individual&apos;s body composition, however, it does not paint

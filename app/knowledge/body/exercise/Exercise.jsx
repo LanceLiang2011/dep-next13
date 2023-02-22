@@ -2,10 +2,7 @@ import Paragraph from '@/components/Typograpjy/Paragraph';
 import Title from '@/components/Typograpjy/Title';
 import UnderlineSubtitle from '@/components/Typograpjy/UnderlineSubtitle';
 import React from 'react';
-import strength from '@/resources/imgs/strength.jpg';
-import cardio from '@/resources/imgs/cardio.jpg';
-import flex from '@/resources/imgs/flex.jpg';
-import Image from 'next/image';
+import ExerciseCompare from './ExerciseCompare';
 
 export default function Exercise() {
   return (
@@ -57,83 +54,9 @@ export default function Exercise() {
             training and can be considered a combination of multipl types.{' '}
           </Paragraph>
           <br />
-          <div className='flex gap-2'>
-            <div className='max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700'>
-              <span>
-                <Image
-                  className='rounded-t-lg'
-                  src={strength}
-                  alt='strength training'
-                  width={400}
-                  height={400}
-                />
-              </span>
-              <div className='p-5'>
-                <h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
-                  Strength Training
-                </h5>
-
-                <p className='mb-3 font-normal text-gray-700 dark:text-gray-400'>
-                  Strength training (also known as resistance training) is a
-                  type of exercise that aims to build strength and endurance of
-                  our muscles. It is based on the principle that when we put
-                  resistance on our muscles, they will work to overcome the
-                  force and thereby become stronger.
-                </p>
-              </div>
-            </div>
-            <div className='max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700'>
-              <span>
-                <Image
-                  className='rounded-t-lg'
-                  src={cardio}
-                  alt='cardio training'
-                  width={400}
-                  height={400}
-                />
-              </span>
-              <div className='p-5'>
-                <h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
-                  Cardiovascular Training
-                </h5>
-
-                <p className='mb-3 font-normal text-gray-700 dark:text-gray-400'>
-                  Cardiovascular training (also known as cardio) is a type of
-                  exercise that conditions our our heart and lungs. Cardio
-                  involves rhythmic and reptitive activities that increase your
-                  heart rate and push your body to produce more oxygen for
-                  working muscles allowing it to work longer.
-                </p>
-              </div>
-            </div>
-
-            <div className='max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700'>
-              <span>
-                <Image
-                  className='rounded-t-lg'
-                  src={flex}
-                  alt='flexible training'
-                  width={400}
-                  height={400}
-                />
-              </span>
-              <div className='p-5'>
-                <h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
-                  Flexibility Training
-                </h5>
-
-                <p className='mb-3 font-normal text-gray-700 dark:text-gray-400'>
-                  Flexibility training (also known as stretching) is a type of
-                  exercise that aims to move your joints and muscles through
-                  their full range of motion. When our muscles are stretched,
-                  tension and stiffness can be released which increases our
-                  mobility and reduces the risk of injury.
-                </p>
-              </div>
-            </div>
-          </div>
+          <ExerciseCompare />
           <br />
-          <div class='relative overflow-x-auto'>
+          <div className='relative overflow-x-auto'>
             <table className='w-full text-sm text-left text-gray-500 dark:text-gray-400'>
               <thead className='text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400'>
                 <tr>
@@ -196,17 +119,47 @@ export default function Exercise() {
             your body and finding what works best with you and your lifestyle.
             Ask yourself these questions…
           </Paragraph>
-          <ol className='mb-3'>
-            <li className='text-lg font-light text-gray-600 dark:text-gray-400 underline underline-offset-1 decoration-2 decoration-blue-400 dark:decoration-blue-600'>
-              What make me feel good?
-            </li>
-            <li className='text-lg font-light text-gray-600 dark:text-gray-400 underline underline-offset-1 decoration-2 decoration-blue-400 dark:decoration-blue-600'>
-              Why am I doing this?
-            </li>
-            <li className='text-lg font-light text-gray-600 dark:text-gray-400 underline underline-offset-1 decoration-2 decoration-blue-400 dark:decoration-blue-600'>
-              Where is this going to get me?
-            </li>
-          </ol>
+          <form class='w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700'>
+            <ol className='mb-3'>
+              <label
+                htmlFor='what'
+                className='text-xl mb-3 font-light text-gray-600 dark:text-gray-400 underline underline-offset-1 decoration-2 decoration-blue-400 dark:decoration-blue-600'
+              >
+                What makes me feel good?
+              </label>
+              <input
+                type='text'
+                id='what'
+                className='mb-5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
+                placeholder='What makes me feel good?'
+              ></input>
+              <label
+                htmlFor='why'
+                className='text-xl mb-3 font-light text-gray-600 dark:text-gray-400 underline underline-offset-1 decoration-2 decoration-blue-400 dark:decoration-blue-600'
+              >
+                Why am I doing this?
+              </label>
+              <input
+                type='text'
+                id='why'
+                className='mb-5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
+                placeholder='Why am I doing this?'
+              ></input>
+              <label
+                htmlFor='where'
+                className='text-xl mb-3 font-light text-gray-600 dark:text-gray-400 underline underline-offset-1 decoration-2 decoration-blue-400 dark:decoration-blue-600'
+              >
+                Where is this going to get me?
+              </label>
+              <input
+                type='text'
+                id='where'
+                className='mb-5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
+                placeholder='Where is this going to get me?'
+              ></input>
+            </ol>
+          </form>
+          <br />
           <Paragraph>
             How this looks for one person may be completely different for
             another. Someone who has a more active lifestyle may lean towards

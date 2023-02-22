@@ -5,6 +5,8 @@ import Image from 'next/image';
 import React from 'react';
 import foods from '@/resources/imgs/foods.jpg';
 import Badge from '@/components/Typograpjy/Badge';
+import DESymptomsCheck from './DESymptomsCheck';
+import NutrientsTable from './NutrientsTable';
 
 export default function Nutrition() {
   return (
@@ -18,6 +20,8 @@ export default function Nutrition() {
             </span>{' '}
             and why it is important?
           </Title>
+          <DESymptomsCheck />
+          <br />
           <Paragraph>
             Nutrients are the substances found in food that are necessary for
             growth, maintenance, and repair of our bodies. There are six
@@ -27,20 +31,11 @@ export default function Nutrition() {
             <Badge type='yellow'>fats</Badge>,{' '}
             <Badge type='green'>vitamins</Badge>,{' '}
             <Badge type='dark'>minerals</Badge>,{' '}
-            <Badge type='default'>water</Badge>.
+            <Badge type='default'>water</Badge>. All six play a specific and
+            important role in the body.
           </Paragraph>
-          <Paragraph>
-            Each nutrient plays a specific and important role in the body. For
-            example, <Badge type='pink'>carbohydrates</Badge>
-            provide energy, <Badge type='purple'>proteins</Badge>
-            build and repair tissues, <Badge type='yellow'>fats</Badge>
-            provide insulation and cushioning for organs,{' '}
-            <Badge type='green'>vitamins</Badge>
-            help regulate chemical processes in the body,{' '}
-            <Badge type='dark'>minerals</Badge>
-            help maintain healthy bones and teeth, and water helps regulate body
-            temperature and maintain healthy skin.
-          </Paragraph>
+          <NutrientsTable />
+          <br />
           <Paragraph>
             It is important to consume a{' '}
             <span className='text-transparent font-bold bg-clip-text bg-gradient-to-r to-red-600 via-green-500 from-indigo-400'>
@@ -61,81 +56,11 @@ export default function Nutrition() {
             carbohydrates, proteins, and fats, which are then absorbed into the
             bloodstream and transported to cells throughout the body.
           </Paragraph>
-          <Paragraph>
-            <Badge type='pink'>Carbohydrates</Badge>
-            are the primary source of energy for the body, providing glucose,
-            which is used by cells to produce ATP, the molecule responsible for
-            energy storage and utilization.{' '}
-            <Badge type='purple'>Proteins</Badge>
-            are important building blocks for tissues, hormones, and enzymes, as
-            well as playing a role in immune system function.{' '}
-            <Badge type='yellow'>Fats</Badge>
-            are also an important source of energy and help with the absorption
-            of fat-soluble vitamins such as vitamins A, D, E, and K. In
-            addition, fats also play a role in insulation and cushioning of
-            organs, hormone production and cell membrane structure.
-          </Paragraph>
-          <Paragraph>
-            <span className='bg-gradient-to-r from-green-100 via-blue-100 to-gray-100 text-green-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-green-900 dark:text-green-300'>
-              Minerals and vitamins
-            </span>
-            are also crucial for various bodily functions and processes,
-            including maintaining a healthy immune system, promoting healthy
-            bones and teeth, and facilitating proper muscle and nerve function.
-          </Paragraph>
+
           <Paragraph>
             Overall, we eat to provide our bodies with the necessary energy,
             nutrients and materials it needs to sustain life and carry out its
             various functions.
-          </Paragraph>
-          <br />
-          <Title type='h2'>Are there &quot;best diet&quot; for me?</Title>
-          <Paragraph>
-            There is no single{' '}
-            <span className='line-through decoration-pink-600/30 decoration-4'>
-              &quot;best diet&quot;
-            </span>{' '}
-            that is universally applicable to all people. This is because
-            individual nutritional needs and preferences vary based on factors
-            such as age, gender, weight, activity level, and health status.
-          </Paragraph>
-          <Paragraph>
-            However, there are certain{' '}
-            <span className='text-transparent bg-clip-text bg-gradient-to-r to-amber-600 from-lime-400 font-bold'>
-              principles
-            </span>{' '}
-            of healthy eating that are generally recognized as beneficial for
-            most people. These principles include:
-          </Paragraph>
-          <ul className='list-disc ml-8'>
-            <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-              Consuming a variety of foods from all food groups, including
-              fruits, vegetables, whole grains, lean proteins, and healthy fats.
-            </li>
-            <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-              Limiting processed foods and added sugars, as well as saturated
-              and trans fats.
-            </li>
-            <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-              Balancing calorie intake with physical activity to maintain a
-              healthy weight.
-            </li>
-            <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-              Drinking plenty of water and limiting sugary drinks.
-            </li>
-            <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-              In addition, some people may have specific dietary requirements
-              based on health conditions or personal beliefs, such as
-              vegetarianism, veganism, or gluten-free diets. In these cases, it
-              is important to seek the advice of a healthcare professional or
-              registered dietitian to ensure that the necessary nutrients are
-              being obtained from the diet.
-            </li>
-          </ul>
-          <Paragraph>
-            In summary, while there is no one best diet, a balanced and
-            nutritious diet that meets an individual&quot;s specific needs and
-            requirements is the key to good health.
           </Paragraph>
           <br />
           <Title type='h2'>
