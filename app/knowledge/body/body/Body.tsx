@@ -56,7 +56,8 @@ export default function Body() {
           <Paragraph>
             Body fat in society has become a very stigmatized component of an
             individual&apos;s body. Yet, having body fat is important for
-            survival . There are 2 types of body fat; non-fat mass and fat mass.
+            survival . There are two distinct types of tissue that make up our
+            body mass: non-fat mass and fat mass.
           </Paragraph>
           <FatTypeCompare />
           <br />
