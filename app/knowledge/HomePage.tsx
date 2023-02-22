@@ -23,7 +23,7 @@ export default function HomePage() {
             eating behaviours that do not warrant the diagnosis of an eating
             disorder. To learn more about it, click sections below that
             interests you or use the navigation bar on the left side to further
-            expore.
+            explore.
           </p>
         </div>
         <div className='space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0'>
