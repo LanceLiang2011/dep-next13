@@ -14,12 +14,12 @@ export default function ButtonGroup() {
             !activeSegment || activeSegment === 'body' ? undefined : 'gray'
           }
         >
-          BODY
+          BODY COMPOSITION
         </Button>
       </Link>
       <Link href='/knowledge/body/exercise'>
         <Button color={activeSegment === 'exercise' ? undefined : 'gray'}>
-          EXERCISE
+          PHYSICAL ACTIVITY AND EXERCISE
         </Button>
       </Link>
       <Link href='/knowledge/body/nutrition'>
