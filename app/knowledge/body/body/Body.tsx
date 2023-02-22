@@ -56,13 +56,15 @@ export default function Body() {
           <Paragraph>
             Body fat in society has become a very stigmatized component of an
             individual&apos;s body. Yet, having body fat is important for
-            survival . There are two distinct types of tissue that make up our
-            body mass: non-fat mass and fat mass.
+            survival. There are 2 types of body fat; non-fat mass and fat mass.
           </Paragraph>
           <FatTypeCompare />
           <br />
           <Paragraph>
-            Within our body, muscles weigh more than both types of body fats.
+            Muscles allow the body to move and function. Being able to kick a
+            soccer ball or being able to chew food is all done through our
+            muscles. Within our body, muscles weigh more than both types of body
+            fats.
           </Paragraph>
           <br />
           <Title type='h2'>Different Measurements of the Body</Title>

@@ -23,9 +23,7 @@ export default function FatTypeCompare() {
 
           <p className='mb-3 font-normal text-gray-700 dark:text-gray-400'>
             Non-fat is essential, and it is within our bones, organs, and
-            muscles. Bones and muscles allow the body to move and function.
-            Being able to kick a soccer ball or being able to chew food is all
-            done through our muscles.
+            muscles.
           </p>
         </div>
       </div>
