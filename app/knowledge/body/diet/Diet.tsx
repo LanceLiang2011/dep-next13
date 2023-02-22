@@ -21,7 +21,7 @@ export default function Nutrition() {
             </span>
           </Title>
           <br />
-          <Title type='h2'>Are there &quot;best diet&quot; for me?</Title>
+          <Title type='h2'>Is there a &quot;best diet&quot; for me?</Title>
           <Paragraph>
             There is no single{' '}
             <span className='line-through decoration-pink-600/30 decoration-4'>
@@ -118,19 +118,13 @@ export default function Nutrition() {
                 Dietitian vs Nutritionist?
               </h5>
               <p className='mb-3 font-normal text-gray-700 dark:text-gray-400'>
-                <span className='underline decoration-2 decoration-blue-400 dark:decoration-blue-600'>
-                  {' '}
-                  In Canada, “Dietitian,” and “Registered Dietitian,” are
-                  protected-titles, only people who have the following
-                  qualifications can call themselves one.
-                </span>{' '}
-                In all other provinces and territories except Nova Scotia,
-                Quebec and Alberta, Nutritionist is not a protected title.
-                <span className='underline decoration-2 decoration-blue-400 dark:decoration-blue-600'>
-                  {' '}
-                  Anyone could legally call themselves a Nutritionist without
-                  reliable qualifications.
-                </span>{' '}
+                In Canada, “Registered Dietitians,” are regulated healthcare
+                professionals, each having specific qualifications depending on
+                the provinces and territories they work in. (Exceptions to this
+                are Nova Scotia, Quebec, and Alberta). Nutritionists are not a
+                regulated healthcare profession, meaning anyone could legally
+                call themselves a nutritionist without reliable, regulated
+                qualifications.
               </p>
             </div>
           </span>
