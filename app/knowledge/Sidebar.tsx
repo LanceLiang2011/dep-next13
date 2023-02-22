@@ -20,12 +20,12 @@ export default function Sidebar() {
           Home
         </Link>
         <Link
-          href='/knowledge/mind'
+          href='/knowledge/de'
           className={`block w-full px-4 py-2 border-b border-gray-200 cursor-pointer  dark:border-gray-600 ${
-            activeSegment === 'mind' ? selectedColor : unselectedColor
+            activeSegment === 'de' ? selectedColor : unselectedColor
           }`}
         >
-          Mind
+          Disordered Eating
         </Link>
         <Link
           href='/knowledge/body'
@@ -36,12 +36,12 @@ export default function Sidebar() {
           Body
         </Link>
         <Link
-          href='/knowledge/others'
+          href='/knowledge/mind'
           className={`block w-full px-4 py-2 border-b border-gray-200 cursor-pointer dark:border-gray-600 ${
-            activeSegment === 'others' ? selectedColor : unselectedColor
+            activeSegment === 'mind' ? selectedColor : unselectedColor
           }`}
         >
-          Others
+          Mind
         </Link>
       </div>
     </>
