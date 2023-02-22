@@ -22,8 +22,10 @@ export default function FatTypeCompare() {
           </h5>
 
           <p className='mb-3 font-normal text-gray-700 dark:text-gray-400'>
-            Non-fat is essential, and it is within our bones, organs, and
-            muscles.
+            Non-fat is essential. They are generally considered to be any fat
+            (including the fat between muscle groups and within a muscle) found
+            beneath the fascia of a muscle and is the widest definition for fat
+            beneath the fascia of a muscle.
           </p>
         </div>
       </div>
