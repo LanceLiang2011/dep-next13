@@ -121,11 +121,9 @@ export default function Nutrition() {
             </li>
           </ul>
           <Paragraph>
-            In summary, a healthy lifestyle and diet are interdependent and can
-            support each other in promoting good health and well-being. Making
-            gradual, sustainable changes to your lifestyle and diet, based on
-            your individual needs and preferences, can have a positive impact on
-            your health over time.
+            Making gradual, sustainable changes to your lifestyle and diet,
+            based on your individual needs and preferences, can have a positive
+            impact on your health over time.
           </Paragraph>
           <br />
           <a
