@@ -2,14 +2,15 @@
 import Badge from '@/components/Typograpjy/Badge';
 import Paragraph from '@/components/Typograpjy/Paragraph';
 import Title from '@/components/Typograpjy/Title';
-import { getDiaryById } from '@/library/firebase';
+import { convertTimestamp, getDiaryById } from '@/library/firebase';
+import { Timestamp } from 'firebase/firestore';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 export interface Diary {
   title: string;
   tag: string;
-  date: string;
+  date: Timestamp;
   description: string;
 }
 
@@ -17,7 +18,7 @@ export default function Diary({ params }: any) {
   const [diary, setDiary] = useState<Diary>({
     title: '',
     tag: '',
-    date: '',
+    date: Timestamp.now(),
     description: '',
   });
   useEffect(() => {
@@ -40,7 +41,7 @@ export default function Diary({ params }: any) {
           )}
           <Badge type='green'>{diary.tag}</Badge>
           {'   '}
-          <Badge type='default'>{diary.date}</Badge>
+          <Badge type='default'>{convertTimestamp(diary.date)}</Badge>
           <br />
           <Paragraph>{diary.description}</Paragraph>
           <br />

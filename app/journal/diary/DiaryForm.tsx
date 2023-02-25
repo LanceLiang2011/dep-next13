@@ -20,7 +20,7 @@ export default function DiaryForm({ setDiaries }: any) {
       tag,
       description,
       uid: user?.uid,
-      date: new Date().toDateString(),
+      date: new Date(),
       id: crypto.randomUUID(),
     };
 

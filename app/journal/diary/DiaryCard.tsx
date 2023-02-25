@@ -1,4 +1,5 @@
 import Badge from '@/components/Typograpjy/Badge';
+import { convertTimestamp } from '@/library/firebase';
 import Link from 'next/link';
 
 export default function DiaryCard({ diary, removeDiary }: any) {
@@ -11,7 +12,12 @@ export default function DiaryCard({ diary, removeDiary }: any) {
       </a>
       <p>
         <Badge type='green'>Tag: {diary.tag}</Badge>
-        <Badge type='default'>Date: {diary.date}</Badge>
+        <Badge type='default'>
+          Date:{' '}
+          {diary.date instanceof Date
+            ? diary.date.toDateString()
+            : convertTimestamp(diary.date)}
+        </Badge>
       </p>
       <p className='my-3 font-normal text-gray-700 dark:text-gray-400'>
         {diary.description.slice(0, 120)}

@@ -20,6 +20,7 @@ import {
   doc,
   getDoc,
   deleteDoc,
+  Timestamp,
 } from 'firebase/firestore';
 import { toast } from 'react-hot-toast';
 // TODO: Add SDKs for Firebase products that you want to use
@@ -195,3 +196,10 @@ export const getDiaryById = async (diaryId: string) => {
     throw new Error(`Diary with ID ${diaryId} does not exist`);
   }
 };
+
+//
+export function convertTimestamp(timestamp: Timestamp) {
+  let date = timestamp.toDate().toDateString();
+
+  return date;
+}
