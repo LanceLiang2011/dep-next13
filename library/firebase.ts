@@ -1,4 +1,5 @@
 // Import the functions you need from the SDKs you need
+import { Diary } from '@/app/journal/diary/[id]/page';
 import { initializeApp } from 'firebase/app';
 import {
   getAuth,
@@ -186,7 +187,7 @@ export const getDiaryById = async (diaryId: string) => {
   const diaryRef = doc(db, 'diary', diaryId);
   const diarySnapshot = await getDoc(diaryRef);
   if (diarySnapshot.exists()) {
-    return { id: diarySnapshot.id, ...diarySnapshot.data() };
+    return { id: diarySnapshot.id, ...(diarySnapshot.data() as Diary) };
   } else {
     throw new Error(`Diary with ID ${diaryId} does not exist`);
   }

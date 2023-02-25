@@ -5,12 +5,23 @@ import Title from '@/components/Typograpjy/Title';
 import { getDiaryById } from '@/library/firebase';
 import { useEffect, useState } from 'react';
 
+export interface Diary {
+  title: string;
+  tag: string;
+  date: string;
+  description: string;
+}
+
 export default function Diary({ params }: any) {
-  const [diary, setDiary] = useState({});
+  const [diary, setDiary] = useState<Diary>({
+    title: '',
+    tag: '',
+    date: '',
+    description: '',
+  });
   useEffect(() => {
     const getDiary = async () => {
       const diaryFromFire = await getDiaryById(params.id);
-      console.log(diaryFromFire);
       setDiary(diaryFromFire);
     };
     getDiary();
