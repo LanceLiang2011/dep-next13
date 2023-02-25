@@ -16,7 +16,11 @@ import {
   collection,
   where,
   addDoc,
+  doc,
+  getDoc,
+  deleteDoc,
 } from 'firebase/firestore';
+import { toast } from 'react-hot-toast';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -53,6 +57,7 @@ export const signInWithGoogle = async (): Promise<void> => {
         email: user.email,
       });
     }
+    toast.success('Log in successfully');
   } catch (error: any) {
     console.error(error);
     alert(error.message);
@@ -66,6 +71,7 @@ export const logInWithEmailAndPassword = async (
 ) => {
   try {
     await signInWithEmailAndPassword(auth, email, password);
+    toast.success('Log in successfully');
   } catch (error: any) {
     console.error(error);
     alert(error.message);
@@ -86,6 +92,7 @@ export const registerWithEmailAndPassword = async (
       authProvider: 'local',
       email,
     });
+    toast.success('Sign up successfully');
   } catch (error: any) {
     console.error(error);
     alert(error.message);
@@ -106,4 +113,81 @@ export const sendPasswordReset = async (email: string) => {
 // Logout
 export const logout = () => {
   signOut(auth);
+  toast.success('Log out successfully');
+};
+
+// get uer data
+export const getUserData = async (uid: string): Promise<any> => {
+  const usersRef = collection(db, 'users');
+  const queryRef = query(usersRef, where('uid', '==', uid));
+  const querySnapshot = await getDocs(queryRef);
+  if (querySnapshot.empty) {
+    return null;
+  }
+  const user = querySnapshot.docs[0].data();
+
+  return user;
+};
+
+// get user doc id
+export const getUserDocId = async (uid: string) => {
+  // Get a reference to the user's document in the Firestore collection
+  const userRef = doc(getFirestore(), 'users', uid);
+
+  // Get the user's document from Firestore
+  const userDoc = await getDoc(userRef);
+
+  // Get the user's document ID
+  const userId = userDoc.id;
+  return userId;
+};
+
+// add diary to db
+export const addDiaryToFirestore = async (diary: any) => {
+  const diaryCollectionRef = collection(db, 'diary');
+  const newDiaryEntryRef = await addDoc(diaryCollectionRef, diary);
+};
+
+// read a user's diary
+export async function getDiaryEntriesForUser(userId: string) {
+  const diaryRef = collection(db, 'diary');
+
+  const q = query(diaryRef, where('uid', '==', userId));
+  const querySnapshot = await getDocs(q);
+
+  const diaryEntries: any = [];
+
+  querySnapshot.forEach((doc) => {
+    const entry = doc.data();
+    entry.id = doc.id;
+    diaryEntries.push(entry);
+  });
+
+  return diaryEntries;
+}
+
+// delete a diary using it's id:
+export async function deleteDiary(diaryId: string): Promise<void> {
+  try {
+    // Create a reference to the diary document to be deleted
+    const diaryRef = doc(db, 'diary', diaryId);
+
+    // Delete the diary document
+    await deleteDoc(diaryRef);
+    console.log(`Diary with ID ${diaryId} has been deleted.`);
+  } catch (error) {
+    console.error('Error deleting diary: ', error);
+    throw new Error('Error deleting diary');
+  }
+}
+
+// get diary by id
+export const getDiaryById = async (diaryId: string) => {
+  const diaryRef = doc(db, 'diary', diaryId);
+  const diarySnapshot = await getDoc(diaryRef);
+  if (diarySnapshot.exists()) {
+    return { id: diarySnapshot.id, ...diarySnapshot.data() };
+  } else {
+    throw new Error(`Diary with ID ${diaryId} does not exist`);
+  }
 };

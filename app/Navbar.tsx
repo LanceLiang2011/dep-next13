@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useRouter } from 'next/navigation';
 import { auth, db, logout } from '@/library/firebase';
+import { Toaster } from 'react-hot-toast';
 
 export default function Navbar() {
   const unselectedButton =
@@ -123,14 +124,22 @@ export default function Navbar() {
                     href='/user'
                     className='block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
                   >
-                    {user.displayName}
+                    {user.displayName || 'Profile'}
                   </Link>
                 </li>
+                {user.photoURL && (
+                  <img
+                    className='w-8 h-8 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500'
+                    src={user.photoURL}
+                    alt={user.displayName || 'anonymous'}
+                  />
+                )}
               </>
             )}
           </ul>
         </div>
       </div>
+      <Toaster />
     </nav>
   );
 }
@@ -186,4 +195,5 @@ tenantId
 
 uid
 : 
+
 */

@@ -4,7 +4,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ['trp.utoronto.ca'],
+    domains: ['trp.utoronto.ca', 'lh3.googleusercontent.com'],
   },
 };
 
