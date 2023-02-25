@@ -189,6 +189,9 @@ export const getDiaryById = async (diaryId: string) => {
   if (diarySnapshot.exists()) {
     return { id: diarySnapshot.id, ...(diarySnapshot.data() as Diary) };
   } else {
+    toast.error(
+      'The diary is on the way saving to the database. Please refresh the page later '
+    );
     throw new Error(`Diary with ID ${diaryId} does not exist`);
   }
 };
