@@ -3,6 +3,9 @@ import Image from 'next/image';
 import React from 'react';
 import { useSelectedLayoutSegment } from 'next/navigation';
 import Link from 'next/link';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { useRouter } from 'next/navigation';
+import { auth, db, logout } from '@/library/firebase';
 
 export default function Navbar() {
   const unselectedButton =
@@ -11,6 +14,9 @@ export default function Navbar() {
     'block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white';
   const activeSegment = useSelectedLayoutSegment();
 
+  const [user, loading, error] = useAuthState(auth);
+  const router = useRouter();
+  // !return
   return (
     <nav className='bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900 mb-4'>
       <div className='container flex flex-wrap items-center justify-between mx-auto'>
@@ -94,17 +100,90 @@ export default function Navbar() {
                 Support
               </Link>
             </li>
-            <li>
-              <Link
-                href='/login'
-                className='block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
-              >
-                Login
-              </Link>
-            </li>
+            {!user && (
+              <li>
+                <Link
+                  href='/login'
+                  className='block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                >
+                  Login
+                </Link>
+              </li>
+            )}
+            {user && (
+              <>
+                <li
+                  className='cursor-pointer block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                  onClick={logout}
+                >
+                  Logout
+                </li>{' '}
+                <li>
+                  <Link
+                    href='/user'
+                    className='block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'
+                  >
+                    {user.displayName}
+                  </Link>
+                </li>
+              </>
+            )}
           </ul>
         </div>
       </div>
     </nav>
   );
 }
+
+/*
+accessToken
+: 
+
+auth
+: 
+
+displayName
+: 
+
+email
+: 
+
+emailVerified
+: 
+
+isAnonymous
+: 
+
+metadata
+: 
+
+phoneNumber
+: 
+
+photoURL
+: 
+
+proactiveRefresh
+: 
+
+providerData
+: 
+
+providerId
+: 
+
+reloadListener
+: 
+
+reloadUserInfo
+: 
+
+stsTokenManager
+: 
+
+tenantId
+: 
+
+uid
+: 
+*/
