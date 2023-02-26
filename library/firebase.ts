@@ -21,8 +21,8 @@ import {
   getDoc,
   deleteDoc,
   Timestamp,
+  setDoc,
 } from 'firebase/firestore';
-import { stringify } from 'querystring';
 import { toast } from 'react-hot-toast';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -50,21 +50,16 @@ export const signInWithGoogle = async (): Promise<void> => {
   try {
     const res = await signInWithPopup(auth, GoogleProvider);
     const user = res.user;
-    alert(JSON.stringify(user)); //FIXME
     const q = query(collection(db, 'users'), where('uid', '==', user.uid));
-    alert(JSON.stringify(q)); //FIXME
     const docs = await getDocs(q);
-    alert(JSON.stringify(docs.docs)); //FIXME
-
-    if (true) {
-      alert('enterif');
-      await addDoc(collection(db, 'users'), {
+    if (docs.docs.length === 0) {
+      const userDocRef = doc(db, 'users', user.uid);
+      await setDoc(userDocRef, {
         uid: user.uid,
         name: user.displayName,
         authProvider: 'google',
         email: user.email,
       });
-      alert('create sucess!!!'); //FIXME
     }
     toast.success('Log in successfully');
   } catch (error: any) {
@@ -95,7 +90,8 @@ export const registerWithEmailAndPassword = async (
   try {
     const res = await createUserWithEmailAndPassword(auth, email, password);
     const user = res.user;
-    await addDoc(collection(db, 'users'), {
+    const userDocRef = doc(db, 'users', user.uid);
+    await setDoc(userDocRef, {
       uid: user.uid,
       name,
       authProvider: 'local',
@@ -153,8 +149,8 @@ export const getUserDocId = async (uid: string) => {
 
 // add diary to db
 export const addDiaryToFirestore = async (diary: any) => {
-  const diaryCollectionRef = collection(db, 'diary');
-  const newDiaryEntryRef = await addDoc(diaryCollectionRef, diary);
+  const diaryRef = doc(db, 'diary', diary.id);
+  const newDiaryEntryRef = await setDoc(diaryRef, diary);
 };
 
 // read a user's diary
