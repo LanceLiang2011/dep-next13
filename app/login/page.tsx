@@ -26,7 +26,7 @@ export default function Login() {
   // ? Side effect, check the auth state
   useEffect(() => {
     if (loading) return;
-    if (user) router.push('/'); // if have logged, return to main page
+    // if (user) router.push('/'); // if have logged, return to main page
   }, [user, loading]);
 
   // ?handlers
