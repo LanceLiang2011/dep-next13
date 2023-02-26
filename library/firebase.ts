@@ -58,6 +58,7 @@ export const signInWithGoogle = async (): Promise<void> => {
         authProvider: 'google',
         email: user.email,
       });
+      console.log('create a new user!');
     }
     toast.success('Log in successfully');
   } catch (error: any) {
