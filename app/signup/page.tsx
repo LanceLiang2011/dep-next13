@@ -10,6 +10,7 @@ import {
 } from '@/library/firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { FormEvent, useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function Signup() {
   // !form related states:
@@ -24,11 +25,15 @@ export default function Signup() {
     if (loading) return;
   }, [user, loading]);
 
+  // ? Router
+  const router = useRouter();
+
   // ?handler
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!name) alert('Please enter name');
     registerWithEmailAndPassword(name, email, password);
+    router.push('/journal');
   };
 
   // ! Return
@@ -128,7 +133,10 @@ export default function Signup() {
               </button>
               <button
                 type='button'
-                onClick={signInWithGoogle}
+                onClick={async () => {
+                  await signInWithGoogle();
+                  router.push('/journal');
+                }}
                 className='w-full text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800'
               >
                 <span className='flex flex-row items-center gap-3 justify-center'>

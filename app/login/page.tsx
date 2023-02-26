@@ -2,6 +2,7 @@
 // !stateful import
 import { FormEvent, useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { useRouter } from 'next/navigation';
 
 // ? stateless import
 import logo from '@/resources/imgs/trp.webp';
@@ -13,6 +14,7 @@ import {
   logInWithEmailAndPassword,
   signInWithGoogle,
 } from '@/library/firebase';
+import { async } from '@firebase/util';
 
 export default function Login() {
   // ! form related states
@@ -25,10 +27,14 @@ export default function Login() {
     if (loading) return;
   }, [user, loading]);
 
+  // ? Router
+  const router = useRouter();
+
   // ?handlers
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     logInWithEmailAndPassword(email, password);
+    router.push('/journal');
   };
   // ! Return
   return (
@@ -91,7 +97,10 @@ export default function Login() {
               </button>
               <button
                 type='button'
-                onClick={signInWithGoogle}
+                onClick={async () => {
+                  await signInWithGoogle();
+                  router.push('/journal');
+                }}
                 className='w-full text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800'
               >
                 <span className='flex flex-row items-center gap-3 justify-center'>
