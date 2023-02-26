@@ -10,7 +10,6 @@ import {
 } from '@/library/firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { FormEvent, useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
 
 export default function Signup() {
   // !form related states:
@@ -20,13 +19,9 @@ export default function Signup() {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [user, loading, error] = useAuthState(auth);
 
-  // ? router
-  const router = useRouter();
-
   // ? Side effect, check the auth state
   useEffect(() => {
     if (loading) return;
-    // if (user) router.push('/'); // if have logged, return to main page
   }, [user, loading]);
 
   // ?handler

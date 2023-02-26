@@ -2,7 +2,7 @@
 // !stateful import
 import { FormEvent, useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { useRouter } from 'next/navigation';
+
 // ? stateless import
 import logo from '@/resources/imgs/trp.webp';
 import Image from 'next/image';
@@ -20,13 +20,9 @@ export default function Login() {
   const [password, setPassword] = useState('');
   const [user, loading, error] = useAuthState(auth);
 
-  // ? router
-  const router = useRouter();
-
   // ? Side effect, check the auth state
   useEffect(() => {
     if (loading) return;
-    // if (user) router.push('/'); // if have logged, return to main page
   }, [user, loading]);
 
   // ?handlers
