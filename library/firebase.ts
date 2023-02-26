@@ -22,6 +22,7 @@ import {
   deleteDoc,
   Timestamp,
 } from 'firebase/firestore';
+import { stringify } from 'querystring';
 import { toast } from 'react-hot-toast';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -49,7 +50,7 @@ export const signInWithGoogle = async (): Promise<void> => {
   try {
     const res = await signInWithPopup(auth, GoogleProvider);
     const user = res.user;
-    alert(user); //FIXME
+    alert(JSON.stringify(user)); //FIXME
     const q = query(collection(db, 'users'), where('uid', '==', user.uid));
     const docs = await getDocs(q);
     if (docs.docs.length === 0 || !docs.docs) {
