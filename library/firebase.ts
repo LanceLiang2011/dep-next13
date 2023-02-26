@@ -49,6 +49,7 @@ export const signInWithGoogle = async (): Promise<void> => {
   try {
     const res = await signInWithPopup(auth, GoogleProvider);
     const user = res.user;
+    console.log(user); //FIXME
     const q = query(collection(db, 'users'), where('uid', '==', user.uid));
     const docs = await getDocs(q);
     if (docs.docs.length === 0 || !docs.docs) {
@@ -58,8 +59,8 @@ export const signInWithGoogle = async (): Promise<void> => {
         authProvider: 'google',
         email: user.email,
       });
-      console.log('create a new user!');
-      alert('create sucess!!!');
+      console.log('create a new user!'); //FIXME
+      alert('create sucess!!!'); //FIXME
     }
     toast.success('Log in successfully');
   } catch (error: any) {
