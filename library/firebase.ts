@@ -52,15 +52,18 @@ export const signInWithGoogle = async (): Promise<void> => {
     const user = res.user;
     alert(JSON.stringify(user)); //FIXME
     const q = query(collection(db, 'users'), where('uid', '==', user.uid));
+    alert(JSON.stringify(q)); //FIXME
     const docs = await getDocs(q);
+    alert(JSON.stringify(docs)); //FIXME
+
     if (docs.docs.length === 0 || !docs.docs) {
+      alert('enterif');
       await addDoc(collection(db, 'users'), {
         uid: user.uid,
         name: user.displayName,
         authProvider: 'google',
         email: user.email,
       });
-      console.log('create a new user!'); //FIXME
       alert('create sucess!!!'); //FIXME
     }
     toast.success('Log in successfully');
