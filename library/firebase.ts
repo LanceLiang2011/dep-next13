@@ -22,6 +22,7 @@ import {
   deleteDoc,
   Timestamp,
   setDoc,
+  collectionGroup,
 } from 'firebase/firestore';
 import { toast } from 'react-hot-toast';
 // TODO: Add SDKs for Firebase products that you want to use
@@ -200,9 +201,38 @@ export const getDiaryById = async (diaryId: string) => {
   }
 };
 
-//
+// convert firestore datetime
 export function convertTimestamp(timestamp: Timestamp) {
   let date = timestamp.toDate().toDateString();
 
   return date;
 }
+
+// add user's goal to firestore given userid and the goal object
+export const addGoalToFirestore = async (uid: string, goal: any) => {
+  const goalRef = doc(collection(db, 'users', uid, 'goals'), goal.goalId);
+  await setDoc(goalRef, goal);
+};
+
+// get user's goal data given uid
+export const getUserGoalsById = async (uid: string) => {
+  const q = query(collectionGroup(db, 'goals'), where('uid', '==', uid));
+  const querySnapshot = await getDocs(q);
+  const goals = querySnapshot.docs.map((doc) => ({
+    goalId: doc.id,
+    ...doc.data(),
+  }));
+  return goals;
+};
+
+// delete a goal using ID
+export const deleteGoalById = async (uid: string, goalId: string) => {
+  const goalDocRef = doc(collection(db, 'users', uid, 'goals'), goalId);
+  deleteDoc(goalDocRef)
+    .then(() => {
+      console.log('Diary document deleted successfully.');
+    })
+    .catch((error) => {
+      console.error('Error deleting diary document: ', error);
+    });
+};

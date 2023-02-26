@@ -60,7 +60,7 @@ export default function DiaryList({ diaries, removeDiary }: any) {
             type='radio'
             value=''
             checked={searchScope === 'tag'}
-            onClick={() => {
+            onChange={() => {
               setSearchScope('tag');
             }}
             name='inline-radio-group'
@@ -79,7 +79,7 @@ export default function DiaryList({ diaries, removeDiary }: any) {
             type='radio'
             value=''
             checked={searchScope === 'title'}
-            onClick={() => {
+            onChange={() => {
               setSearchScope('title');
             }}
             name='inline-radio-group'
