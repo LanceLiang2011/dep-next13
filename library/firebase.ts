@@ -54,7 +54,7 @@ export const signInWithGoogle = async (): Promise<void> => {
     const q = query(collection(db, 'users'), where('uid', '==', user.uid));
     alert(JSON.stringify(q)); //FIXME
     const docs = await getDocs(q);
-    alert(JSON.stringify(docs)); //FIXME
+    alert(JSON.stringify(docs.docs)); //FIXME
 
     if (docs.docs.length === 0 || !docs.docs) {
       alert('enterif');
