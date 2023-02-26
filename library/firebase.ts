@@ -49,7 +49,7 @@ export const signInWithGoogle = async (): Promise<void> => {
   try {
     const res = await signInWithPopup(auth, GoogleProvider);
     const user = res.user;
-    console.log(user); //FIXME
+    alert(user); //FIXME
     const q = query(collection(db, 'users'), where('uid', '==', user.uid));
     const docs = await getDocs(q);
     if (docs.docs.length === 0 || !docs.docs) {
