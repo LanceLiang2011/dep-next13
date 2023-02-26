@@ -59,6 +59,7 @@ export const signInWithGoogle = async (): Promise<void> => {
         email: user.email,
       });
       console.log('create a new user!');
+      alert('create sucess!!!');
     }
     toast.success('Log in successfully');
   } catch (error: any) {
