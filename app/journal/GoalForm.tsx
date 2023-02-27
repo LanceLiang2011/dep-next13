@@ -7,7 +7,7 @@ import { FormEvent, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { toast } from 'react-hot-toast';
 
-export default function GoalForm({ setGoals }: any) {
+export default function GoalForm({ setGoals, fnToCall }: any) {
   // !form states
   const [title, setTitle] = useState('');
   const [specific, setSpecific] = useState('');
@@ -33,6 +33,10 @@ export default function GoalForm({ setGoals }: any) {
     if (setGoals) {
       setGoals((currentGoals: any) => [goalToAdd, ...currentGoals]);
     }
+    if (fnToCall) {
+      fnToCall();
+    }
+
     await addGoalToFirestore(user?.uid ?? '', goalToAdd);
     toast.success('Your new goal is successfully added!');
     setTitle('');
