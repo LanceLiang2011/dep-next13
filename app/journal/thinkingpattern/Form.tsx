@@ -7,7 +7,7 @@ import { Button } from 'flowbite-react';
 
 export default function Form() {
   return (
-    <div className='flex flex-col items-stretch justify-start mt-12'>
+    <div className='flex flex-col items-stretch justify-start mt-12 max-w-xl'>
       <h2 className='max-w-lg mb-4 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl dark:text-white'>
         Add new thinking patterns anytime you would like to.
       </h2>

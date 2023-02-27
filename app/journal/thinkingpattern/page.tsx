@@ -4,7 +4,7 @@ import Intro from './Intro';
 
 export default function ThinkingPattern() {
   return (
-    <div className='flex flex-wrap justify-between gap-20'>
+    <div className='flex flex-wrap justify-between gap-12'>
       <Intro />
       <Form />
     </div>
