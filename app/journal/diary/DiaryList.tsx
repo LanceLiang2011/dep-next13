@@ -1,9 +1,10 @@
 'use client';
 
+import { Spinner } from 'flowbite-react';
 import { useEffect, useState } from 'react';
 import DiaryCard from './DiaryCard';
 
-export default function DiaryList({ diaries, removeDiary }: any) {
+export default function DiaryList({ diaries, removeDiary, isLoading }: any) {
   const [searchScope, setSearchScope] = useState('tag');
   const [search, setSearch] = useState('');
   const [filteredDiaries, setFilteredDiaries] = useState(diaries);
@@ -97,9 +98,11 @@ export default function DiaryList({ diaries, removeDiary }: any) {
       <br />
       {/* list */}
       <div className='flex flex-col flex-wrap gap-5'>
-        {filteredDiaries.map((diary: any) => (
-          <DiaryCard key={diary.id} diary={diary} removeDiary={removeDiary} />
-        ))}
+        {!isLoading &&
+          filteredDiaries.map((diary: any) => (
+            <DiaryCard key={diary.id} diary={diary} removeDiary={removeDiary} />
+          ))}
+        {isLoading && <Spinner aria-label='Waiting for data' size='xl' />}
       </div>
     </div>
   );

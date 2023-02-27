@@ -9,11 +9,14 @@ import DiaryList from './DiaryList';
 export default function Diary() {
   const [diaries, setDiaries] = useState([]);
   const [user, loading, error] = useAuthState(auth);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const getUserDiaryData = async () => {
+      setIsLoading(true);
       const diariesFromFirebase = await getDiaryEntriesForUser(user?.uid ?? '');
       setDiaries(diariesFromFirebase);
+      setIsLoading(false);
     };
     getUserDiaryData();
   }, [user]);
@@ -28,7 +31,11 @@ export default function Diary() {
   return (
     <div className='flex justify-between gap-20 flex-wrap'>
       <DiaryForm setDiaries={setDiaries} />
-      <DiaryList diaries={diaries} removeDiary={removeDiary} />
+      <DiaryList
+        diaries={diaries}
+        removeDiary={removeDiary}
+        isLoading={isLoading}
+      />
     </div>
   );
 }
