@@ -97,7 +97,7 @@ export default function DiaryList({ diaries, removeDiary, isLoading }: any) {
 
       <br />
       {/* list */}
-      <div className='flex flex-col flex-wrap gap-5'>
+      <div className='flex flex-col flex-wrap gap-5 break-words'>
         {!isLoading &&
           filteredDiaries.map((diary: any) => (
             <DiaryCard key={diary.id} diary={diary} removeDiary={removeDiary} />

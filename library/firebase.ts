@@ -23,6 +23,7 @@ import {
   Timestamp,
   setDoc,
   collectionGroup,
+  updateDoc,
 } from 'firebase/firestore';
 import { toast } from 'react-hot-toast';
 // TODO: Add SDKs for Firebase products that you want to use
@@ -235,4 +236,60 @@ export const deleteGoalById = async (uid: string, goalId: string) => {
     .catch((error) => {
       console.error('Error deleting diary document: ', error);
     });
+};
+
+// adding new thinking pattern to user
+export const addPatternToUsers = async (uid: string, pattern: any) => {
+  const patternRef = doc(collection(db, 'users', uid, 'patterns'), pattern.id);
+  await setDoc(patternRef, pattern);
+};
+
+// getting thinking pattern of a user
+export const getPatternOfUser = async (uid: string) => {
+  const userDocRef = doc(db, 'users', uid);
+  const patternCollectionRef = collection(userDocRef, 'patterns');
+  const querySnapshot = await getDocs(patternCollectionRef);
+  const patterns = querySnapshot.docs.map((doc) => doc.data());
+  return patterns[0];
+
+  // const q = query(collectionGroup(db, 'patterns'), where('uid', '==', uid));
+  // const querySnapshot = await getDocs(q);
+  // const patterns = querySnapshot.docs.map((doc) => doc.data());
+  // return patterns[0];
+};
+
+// editing thinking patterns
+export const changeUserPattern = async (
+  uid: string,
+  patternId: string,
+  newPattern: any
+) => {
+  const patternRef = doc(collection(db, 'users', uid, 'patterns'), patternId);
+  await updateDoc(patternRef, newPattern);
+};
+
+// delete thinking pattern
+export const deleteUserPattern = async (uid: string, id: string) => {
+  const patternRef = doc(collection(db, 'users', uid, 'patterns'), id);
+  await deleteDoc(patternRef);
+};
+
+// add new thought
+export const addThoughtToUser = async (uid: string, thought: any) => {
+  const thoughtRef = doc(collection(db, 'users', uid, 'thoughts'), thought.id);
+  await setDoc(thoughtRef, thought);
+};
+
+// get all thoughts
+export const getThoughtsOfUser = async (uid: string) => {
+  const userDocRef = doc(db, 'users', uid);
+  const thoughtsCollectionRef = collection(userDocRef, 'thoughts');
+  const querySnapshot = await getDocs(thoughtsCollectionRef);
+  const thoughts = querySnapshot.docs.map((doc) => doc.data());
+  return thoughts;
+};
+
+export const deleteThoughtById = async (uid: string, id: string) => {
+  const thoughtRef = doc(collection(db, 'users', uid, 'thoughts'), id);
+  await deleteDoc(thoughtRef);
 };
