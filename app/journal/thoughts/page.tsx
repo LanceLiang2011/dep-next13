@@ -15,7 +15,7 @@ import { toast } from 'react-hot-toast';
 import ThoughtCard from './ThoughtCard';
 
 export default function MyThoughts() {
-  const [addNew, setAddNew] = useState(true);
+  const [addNew, setAddNew] = useState(false);
   const [user, loading, error] = useAuthState(auth);
   const [userPattern, setUserPattern] = useState({
     id: '',
