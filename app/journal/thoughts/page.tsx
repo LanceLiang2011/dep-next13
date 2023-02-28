@@ -151,6 +151,7 @@ export default function MyThoughts() {
     // @ts-ignore
     setUserThoughts((current) => [newThought, ...current]);
     toast.success('New Thought Successfully Added');
+    setAddNew(false);
     setSituation('');
     setThought('');
     setBelief(50);
