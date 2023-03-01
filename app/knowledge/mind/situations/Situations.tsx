@@ -1,7 +1,6 @@
 import BackQuote from '@/components/Typograpjy/BackQuote';
 import Paragraph from '@/components/Typograpjy/Paragraph';
 import Title from '@/components/Typograpjy/Title';
-import UnderlineSubtitle from '@/components/Typograpjy/UnderlineSubtitle';
 import React from 'react';
 
 export default function Situations() {
@@ -9,12 +8,8 @@ export default function Situations() {
     <main className='pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900'>
       <div className='flex justify-between px-4 mx-auto max-w-screen-xl '>
         <article className='w-full format format-sm sm:format-base lg:format-lg format-blue dark:format-invert'>
-          <Title type='h2'>
-            Understanding{' '}
-            <span className='text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400'>
-              Situations{' '}
-            </span>
-          </Title>
+          <Title type='h1'>Understanding Situations </Title>
+          <br />
           <Paragraph>
             In essence, a situation is just when something happens. Situations
             occur every day, varying in weight of importance. Situations
@@ -23,10 +18,10 @@ export default function Situations() {
             different thoughts.
           </Paragraph>
           <br />
-          <UnderlineSubtitle>
+          <Title type='h3'>
             SITUATION: Molly and Abbey both went to the movies and ate a bunch
             of candy.
-          </UnderlineSubtitle>
+          </Title>
           <table className='w-full text-sm text-left text-gray-500 dark:text-gray-400'>
             <thead className='text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400'>
               <tr>

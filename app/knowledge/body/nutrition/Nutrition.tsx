@@ -13,15 +13,11 @@ export default function Nutrition() {
     <main className='pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900'>
       <div className='flex justify-between px-4 mx-auto max-w-screen-xl '>
         <article className='w-full format format-sm sm:format-base lg:format-lg format-blue dark:format-invert'>
+          <Title type='h1'>Nutrients</Title>
+          <br />
           <DESymptomsCheck />
           <br />
-          <Title type='h2'>
-            What is{' '}
-            <span className='text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400'>
-              Nutrients
-            </span>{' '}
-            and why it is important?
-          </Title>
+          <Title type='h2'>What is Nutrients and why it is important?</Title>
           <Paragraph>
             Nutrients are the substances found in food that are necessary for
             growth, maintenance, and repair of our bodies. There are six
@@ -63,10 +59,7 @@ export default function Nutrition() {
             various functions.
           </Paragraph>
           <br />
-          <Title type='h2'>
-            How does my lifestyle effects my diet, and how does my diet
-            compliment my lifestyle
-          </Title>
+          <Title type='h2'>How lifestyle can influence nutrition?</Title>
           <Paragraph>
             Your lifestyle can greatly impact your dietary habits and choices,
             and vice versa. Here are some ways in which they are interconnected:

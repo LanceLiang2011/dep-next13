@@ -10,12 +10,7 @@ export default function Behaviours() {
     <main className='pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900'>
       <div className='flex justify-between px-4 mx-auto max-w-screen-xl '>
         <article className='w-full format format-sm sm:format-base lg:format-lg format-blue dark:format-invert'>
-          <Title type='h2'>
-            Understanding{' '}
-            <span className='text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400'>
-              Behaviour{' '}
-            </span>
-          </Title>
+          <Title type='h1'>Understanding Behaviour </Title>
           <br />
           <Image
             src={mindInfluence}
@@ -23,7 +18,7 @@ export default function Behaviours() {
             height={400}
             width={800}
           ></Image>
-          <UnderlineSubtitle>Understanding Behaviour</UnderlineSubtitle>
+          <Title type='h3'>Understanding Behaviour</Title>
           <Paragraph>
             Behaviour is just the action piece of a thought and emotion. It is
             important to try and understand your thoughts and emotions before
@@ -32,9 +27,7 @@ export default function Behaviours() {
             is to understand facts versus feelings versus opinions.
           </Paragraph>
           <br />
-          <UnderlineSubtitle>
-            Understanding Facts vs. Feelings vs. Opinion
-          </UnderlineSubtitle>
+          <Title type='h3'>Understanding Facts vs. Feelings vs. Opinion</Title>
           <Paragraph>
             Facts must have verifiability and validity to them. “I had a
             disagreement with my partner” is an example of a fact, as it can be

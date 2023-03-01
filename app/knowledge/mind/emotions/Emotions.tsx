@@ -1,6 +1,5 @@
 import Paragraph from '@/components/Typograpjy/Paragraph';
 import Title from '@/components/Typograpjy/Title';
-import UnderlineSubtitle from '@/components/Typograpjy/UnderlineSubtitle';
 import mindInfluence from '@/resources/imgs/mind-influence.png';
 import Image from 'next/image';
 
@@ -9,12 +8,8 @@ export default function Emotions() {
     <main className='pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900'>
       <div className='flex justify-between px-4 mx-auto max-w-screen-xl '>
         <article className='w-full format format-sm sm:format-base lg:format-lg format-blue dark:format-invert'>
-          <Title type='h2'>
-            Unserdtading{' '}
-            <span className='text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400'>
-              Emotions
-            </span>
-          </Title>
+          <Title type='h1'>Unserdtading Emotions</Title>
+          <br />
           <Image
             src={mindInfluence}
             alt='influence of mind to eating'
@@ -22,7 +17,7 @@ export default function Emotions() {
             width={800}
           ></Image>
           <br />
-          <UnderlineSubtitle>Understanding Emotion</UnderlineSubtitle>
+          <Title type='h3'>Understanding Emotion</Title>
           <Paragraph>
             As we know, thoughts (and assumptions) can create an emotional
             response. Emotion is caused by the feeling of a thought or thoughts.
@@ -30,9 +25,9 @@ export default function Emotions() {
             and then ultimately behaviour/action.
           </Paragraph>
           <br />
-          <UnderlineSubtitle>
+          <Title type='h3'>
             Negative Thoughts, Assumptions, and Emotions:{' '}
-          </UnderlineSubtitle>
+          </Title>
           <Paragraph>
             Negative thinking will always be present and different for each
             person. There are several different styles of negative thinking, but

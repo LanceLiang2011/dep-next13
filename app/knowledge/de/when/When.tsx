@@ -1,3 +1,4 @@
+import BackQuote from '@/components/Typograpjy/BackQuote';
 import Paragraph from '@/components/Typograpjy/Paragraph';
 import Title from '@/components/Typograpjy/Title';
 import React from 'react';
@@ -8,10 +9,7 @@ export default function When() {
       <div className='flex justify-between px-4 mx-auto max-w-screen-xl '>
         <article className='w-full format format-sm sm:format-base lg:format-lg format-blue dark:format-invert'>
           <Title type='h1'>
-            <span className='text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400'>
-              When
-            </span>{' '}
-            Does Disordered Eating Become Problematic?
+            When Does Disordered Eating Become Problematic?
           </Title>
           <br />
           <Paragraph>
@@ -51,22 +49,81 @@ export default function When() {
             To understand how a symptom is impacting an individual&apos;s life,
             there are two questions one can ask themself:{' '}
           </Paragraph>
-          <ol className='list-disc ml-8'>
-            <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-              Is the symptom that you are engaging in causing significant
-              disruption in your life in any capacity? <br />→ Typically people
-              will not see disordered eating behaviours as a problem or as
-              having a negative influence/impact on their life. <br />→ This
-              question also may vary in importance based on symptoms. For
+          <BackQuote>
+            Is the symptom that you are engaging in causing significant
+            disruption in your life in any capacity?
+          </BackQuote>
+          <div
+            className='flex p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400'
+            role='alert'
+          >
+            <svg
+              aria-hidden='true'
+              className='flex-shrink-0 inline w-5 h-5 mr-3'
+              fill='currentColor'
+              viewBox='0 0 20 20'
+              xmlns='http://www.w3.org/2000/svg'
+            >
+              <path
+                fill-rule='evenodd'
+                d='M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z'
+                clip-rule='evenodd'
+              ></path>
+            </svg>
+            <span className='sr-only'>Info</span>
+            <div>
+              Typically people will not see disordered eating behaviours as a
+              problem or as having a negative influence/impact on their life.
+            </div>
+          </div>
+          <div
+            className='flex p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400'
+            role='alert'
+          >
+            <svg
+              aria-hidden='true'
+              className='flex-shrink-0 inline w-5 h-5 mr-3'
+              fill='currentColor'
+              viewBox='0 0 20 20'
+              xmlns='http://www.w3.org/2000/svg'
+            >
+              <path
+                fill-rule='evenodd'
+                d='M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z'
+                clip-rule='evenodd'
+              ></path>
+            </svg>
+            <span className='sr-only'>Info</span>
+            <div>
+              This question also may vary in importance based on symptoms. For
               example, someone might have bizarre food fears, yet, it is not
               causing significant disruption in their life.
-            </li>
-            <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-              Can you stop engaging in this manner? <br />→ If someone cannot
-              stop engaging in a behaviour/symptom, it is a much larger issue at
-              hand.
-            </li>
-          </ol>
+            </div>
+          </div>
+          <BackQuote>Can you stop engaging in this manner?</BackQuote>
+          <div
+            className='flex p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400'
+            role='alert'
+          >
+            <svg
+              aria-hidden='true'
+              className='flex-shrink-0 inline w-5 h-5 mr-3'
+              fill='currentColor'
+              viewBox='0 0 20 20'
+              xmlns='http://www.w3.org/2000/svg'
+            >
+              <path
+                fill-rule='evenodd'
+                d='M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z'
+                clip-rule='evenodd'
+              ></path>
+            </svg>
+            <span className='sr-only'>Info</span>
+            <div>
+              If someone cannot stop engaging in a behaviour/symptom, it is a
+              much larger issue at hand.
+            </div>
+          </div>
           <br />
           <a
             href='#'

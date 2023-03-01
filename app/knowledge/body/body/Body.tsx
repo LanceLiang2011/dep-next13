@@ -18,16 +18,11 @@ export default function Body() {
     <main className='pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900'>
       <div className='flex justify-between px-4 mx-auto max-w-screen-xl '>
         <article className='w-full format format-sm sm:format-base lg:format-lg format-blue dark:format-invert'>
+          <Title type='h1'>Body Composition</Title>
+          <br />
           <DESymptomsCheck />
           <br />
-          <Title type='h2'>
-            How is the{' '}
-            <span className='text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-green-400'>
-              Body
-            </span>{' '}
-            Composed?
-          </Title>
-          <br />
+          <Title type='h2'>How is the Body Composed?</Title>
           <Paragraph>
             An individual&apos;s body is composed of 3 major factors:{' '}
             <HoverImage src={fat}>
@@ -68,56 +63,62 @@ export default function Body() {
           </Paragraph>
           <br />
           <Title type='h2'>Different Measurements of the Body</Title>
-          <UnderlineSubtitle>What weight represents</UnderlineSubtitle>
-          <Paragraph>
-            <HoverImage src={scalegif}>
-              <span className='underline decoration-2 decoration-blue-400 dark:decoration-blue-600'>
-                Weight
-              </span>
-            </HoverImage>{' '}
-            is a quick measurement used to represent how much mass an individual
-            is. It does not take into consideration different sections or
-            components of the body.{' '}
-          </Paragraph>
-          <Image
-            src={scaleHospital}
-            height={300}
-            width={300}
-            alt='a scle in hospital'
-          />
+          <Title type='h3'>What weight represents</Title>
+          <div className='flex flex-wrap gap-4 items-center justify-between'>
+            <Paragraph className='max-w-xl'>
+              <HoverImage src={scalegif}>
+                <span className='underline decoration-2 decoration-blue-400 dark:decoration-blue-600'>
+                  Weight
+                </span>
+              </HoverImage>{' '}
+              is a quick measurement used to represent how much mass an
+              individual is. It does not take into consideration different
+              sections or components of the body.{' '}
+            </Paragraph>
+            <Image
+              src={scaleHospital}
+              height={300}
+              width={300}
+              alt='a scle in hospital'
+            />
+          </div>
           <br />
-          <UnderlineSubtitle>What is BMI?</UnderlineSubtitle>
-          <Paragraph>
-            <span className='text-transparent bg-clip-text bg-gradient-to-r to-sky-600 from-blue-400'>
-              B
-            </span>
-            ody{' '}
-            <span className='text-transparent bg-clip-text bg-gradient-to-r to-sky-600 from-blue-400'>
-              M
-            </span>
-            ass{' '}
-            <span className='text-transparent bg-clip-text bg-gradient-to-r to-sky-600 from-blue-400'>
-              I
-            </span>
-            ndex{' '}
-            <span className='bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300'>
-              BMI
-            </span>
-            refers to “a person&apos;s weight in kilograms divided by the square
-            of height in meters”. Having too high of a BMI can be seen as
-            problematic, as well as, having too low of a BMI. Similar to weight,
-            it is a quick measurement used by healthcare professionals to assess
-            an individual&apos;s body composition and does not take into
-            consideration different components of the body. This can sometimes
-            be a problematic measurement because those who could be considered
-            “healthy” might not be reflected within the BMI measurement.{' '}
-          </Paragraph>
-          <Image
-            src={bmivsbody}
-            height={350}
-            width={350}
-            alt='a scle in hospital'
-          />
+          <Title type='h3'>What is BMI?</Title>
+          <div className='flex flex-wrap gap-4 items-center justify-between'>
+            <Paragraph className='max-w-xl'>
+              <span className='text-transparent bg-clip-text bg-gradient-to-r to-sky-600 from-blue-400'>
+                B
+              </span>
+              ody{' '}
+              <span className='text-transparent bg-clip-text bg-gradient-to-r to-sky-600 from-blue-400'>
+                M
+              </span>
+              ass{' '}
+              <span className='text-transparent bg-clip-text bg-gradient-to-r to-sky-600 from-blue-400'>
+                I
+              </span>
+              ndex{' '}
+              <span className='bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300'>
+                BMI
+              </span>
+              refers to “a person&apos;s weight in kilograms divided by the
+              square of height in meters”. Having too high of a BMI can be seen
+              as problematic, as well as, having too low of a BMI. Similar to
+              weight, it is a quick measurement used by healthcare professionals
+              to assess an individual&apos;s body composition and does not take
+              into consideration different components of the body. This can
+              sometimes be a problematic measurement because those who could be
+              considered “healthy” might not be reflected within the BMI
+              measurement.{' '}
+            </Paragraph>
+            <Image
+              src={bmivsbody}
+              height={350}
+              width={350}
+              alt='a scle in hospital'
+            />
+          </div>
+
           <Paragraph>
             It is important to remember that BMI can be a useful quick image of
             an individual&apos;s body composition, however, it does not paint
@@ -125,7 +126,7 @@ export default function Body() {
             important.
           </Paragraph>
           <br />
-          <UnderlineSubtitle>What is body composition? </UnderlineSubtitle>
+          <Title type='h3'>What is body composition? </Title>
           <Paragraph>
             The term body composition is typically stated between doctors,
             healthcare professionals, and those within the fitness industry (1).

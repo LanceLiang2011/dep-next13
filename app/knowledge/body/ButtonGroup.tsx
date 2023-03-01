@@ -29,7 +29,7 @@ export default function ButtonGroup() {
       </Link>
       <Link href='/knowledge/body/diet'>
         <Button color={activeSegment === 'diet' ? undefined : 'gray'}>
-          DIET AND MEDICINE
+          NUTRITION AND MEDICINE
         </Button>
       </Link>
     </Button.Group>

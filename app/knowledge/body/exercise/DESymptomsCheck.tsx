@@ -11,10 +11,9 @@ export default function DESymptomsCheck() {
           Common Disordered Eating Symptoms Relating to the Body
         </h2>
         <ul className='max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400'>
-          <li>Poor body image</li>
-          <li>Body checking and scanning</li>
-          <li>Preoccupation about weight</li>
-          <li>Discontent surrounding one&apos;s body</li>
+          <li>Overexercising</li>
+          <li>Exercising in specific ways to alter body</li>
+          <li>Negative relationship with physical activity or exercise </li>
         </ul>
       </div>
     </Tooltip>

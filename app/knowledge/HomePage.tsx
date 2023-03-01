@@ -53,7 +53,7 @@ export default function HomePage() {
           <Link href='/knowledge/body/exercise'>
             <Feature
               title='Physical Activity & Exercise'
-              content='Tere are so many exercises out there! What are they, and which is
+              content='There are so many exercises out there! What are they and which is
             best for me?'
               icon={<MdSportsHandball size={20} color='#2563eb' />}
             />

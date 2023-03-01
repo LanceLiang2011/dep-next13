@@ -1,7 +1,6 @@
 'use client';
 import Paragraph from '@/components/Typograpjy/Paragraph';
 import Title from '@/components/Typograpjy/Title';
-import UnderlineSubtitle from '@/components/Typograpjy/UnderlineSubtitle';
 import { Tooltip } from 'flowbite-react';
 import Image from 'next/image';
 import debvsed from '@/resources/imgs/debed.png';
@@ -13,10 +12,7 @@ export default function WhyAndHow() {
       <div className='flex justify-between px-4 mx-auto max-w-screen-xl '>
         <article className='w-full format format-sm sm:format-base lg:format-lg format-blue dark:format-invert'>
           <Title type='h1'>
-            <span className='text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400'>
-              Why and How{' '}
-            </span>
-            People Engage in Disordered Eating
+            Why and How People Engage in Disordered Eating
           </Title>
           <br />
           <Paragraph>
@@ -31,9 +27,9 @@ export default function WhyAndHow() {
             food intake.
           </Paragraph>
           <br />
-          <UnderlineSubtitle>
+          <Title type='h3'>
             Why do people experiment with food intake and appearance?
-          </UnderlineSubtitle>
+          </Title>
           <Paragraph>
             As mentioned previously, eating and individual concerns about
             one&apos;s body are very individualized. Therefore, there are
@@ -78,12 +74,12 @@ export default function WhyAndHow() {
               <Image alt='Deb vs ED' src={debvsed} height={600} width={600} />
             </Tooltip>
           </div>
-          <UnderlineSubtitle>
+          <Title type='h3'>
             Behaviours: The way we{' '}
             <span className='text-transparent bg-clip-text bg-gradient-to-r to-red-600 from-pink-400'>
               act
             </span>
-          </UnderlineSubtitle>
+          </Title>
           <Paragraph>
             Behaviour is how someone acts in response to their environment
             internally; their thoughts and feelings and externally; other people
@@ -119,12 +115,12 @@ export default function WhyAndHow() {
             </span>
           </div>
           <br />
-          <UnderlineSubtitle>
+          <Title type='h3'>
             Cognition: The way we{' '}
             <span className='text-transparent bg-clip-text bg-gradient-to-r to-blue-600 from-sky-400'>
               think
             </span>
-          </UnderlineSubtitle>
+          </Title>
           <Paragraph>
             Cognition includes all the processes in which we accumulate
             knowledge. With an eating disorder, individuals experience a
@@ -139,12 +135,12 @@ export default function WhyAndHow() {
             </p>
           </blockquote>
           <br />
-          <UnderlineSubtitle>
+          <Title type='h3'>
             Affect: The way we{' '}
             <span className='text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400'>
               feel
             </span>
-          </UnderlineSubtitle>
+          </Title>
           <Paragraph>
             Affect is the outward expression of our feelings about ourselves and
             those around us through our moods and emotions. With eating
@@ -161,12 +157,12 @@ export default function WhyAndHow() {
             </p>
           </blockquote>
           <br />
-          <UnderlineSubtitle>
+          <Title type='h3'>
             Perception: The way we{' '}
             <span className='text-transparent bg-clip-text bg-gradient-to-r to-indigo-800 from-purple-600'>
               perceive
             </span>
-          </UnderlineSubtitle>
+          </Title>
           <Paragraph>
             Perception is the way we recognize, organize and interpret sensory
             information from external stimuli. The way in which we perceive

@@ -1,6 +1,5 @@
 'use client';
-import { Alert, Button, Card, Tooltip } from 'flowbite-react';
-import Image from 'next/image';
+import { Alert, Button, Card } from 'flowbite-react';
 import React, { useState } from 'react';
 
 interface Question {

@@ -9,15 +9,7 @@ export default function Nutrition() {
     <main className='pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900'>
       <div className='flex justify-between px-4 mx-auto max-w-screen-xl '>
         <article className='w-full format format-sm sm:format-base lg:format-lg format-blue dark:format-invert'>
-          <Title type='h2'>
-            <span className='text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400'>
-              Diet
-            </span>{' '}
-            and{' '}
-            <span className='text-transparent bg-clip-text bg-gradient-to-r to-purple-600 from-emerald-400'>
-              Medicine
-            </span>
-          </Title>
+          <Title type='h1'>Nutrition and Medicine</Title>
           <br />
           <Title type='h2'>Is there a &quot;best diet&quot; for me?</Title>
           <Paragraph>
@@ -77,30 +69,21 @@ export default function Nutrition() {
             supported, nutritionally balanced, or sustainable in the long term.
           </Paragraph>
           <Paragraph>
-            In order to determine the best diet for you, it is recommended to{' '}
-            <span className='underline decoration-2 decoration-blue-400 dark:decoration-blue-600'>
-              consult a healthcare professional or registered dietitian
-            </span>{' '}
-            who can take into consideration your individual needs, medical
-            history, and health goals. They can help you create a healthy eating
-            plan that meets your nutritional needs and supports your overall
-            health and well-being.
+            In order to determine the best diet for you, it is recommended toW
+            consult a healthcare professional or registered dietitian who can
+            take into consideration your individual needs, medical history, and
+            health goals. They can help you create a healthy eating plan that
+            meets your nutritional needs and supports your overall health and
+            well-being.
           </Paragraph>
           <Paragraph>
             It is also important to keep in mind that quick-fix or restrictive
             diets are unlikely to be effective or sustainable in the long term.
-            A healthy diet should be{' '}
-            <span className='underline decoration-2 decoration-blue-400 dark:decoration-blue-600'>
-              balanced, varied, and include a variety of foods from all food
-              groups
-            </span>
-            . In addition,{' '}
-            <span className='underline decoration-2 decoration-blue-400 dark:decoration-blue-600'>
-              making gradual, sustainable changes
-            </span>{' '}
-            to your eating habits, such as reducing added sugars and increasing
-            fruit and vegetable intake, can have a positive impact on your
-            health over time.
+            A healthy diet should be balanced, varied, and include a variety of
+            foods from all food groups . In addition, making gradual,
+            sustainable changes to your eating habits, such as reducing added
+            sugars and increasing fruit and vegetable intake, can have a
+            positive impact on your health over time.
           </Paragraph>
           <br />
           <span className='flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700'>
@@ -162,15 +145,12 @@ export default function Nutrition() {
           </Paragraph>
           <Paragraph>
             Therefore, it is important to be cautious when considering the use
-            of diet pills, and to{' '}
-            <span className='underline decoration-2 decoration-blue-400 dark:decoration-blue-600'>
-              consult a healthcare professional before starting any weight loss
-              supplement
-            </span>
-            . It is also important to remember that there is no magic solution
-            for weight loss, and the most effective and safe way to lose weight
-            and maintain a healthy weight is through a balanced and nutritious
-            diet, combined with regular physical activity.
+            of diet pills, and to consult a healthcare professional before
+            starting any weight loss supplement . It is also important to
+            remember that there is no magic solution for weight loss, and the
+            most effective and safe way to lose weight and maintain a healthy
+            weight is through a balanced and nutritious diet, combined with
+            regular physical activity.
           </Paragraph>
           <br />
           <Title type='h2'>Is laxatives helpful for losing weight?</Title>
@@ -185,10 +165,8 @@ export default function Nutrition() {
             are not a safe or effective method for losing weight. Laxatives work
             by increasing bowel movements and promoting the elimination of waste
             from the body. While they may result in a temporary reduction in
-            body weight,{' '}
-            <span className='underline decoration-2 decoration-blue-400 dark:decoration-blue-600'>
-              this is due to the loss of water and electrolytes, not fat.
-            </span>
+            body weight, this is due to the loss of water and electrolytes, not
+            fat.
           </Paragraph>
           <Paragraph>
             In addition, using laxatives regularly can lead to a number of

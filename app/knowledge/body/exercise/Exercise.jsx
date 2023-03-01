@@ -2,6 +2,7 @@ import Paragraph from '@/components/Typograpjy/Paragraph';
 import Title from '@/components/Typograpjy/Title';
 import UnderlineSubtitle from '@/components/Typograpjy/UnderlineSubtitle';
 import React from 'react';
+import DESymptomsCheck from './DESymptomsCheck';
 import ExerciseCompare from './ExerciseCompare';
 
 export default function Exercise() {
@@ -9,12 +10,9 @@ export default function Exercise() {
     <main className='pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900'>
       <div className='flex justify-between px-4 mx-auto max-w-screen-xl '>
         <article className='w-full format format-sm sm:format-base lg:format-lg format-blue dark:format-invert'>
-          <Title type='h1'>
-            Physical Activity &{' '}
-            <span className='text-transparent bg-clip-text bg-gradient-to-r to-orange-600 from-yellow-400'>
-              Exercise
-            </span>
-          </Title>
+          <Title type='h1'>Physical Activity & Exercise</Title>
+          <br />
+          <DESymptomsCheck />
           <br />
           <Title type='h2'>What is Exercise?</Title>
           <Paragraph>
@@ -123,7 +121,7 @@ export default function Exercise() {
             <ol className='mb-3'>
               <label
                 htmlFor='what'
-                className='text-xl mb-3 font-light text-gray-600 dark:text-gray-400 underline underline-offset-1 decoration-2 decoration-blue-400 dark:decoration-blue-600'
+                className='text-xl mb-3 font-light text-gray-600 dark:text-gray-400'
               >
                 What makes me feel good?
               </label>
@@ -135,7 +133,7 @@ export default function Exercise() {
               ></input>
               <label
                 htmlFor='why'
-                className='text-xl mb-3 font-light text-gray-600 dark:text-gray-400 underline underline-offset-1 decoration-2 decoration-blue-400 dark:decoration-blue-600'
+                className='text-xl mb-3 font-light text-gray-600 dark:text-gray-400'
               >
                 Why am I doing this?
               </label>
@@ -147,7 +145,7 @@ export default function Exercise() {
               ></input>
               <label
                 htmlFor='where'
-                className='text-xl mb-3 font-light text-gray-600 dark:text-gray-400 underline underline-offset-1 decoration-2 decoration-blue-400 dark:decoration-blue-600'
+                className='text-xl mb-3 font-light text-gray-600 dark:text-gray-400'
               >
                 Where is this going to get me?
               </label>

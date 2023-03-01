@@ -1,6 +1,5 @@
 import Paragraph from '@/components/Typograpjy/Paragraph';
 import Title from '@/components/Typograpjy/Title';
-import UnderlineSubtitle from '@/components/Typograpjy/UnderlineSubtitle';
 import mindInfluence from '@/resources/imgs/mind-influence.png';
 import Image from 'next/image';
 
@@ -9,12 +8,8 @@ export default function Thoughts() {
     <main className='pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900'>
       <div className='flex justify-between px-4 mx-auto max-w-screen-xl '>
         <article className='w-full format format-sm sm:format-base lg:format-lg format-blue dark:format-invert'>
-          <Title type='h2'>
-            Understanding{' '}
-            <span className='text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400'>
-              Thoughts{' '}
-            </span>
-          </Title>
+          <Title type='h1'>Understanding Thoughts </Title>
+          <br />
           <Image
             src={mindInfluence}
             alt='influence of mind to eating'
@@ -22,7 +17,7 @@ export default function Thoughts() {
             width={800}
           ></Image>
           <br />
-          <UnderlineSubtitle>Understanding Thoughts </UnderlineSubtitle>
+          <Title type='h2'>Understanding Thoughts </Title>
           <Paragraph>
             Individuals have 70 000 thoughts per day. Our brain uses these
             thoughts to make interpretations about what certain things mean and
@@ -33,7 +28,7 @@ export default function Thoughts() {
             **Place Holder: AUTONOMIC THOUGHTS → ASSUMPTIONS → CORE BELIEFS**
           </Paragraph>
           <br />
-          <UnderlineSubtitle>Autonomic Thoughts</UnderlineSubtitle>
+          <Title type='h3'>Autonomic Thoughts</Title>
           <Paragraph>
             Autonomic thoughts are just thoughts that we automatically think
             throughout the day. Since we have so many thoughts a day, our brains
@@ -52,7 +47,7 @@ export default function Thoughts() {
             or look at the negatives within situations.{' '}
           </Paragraph>
           <br />
-          <UnderlineSubtitle>Assumptions</UnderlineSubtitle>
+          <Title type='h3'>Assumptions</Title>
           <Paragraph>
             Based on previous life experiences, our thoughts can be or become
             assumptions about ourselves, others, the world, and life in general.
@@ -61,7 +56,7 @@ export default function Thoughts() {
             assumptions can also be negative, which are the assumptions we as
             human beings tend to fixate on.{' '}
           </Paragraph>
-          <UnderlineSubtitle>Core Beliefs</UnderlineSubtitle>
+          <Title type='h3'>Core Beliefs</Title>
           <Paragraph>
             At the center of one&apos;s thoughts and assumptions are one&apos;s
             core beliefs. Core beliefs have been rooted in us from our life
