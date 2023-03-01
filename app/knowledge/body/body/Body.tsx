@@ -17,7 +17,7 @@ export default function Body() {
   return (
     <main className='pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900'>
       <div className='flex justify-between px-4 mx-auto max-w-screen-xl '>
-        <article className='mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert'>
+        <article className='w-full format format-sm sm:format-base lg:format-lg format-blue dark:format-invert'>
           <DESymptomsCheck />
           <br />
           <Title type='h2'>
@@ -114,8 +114,8 @@ export default function Body() {
           </Paragraph>
           <Image
             src={bmivsbody}
-            height={250}
-            width={250}
+            height={350}
+            width={350}
             alt='a scle in hospital'
           />
           <Paragraph>

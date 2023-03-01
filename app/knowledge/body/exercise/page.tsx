@@ -6,7 +6,6 @@ export default function ExercisePage() {
   return (
     <div className='flex flex-wrap justify-between gap-20'>
       <Exercise />
-      <InteractiveImg />
     </div>
   );
 }

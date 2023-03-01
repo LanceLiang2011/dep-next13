@@ -1,10 +1,10 @@
 import React from 'react';
-import Body from './Body';
+import Thoughts from './Thoughts';
 
-export default function BodyPage() {
+export default function ThoughtsPage() {
   return (
     <div className='flex flex-wrap justify-between gap-20'>
-      <Body />
+      <Thoughts />
     </div>
   );
 }

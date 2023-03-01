@@ -6,7 +6,6 @@ export default function WhyAndHowPage() {
   return (
     <div className='flex flex-wrap justify-between gap-20'>
       <WhyAndHow />
-      <InteractiveImg />
     </div>
   );
 }

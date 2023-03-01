@@ -20,7 +20,7 @@ export default function NavbarComponent() {
   const router = useRouter();
   // !return
   return (
-    <Navbar fluid={true} rounded={true}>
+    <Navbar className='mb-8' fluid={true} rounded={true}>
       <Navbar.Brand href='#'>
         <Image
           src='https://trp.utoronto.ca/new/wp-content/uploads/sites/16/2022/04/cropped-trpdrop3.png'

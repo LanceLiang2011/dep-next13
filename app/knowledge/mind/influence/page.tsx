@@ -1,10 +1,10 @@
 import React from 'react';
-import Body from './Body';
+import Influence from './Influence';
 
-export default function BodyPage() {
+export default function InfluencePage() {
   return (
     <div className='flex flex-wrap justify-between gap-20'>
-      <Body />
+      <Influence />
     </div>
   );
 }

@@ -1,5 +1,5 @@
-import React from 'react';
+import InfluencePage from './influence/page';
 
 export default function Mind() {
-  return <div>Mind</div>;
+  return <InfluencePage />;
 }

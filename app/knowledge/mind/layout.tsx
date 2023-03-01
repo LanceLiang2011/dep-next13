@@ -1,6 +1,6 @@
 import ButtonGroup from './ButtonGroup';
 
-export default function BodyLayout({
+export default function MindLayout({
   children,
 }: {
   children: React.ReactNode;

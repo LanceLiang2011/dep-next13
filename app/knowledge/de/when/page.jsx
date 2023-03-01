@@ -6,7 +6,6 @@ export default function WhenPage() {
   return (
     <div className='flex flex-wrap justify-between gap-20'>
       <When />
-      <InteractiveImg />
     </div>
   );
 }

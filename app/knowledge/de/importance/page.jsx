@@ -6,7 +6,6 @@ export default function ImportancePage() {
   return (
     <div className='flex flex-wrap justify-between gap-20'>
       <Importance />
-      <InteractiveImg />
     </div>
   );
 }

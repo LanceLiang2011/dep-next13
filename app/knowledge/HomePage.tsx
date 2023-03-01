@@ -1,14 +1,11 @@
 import Feature from '@/components/UI/Feature';
 import Link from 'next/link';
 import React from 'react';
-import {
-  BsBookFill,
-  BsFillPatchQuestionFill,
-  BsFillPatchExclamationFill,
-} from 'react-icons/bs';
+import { BsBookFill, BsFillPatchQuestionFill } from 'react-icons/bs';
 
 import { IoIosBody } from 'react-icons/io';
 import { MdSportsHandball, MdFastfood } from 'react-icons/md';
+import { FaBrain } from 'react-icons/fa';
 
 export default function HomePage() {
   return (
@@ -45,15 +42,6 @@ export default function HomePage() {
             />
           </Link>
 
-          <Link href='/knowledge/de/importance'>
-            <Feature
-              title='The Importance of Unserstanding'
-              content='Why is it important to understand disordered eating, and how
-            should we take action?'
-              icon={<BsFillPatchExclamationFill size={20} color='#2563eb' />}
-            />
-          </Link>
-
           <Link href='/knowledge/body/body'>
             <Feature
               title='Body composition'
@@ -76,6 +64,14 @@ export default function HomePage() {
               content="Why do we eat? How should I choose my diet? Let's figure it
             out together!"
               icon={<MdFastfood size={20} color='#2563eb' />}
+            />
+          </Link>
+
+          <Link href='/knowledge/mind/influence'>
+            <Feature
+              title='How Does Mind Influence Eating?'
+              content='Understanding how we interpret situations, how we individually think, how we show emotions, and how these components can influence us.'
+              icon={<FaBrain size={20} color='#2563eb' />}
             />
           </Link>
         </div>
