@@ -8,15 +8,7 @@ export default function ButtonGroup() {
   const activeSegment = useSelectedLayoutSegment();
   return (
     <Button.Group className='mb-6 flex gap-6'>
-      <Link href='/knowledge/mind/influence'>
-        <Button
-          color={
-            !activeSegment || activeSegment === 'influence' ? undefined : 'gray'
-          }
-        >
-          HOW DOES OUR MIND INFLUENCE OUR EATING
-        </Button>
-      </Link>
+      <Link href='/knowledge/mind/influence'></Link>
       <Link href='/knowledge/mind/situations'>
         <Button color={activeSegment === 'situations' ? undefined : 'gray'}>
           UNDERSTANDING SITUATIONS
