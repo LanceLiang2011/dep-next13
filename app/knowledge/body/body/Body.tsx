@@ -66,7 +66,7 @@ export default function Body() {
           <Title type='h3'>What weight represents</Title>
           <div className='flex flex-wrap gap-4 items-center justify-between'>
             <Paragraph className='max-w-xl'>
-              <HoverImage src={scalegif}>
+              <HoverImage src={scalegif} size={100}>
                 <span className='underline decoration-2 decoration-blue-400 dark:decoration-blue-600'>
                   Weight
                 </span>

@@ -1,7 +1,6 @@
 import BackQuote from '@/components/Typograpjy/BackQuote';
 import Paragraph from '@/components/Typograpjy/Paragraph';
 import Title from '@/components/Typograpjy/Title';
-import UnderlineSubtitle from '@/components/Typograpjy/UnderlineSubtitle';
 import mindInfluence from '@/resources/imgs/mind-influence.png';
 import Image from 'next/image';
 

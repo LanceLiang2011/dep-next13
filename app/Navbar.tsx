@@ -21,7 +21,12 @@ export default function NavbarComponent() {
   // !return
   return (
     <Navbar className='mb-8' fluid={true} rounded={true}>
-      <Navbar.Brand href='#'>
+      <Navbar.Brand
+        className='cursor-pointer'
+        onClick={() => {
+          router.push('/');
+        }}
+      >
         <Image
           src='https://trp.utoronto.ca/new/wp-content/uploads/sites/16/2022/04/cropped-trpdrop3.png'
           className='h-6 mr-3 sm:h-9'

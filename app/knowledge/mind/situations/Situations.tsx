@@ -1,7 +1,8 @@
 import BackQuote from '@/components/Typograpjy/BackQuote';
 import Paragraph from '@/components/Typograpjy/Paragraph';
 import Title from '@/components/Typograpjy/Title';
-import React from 'react';
+import mindInfluence from '@/resources/imgs/mind-influence.png';
+import Image from 'next/image';
 
 export default function Situations() {
   return (
@@ -10,6 +11,12 @@ export default function Situations() {
         <article className='w-full format format-sm sm:format-base lg:format-lg format-blue dark:format-invert'>
           <Title type='h1'>Understanding Situations </Title>
           <br />
+          <Image
+            src={mindInfluence}
+            alt='influence of mind to eating'
+            height={400}
+            width={800}
+          ></Image>
           <Paragraph>
             In essence, a situation is just when something happens. Situations
             occur every day, varying in weight of importance. Situations
