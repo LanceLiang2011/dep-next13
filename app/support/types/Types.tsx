@@ -81,7 +81,7 @@ export default function Types() {
                 <tr className='bg-white border-b dark:bg-gray-800 dark:border-gray-700'>
                   <td className='px-6 py-4'>Mind</td>
                   <td className='px-6 py-4'>
-                    <HoverImage src={psychotherapist} size={120}>
+                    <HoverImage src={psychotherapist} size={90}>
                       <span className='underline decoration-2 decoration-blue-400 dark:decoration-blue-600'>
                         Psychotherapist
                       </span>
@@ -182,7 +182,7 @@ export default function Types() {
                 <tr className='bg-white border-b dark:bg-gray-800 dark:border-gray-700'>
                   <td className='px-6 py-4'>Doctor</td>
                   <td className='px-6 py-4'>
-                    <HoverImage src={gp} size={120}>
+                    <HoverImage src={gp} size={80}>
                       <span className='underline decoration-2 decoration-blue-400 dark:decoration-blue-600'>
                         General Practioner
                       </span>
