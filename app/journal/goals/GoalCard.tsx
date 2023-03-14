@@ -10,7 +10,16 @@ export default function GoalCard({ goal, setGoals }: any) {
         (currentGoal: any) => currentGoal.goalId != goal.goalId
       )
     );
-    toast.success('The goal is successfully deleted!');
+    toast.success('The goal is deleted!');
+  };
+  const handlCompleteGoal = () => {
+    deleteGoalById(goal.uid, goal.goalId);
+    setGoals((currentGoals: any) =>
+      currentGoals.filter(
+        (currentGoal: any) => currentGoal.goalId != goal.goalId
+      )
+    );
+    toast.success('Congradulations! You successfully complete your goal!');
   };
 
   return (
@@ -41,6 +50,13 @@ export default function GoalCard({ goal, setGoals }: any) {
         className='px-3 py-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800'
       >
         Delete This Goal
+      </button>
+      <button
+        type='button'
+        onClick={handlCompleteGoal}
+        className=' ml-2 px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
+      >
+        Complete Goal
       </button>
     </div>
   );
