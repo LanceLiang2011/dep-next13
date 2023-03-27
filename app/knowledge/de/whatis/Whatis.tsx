@@ -39,10 +39,7 @@ export default function Whatis() {
             Eating can be viewed on a continuum that spans from healthy eating
             to disordered eating to eating disorders. Throughout our lives, we
             can experience fluctuations across the continuum based on our
-            lifestyle, situations, and experiences. Regardless of where an
-            individual falls on the continuum, their experience is as equally
-            important as another and valid and deserving of counselling and
-            support.
+            lifestyle, situations, and experiences.
           </Paragraph>
           <br />
 
@@ -58,11 +55,8 @@ export default function Whatis() {
               calorie intake, and a healthy body weight. Individuals who
               demonstrate healthy eating behaviours are not preoccupied with
               their body image and perform regular bouts of exercise. They are{' '}
-              <span className='underline decoration-2 decoration-red-400 dark:decoration-red-600'>
-                more likely{' '}
-              </span>
-              to be intuitive with their body&apos;s needs and eat for
-              nourishment, pleasure, and joy.{' '}
+              more likely to be intuitive with their body&apos;s needs and eat
+              for nourishment, pleasure, and joy.{' '}
             </Paragraph>
             <Image
               src={car}
@@ -79,15 +73,16 @@ export default function Whatis() {
           </Title>
           <div className='flex flex-wrap gap-4 items-center justify-between'>
             <Paragraph className='max-w-xl'>
-              Individuals who experience disordered eating behaviours express
-              recurring negative preoccupations and associations with food,
-              dieting, exercise, and body image. This can include regular bouts
-              of overeating and undereating, distress caused by body size and
-              image, fixation and obsessiveness around exercise, and an
+              Individuals who experience disordered eating express recurring
+              negative preoccupations and associations with food, dieting,
+              exercise, and body image. This can include regular bouts of
+              overeating and undereating, distress caused by body image and
+              size, fixation and obsessiveness around exercise, and an
               unbalanced irregular diet. Individuals who experience disordered
-              eating can experience a lack of self-worth and associate their
-              food intake with their perception of themselves and others. This
-              most often can result in feelings and shame and guilt.
+              eating can also experience a lack of self-worth. Disordered Eating
+              does not warrant a clinical diagnosis. It can be considered as the
+              space between normal eating and an eating disorder. This most
+              often can result in negative feelings, shame and guilt.
             </Paragraph>
             <Image
               src={car2}
@@ -104,12 +99,12 @@ export default function Whatis() {
           </Title>
           <div className='flex flex-wrap gap-4 items-center justify-between'>
             <Paragraph className='max-w-xl'>
-              Eating Disorders are a group of serious and complex mental health
-              illnesses that are characterized by persistent disturbances in
+              Eating Disorders are a group of serious and complex mental
+              illnesses, that are characterized by persistent disturbances in
               behaviours, thoughts and attitudes toward foods, eating, and body
-              size. There are conditions that affect an individual&apos;s
-              physical, psychological and social function and are clinically
-              diagnosed. Individuals may experience restrictive eating, food
+              size. Eating disorders effect an individual&apos;s physical,
+              psychological and social function. They will have a clinical
+              diagnosis. Individuals may experience restrictive eating, food
               avoidance, binge eating, purging or laxative misuse, and
               compulsive exercise depending upon their diagnosis. As such, this
               can result in severe alterations to their physical and mental

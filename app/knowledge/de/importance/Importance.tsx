@@ -1,6 +1,5 @@
 import Paragraph from '@/components/Typograpjy/Paragraph';
 import Title from '@/components/Typograpjy/Title';
-import UnderlineSubtitle from '@/components/Typograpjy/UnderlineSubtitle';
 import UnderlineTooltip from '@/components/UI/UnderlineTooltip';
 import React from 'react';
 
@@ -13,15 +12,14 @@ export default function Importance() {
             The Importance of Understanding Disordered Eating
           </Title>
           <br />
-          <Title type='h3'>Importance of Understanding & Taking Action </Title>
           <Paragraph>
             Disordered eating can have significant long-term health
-            repercussions that can affect individuals physically and mentally.
+            repercussions that can affect an individual physically and mentally.
             Individuals who suffer from disordered eating can be at risk for:
           </Paragraph>
           <ul className='list-disc ml-8'>
             <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-              The development of eating disorders
+              The development of an eating disorder
             </li>
             <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
               <UnderlineTooltip content='A mood disorder is a mental health class that health professionals use to broadly describe all types of depression and bipolar disorders.'>
@@ -33,7 +31,7 @@ export default function Importance() {
               and digestive issues.
             </li>
             <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-              Impact on daily function
+              Poor daily function
             </li>
           </ul>
           <br />
@@ -60,7 +58,7 @@ export default function Importance() {
               disordered eating before prospective problems could escalate. How
               we eat and feel about our body is critical for our health and
               well-being, therefore it is essential to use tools and resources
-              to improve our relationship with food, our body, and our mind.
+              to improve one&apos;s relationship with food, and one&apos;s body.
             </div>
           </div>
           <br />

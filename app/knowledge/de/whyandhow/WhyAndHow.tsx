@@ -4,7 +4,7 @@ import Title from '@/components/Typograpjy/Title';
 import { Tooltip } from 'flowbite-react';
 import Image from 'next/image';
 import debvsed from '@/resources/imgs/debed.png';
-import React from 'react';
+import BackQuote from '@/components/Typograpjy/BackQuote';
 
 export default function WhyAndHow() {
   return (
@@ -12,29 +12,29 @@ export default function WhyAndHow() {
       <div className='flex justify-between px-4 mx-auto max-w-screen-xl '>
         <article className='w-full format format-sm sm:format-base lg:format-lg format-blue dark:format-invert'>
           <Title type='h1'>
-            Why and How People Engage in Disordered Eating
+            Why and How Do People Engage in Disordered Eating
           </Title>
           <br />
           <Paragraph>
             From childhood, our society and Western culture engrave certain
             ideals about individual appearance and what concerns individuals
-            should have with regard to their body and food intake. Therefore,
-            the transition into adolescence and adulthood can be very difficult
-            for people due to the fact that one&apos;s body will change because
-            of puberty. Since people have these ideals about the way that they
-            &quot;should&quot; appear and what they &quot;should&quot; consume,
-            these ideals can cause people to want to alter their appearance and
-            food intake.
+            &quot;should have&quot; with regards to their body and food intake.
+            Therefore, the transition into adolescence and adulthood can be very
+            difficult for people due to the fact that one&apos;s body will
+            change because of puberty. Since people have these ideals about the
+            way that they &quot;should&quot; appear and what they
+            &quot;should&quot; consume, these ideals can cause people to want to
+            alter their appearance and food intake.
           </Paragraph>
           <br />
           <Title type='h3'>
             Why do people experiment with food intake and appearance?
           </Title>
           <Paragraph>
-            As mentioned previously, eating and individual concerns about
-            one&apos;s body are very individualized. Therefore, there are
-            countless reasons why people engage in disordered eating. Some
-            common reasons for engaging include:
+            Eating and individual concerns about one&apos;s body are very
+            individualized. Therefore, there are countless reasons why people
+            engage in disordered eating. Some common reasons for engaging in
+            these behaviours:
           </Paragraph>
           <ul className='list-disc ml-8'>
             <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
@@ -48,7 +48,7 @@ export default function WhyAndHow() {
               Depression, Obsessive Compulsive Disorder)
             </li>
             <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-              Life stressors (death, divorces, relationship changes, changes in
+              Life stressors (Death, divorces, relationship changes, changes in
               careers, school, job)
             </li>
             <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
@@ -56,13 +56,17 @@ export default function WhyAndHow() {
               appearance
             </li>
             <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-              Mirroring others&apos; behaviours (family members, friends, peers,
-              people on social media) (&quot;My mom does not eat over 500
-              calories, therefore, I should not&quot;).
+              Mirroring others&apos; behaviours (Family members, friends, peers,
+              people on social media).
             </li>
+            <p className='ml-4 text-lg font-light text-gray-600 dark:text-gray-400'>
+              - Example: &quot;My mom does not eat over 500 calories, therefore,
+              I should not&quot;.
+            </p>
           </ul>
           <br />
-          <Paragraph>
+          <br />
+          <Paragraph className=' font-bold'>
             These food intake and body alteration &quot;experiments&quot; can
             influence the way we think (cognition), the way we perceive
             (perception), the way we feel (affect), and lastly, the way we act
@@ -90,15 +94,15 @@ export default function WhyAndHow() {
           <div className='flex p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400'>
             <span className='px-4'>
               <h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
-                Example A
+                Example #1
               </h5>
               <p className='font-bold text-gray-700 dark:text-gray-400'>
-                Avoids all carbs unless they have exercised enough.
+                Avoids all carbonhydrates unless they have exercised enough.
               </p>
             </span>
             <span className='px-4'>
               <h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
-                Example B
+                Example #2
               </h5>
               <p className='font-bold text-gray-700 dark:text-gray-400'>
                 Looks at a menu and counts all the calories of each meal in
@@ -107,10 +111,10 @@ export default function WhyAndHow() {
             </span>
             <span className='px-4'>
               <h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
-                Example C
+                Example #3
               </h5>
               <p className='font-bold text-gray-700 dark:text-gray-400'>
-                Overeats when they are upset about something.
+                Overeats when they are upset.
               </p>
             </span>
           </div>
@@ -123,17 +127,36 @@ export default function WhyAndHow() {
           </Title>
           <Paragraph>
             Cognition includes all the processes in which we accumulate
-            knowledge. With an eating disorder, individuals experience a
-            disturbance in their cognition causing inaccurate or exaggerated
-            thought patterns such as black-and-white thinking, overgeneralizing,
-            catastrophizing, blaming, and negative filtering.
+            knowledge. With eating disorders and disordered eating, individuals
+            experience a disturbance in their cognition causing negative
+            thinking patterns. For example:
           </Paragraph>
-          <blockquote className='p-4 my-4 border-l-4 border-gray-300 bg-gray-50 dark:border-gray-500 dark:bg-gray-800'>
-            <p className='text-md italic font-medium leading-relaxed text-gray-900 dark:text-white'>
-              Example: &quot;If I don&apos;t exercise today then I won&apos;t
-              eat dinner tonight&quot;
-            </p>
-          </blockquote>
+          <BackQuote>
+            <ul className='list-disc ml-8'>
+              <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
+                Black-and-white thinking: &quot;If I eat a single piece of cake,
+                I have failed my diet completely.&quot;
+              </li>
+              <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
+                Overgeneralizing: &quot;I always mess up my meals. I&apos;ll
+                never be able to eat healthy.&quot;
+              </li>
+              <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
+                Catastrophizing: &quot;If I eat this slice of pizza, I&apos;ll
+                gain 10 pounds overnight and never be able to lose it
+                again.&quot;
+              </li>
+              <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
+                Blaming: &quot;It&apos;s not my fault I overate. My friend kept
+                pressuring me to have more food.&quot;
+              </li>
+              <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
+                Negative filtering: &quot;I ate a healthy salad for lunch, but
+                it doesn&apos;t matter because I still ate a cookie after
+                dinner.&quot;
+              </li>
+            </ul>
+          </BackQuote>
           <br />
           <Title type='h3'>
             Affect: The way we{' '}
@@ -143,19 +166,32 @@ export default function WhyAndHow() {
           </Title>
           <Paragraph>
             Affect is the outward expression of our feelings about ourselves and
-            those around us through our moods and emotions. With eating
-            disorders, an individual&apos;s affective experiences are
-            dysregulated which impacts their choices and perceptions of a given
-            situation. As such, their ability to function efficiently throughout
-            the day is distorted and can result in abnormal behaviours and
-            actions.
+            others through our moods and emotions. With eating disorders, an
+            individual&apos;s affective experiences are dysregulated which
+            impacts their choices and perceptions of a given situation. As such,
+            their ability to function efficiently throughout the day is
+            distorted and can result in abnormal behaviours and actions.
+            Disordered Eating can experience these moods and emotions, however,
+            to a far less degree and impact on daily function.
           </Paragraph>
-          <blockquote className='p-4 my-4 border-l-4 border-gray-300 bg-gray-50 dark:border-gray-500 dark:bg-gray-800'>
-            <p className='text-md italic font-medium leading-relaxed text-gray-900 dark:text-white'>
-              Example: &quot;I Feels shame and guilt after eating and gets
-              upset. &quot;
-            </p>
-          </blockquote>
+          <BackQuote>
+            <ul className='list-disc ml-8'>
+              <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
+                Example: &quot;I feel shame and guilt after eating and gets
+                upset. &quot;
+              </li>
+              <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
+                Example: &quot;I feel intense anxiety and fear around food and
+                eating, which makes it difficult to enjoy social events and
+                meals with others.&quot;
+              </li>
+              <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
+                Example: &quot;I feel frustrated and disappointed in myself when
+                I don&apos;t stick to my strict eating plan, and it impacts my
+                mood and productivity.&quot;
+              </li>
+            </ul>
+          </BackQuote>
           <br />
           <Title type='h3'>
             Perception: The way we{' '}
@@ -164,22 +200,31 @@ export default function WhyAndHow() {
             </span>
           </Title>
           <Paragraph>
-            Perception is the way we recognize, organize and interpret sensory
+            Perception is the way we recognize, organize and interpret
             information from external stimuli. The way in which we perceive
             information is dependent upon our unique characteristics and
             experiences and dictates our ability to receive meaningful knowledge
             and act accordingly. An individual with an eating disorder will have
-            a distorted perception of themselves and those around them. As such,
-            they are challenged to recognize and process the reality of given
-            situations.
+            a distorted perception of themselves and those around them.
           </Paragraph>
-          <div
-            className='p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400'
-            role='alert'
-          >
-            <span className='font-medium'>Example:</span> An underweight female
-            looks in the mirror and sees an obese figure.
-          </div>
+          <BackQuote>
+            <ul className='list-disc ml-8'>
+              <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
+                Example: An underweight female looks in the mirror and sees an
+                obese figure.
+              </li>
+              <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
+                Example: A person with bulimia nervosa may perceive their binge
+                eating behaviors as being out of control, even if they occur
+                infrequently or are not actually excessive.
+              </li>
+              <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
+                Example: A person with binge eating disorder may perceive
+                themselves as being unable to control their food intake, despite
+                being able to stop or regulate their eating in other situations.
+              </li>
+            </ul>
+          </BackQuote>
           <br />
           <a
             href='#'

@@ -20,7 +20,7 @@ export default function ButtonGroup() {
       <Link href='/knowledge/de/whyandhow'>
         <Button color={activeSegment === 'whyandhow' ? undefined : 'gray'}>
           {' '}
-          WHY AND HOW PEOPLE ENGAGE IN DISORDERED EATING
+          WHY AND HOW DO PEOPLE ENGAGE IN DISORDERED EATING
         </Button>
       </Link>
       <Link href='/knowledge/de/when'>

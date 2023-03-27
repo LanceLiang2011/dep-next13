@@ -37,11 +37,7 @@ export default function When() {
               Length of symptom engagement
             </li>
             <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-              Life stressors (death, divorces, relationship changes, changes in
-              careers, school, job)
-            </li>
-            <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-              Impact on daily function
+              Symptom impact on daily function
             </li>
           </ul>
           <br />
@@ -50,7 +46,7 @@ export default function When() {
             there are two questions one can ask themself:{' '}
           </Paragraph>
           <BackQuote>
-            Is the symptom that you are engaging in causing significant
+            1. Is the symptom that you are engaging in causing significant
             disruption in your life in any capacity?
           </BackQuote>
           <div
@@ -96,11 +92,11 @@ export default function When() {
             <span className='sr-only'>Info</span>
             <div>
               This question also may vary in importance based on symptoms. For
-              example, someone might have bizarre food fears, yet, it is not
-              causing significant disruption in their life.
+              example, someone might have bizarre food fears, yet, does not
+              cause significant disruption in their life.
             </div>
           </div>
-          <BackQuote>Can you stop engaging in this manner?</BackQuote>
+          <BackQuote>2. Can you stop engaging in this manner?</BackQuote>
           <div
             className='flex p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400'
             role='alert'
