@@ -132,30 +132,28 @@ export default function WhyAndHow() {
             thinking patterns. For example:
           </Paragraph>
           <BackQuote>
-            <ul className='list-disc ml-8'>
-              <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-                Black-and-white thinking: &quot;If I eat a single piece of cake,
-                I have failed my diet completely.&quot;
-              </li>
-              <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-                Overgeneralizing: &quot;I always mess up my meals. I&apos;ll
-                never be able to eat healthy.&quot;
-              </li>
-              <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-                Catastrophizing: &quot;If I eat this slice of pizza, I&apos;ll
-                gain 10 pounds overnight and never be able to lose it
-                again.&quot;
-              </li>
-              <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-                Blaming: &quot;It&apos;s not my fault I overate. My friend kept
-                pressuring me to have more food.&quot;
-              </li>
-              <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-                Negative filtering: &quot;I ate a healthy salad for lunch, but
-                it doesn&apos;t matter because I still ate a cookie after
-                dinner.&quot;
-              </li>
-            </ul>
+            Black-and-white thinking: &quot;If I eat a single piece of cake, I
+            have failed my diet completely.&quot;
+          </BackQuote>
+          <BackQuote>
+            {' '}
+            Overgeneralizing: &quot;I always mess up my meals. I&apos;ll never
+            be able to eat healthy.&quot;
+          </BackQuote>
+          <BackQuote>
+            {' '}
+            Catastrophizing: &quot;If I eat this slice of pizza, I&apos;ll gain
+            10 pounds overnight and never be able to lose it again.&quot;
+          </BackQuote>
+          <BackQuote>
+            {' '}
+            Blaming: &quot;It&apos;s not my fault I overate. My friend kept
+            pressuring me to have more food.&quot;
+          </BackQuote>
+          <BackQuote>
+            {' '}
+            Negative filtering: &quot;I ate a healthy salad for lunch, but it
+            doesn&apos;t matter because I still ate a cookie after dinner.&quot;
           </BackQuote>
           <br />
           <Title type='h3'>
@@ -175,22 +173,20 @@ export default function WhyAndHow() {
             to a far less degree and impact on daily function.
           </Paragraph>
           <BackQuote>
-            <ul className='list-disc ml-8'>
-              <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-                Example: &quot;I feel shame and guilt after eating and gets
-                upset. &quot;
-              </li>
-              <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-                Example: &quot;I feel intense anxiety and fear around food and
-                eating, which makes it difficult to enjoy social events and
-                meals with others.&quot;
-              </li>
-              <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-                Example: &quot;I feel frustrated and disappointed in myself when
-                I don&apos;t stick to my strict eating plan, and it impacts my
-                mood and productivity.&quot;
-              </li>
-            </ul>
+            Example #1: &quot;I feel shame and guilt after eating and gets
+            upset. &quot;
+          </BackQuote>
+          <BackQuote>
+            {' '}
+            Example #2: &quot;I feel intense anxiety and fear around food and
+            eating, which makes it difficult to enjoy social events and meals
+            with others.&quot;
+          </BackQuote>
+          <BackQuote>
+            {' '}
+            Example #3: &quot;I feel frustrated and disappointed in myself when
+            I don&apos;t stick to my strict eating plan, and it impacts my mood
+            and productivity.&quot;
           </BackQuote>
           <br />
           <Title type='h3'>
@@ -208,23 +204,22 @@ export default function WhyAndHow() {
             a distorted perception of themselves and those around them.
           </Paragraph>
           <BackQuote>
-            <ul className='list-disc ml-8'>
-              <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-                Example: An underweight female looks in the mirror and sees an
-                obese figure.
-              </li>
-              <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-                Example: A person with bulimia nervosa may perceive their binge
-                eating behaviors as being out of control, even if they occur
-                infrequently or are not actually excessive.
-              </li>
-              <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-                Example: A person with binge eating disorder may perceive
-                themselves as being unable to control their food intake, despite
-                being able to stop or regulate their eating in other situations.
-              </li>
-            </ul>
+            Example #1: An underweight female looks in the mirror and sees an
+            obese figure.
           </BackQuote>
+          <BackQuote>
+            {' '}
+            Example #2: A person with bulimia nervosa may perceive their binge
+            eating behaviors as being out of control, even if they occur
+            infrequently or are not actually excessive.
+          </BackQuote>
+          <BackQuote>
+            {' '}
+            Example #3: A person with binge eating disorder may perceive
+            themselves as being unable to control their food intake, despite
+            being able to stop or regulate their eating in other situations.
+          </BackQuote>
+
           <br />
           <a
             href='#'
