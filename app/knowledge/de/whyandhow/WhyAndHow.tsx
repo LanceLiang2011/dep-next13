@@ -119,6 +119,7 @@ export default function WhyAndHow() {
             </span>
           </div>
           <br />
+          <br />
           <Title type='h3'>
             Cognition: The way we{' '}
             <span className='text-transparent bg-clip-text bg-gradient-to-r to-blue-600 from-sky-400'>
@@ -131,30 +132,45 @@ export default function WhyAndHow() {
             experience a disturbance in their cognition causing negative
             thinking patterns. For example:
           </Paragraph>
-          <BackQuote>
-            Black-and-white thinking: &quot;If I eat a single piece of cake, I
-            have failed my diet completely.&quot;
-          </BackQuote>
-          <BackQuote>
-            {' '}
-            Overgeneralizing: &quot;I always mess up my meals. I&apos;ll never
-            be able to eat healthy.&quot;
-          </BackQuote>
-          <BackQuote>
-            {' '}
-            Catastrophizing: &quot;If I eat this slice of pizza, I&apos;ll gain
-            10 pounds overnight and never be able to lose it again.&quot;
-          </BackQuote>
-          <BackQuote>
-            {' '}
-            Blaming: &quot;It&apos;s not my fault I overate. My friend kept
-            pressuring me to have more food.&quot;
-          </BackQuote>
-          <BackQuote>
-            {' '}
-            Negative filtering: &quot;I ate a healthy salad for lunch, but it
-            doesn&apos;t matter because I still ate a cookie after dinner.&quot;
-          </BackQuote>
+          <div className='flex p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400'>
+            <span className='px-4'>
+              <h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
+                Black-and-white thinking
+              </h5>
+              <p className='font-bold text-gray-700 dark:text-gray-400'>
+                &quot;If I eat a single piece of cake, I have failed my diet
+                completely.&quot;
+              </p>
+            </span>
+            <span className='px-4'>
+              <h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
+                Overgeneralizing
+              </h5>
+              <p className='font-bold text-gray-700 dark:text-gray-400'>
+                &quot;I always mess up my meals. I&apos;ll never be able to eat
+                healthy.&quot;
+              </p>
+            </span>
+            <span className='px-4'>
+              <h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
+                Catastrophizing
+              </h5>
+              <p className='font-bold text-gray-700 dark:text-gray-400'>
+                &quot;If I eat this slice of pizza, I&apos;ll gain 10 pounds
+                overnight and never be able to lose it again.&quot;
+              </p>
+            </span>
+            <span className='px-4'>
+              <h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
+                Negative filtering
+              </h5>
+              <p className='font-bold text-gray-700 dark:text-gray-400'>
+                &quot;I ate a healthy salad for lunch, but it doesn&apos;t
+                matter because I still ate a cookie after dinner.&quot;
+              </p>
+            </span>
+          </div>
+          <br />
           <br />
           <Title type='h3'>
             Affect: The way we{' '}
@@ -172,22 +188,37 @@ export default function WhyAndHow() {
             Disordered Eating can experience these moods and emotions, however,
             to a far less degree and impact on daily function.
           </Paragraph>
-          <BackQuote>
-            Example #1: &quot;I feel shame and guilt after eating and gets
-            upset. &quot;
-          </BackQuote>
-          <BackQuote>
-            {' '}
-            Example #2: &quot;I feel intense anxiety and fear around food and
-            eating, which makes it difficult to enjoy social events and meals
-            with others.&quot;
-          </BackQuote>
-          <BackQuote>
-            {' '}
-            Example #3: &quot;I feel frustrated and disappointed in myself when
-            I don&apos;t stick to my strict eating plan, and it impacts my mood
-            and productivity.&quot;
-          </BackQuote>
+          <div className='flex p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400'>
+            <span className='px-4'>
+              <h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
+                Example #1
+              </h5>
+              <p className='font-bold text-gray-700 dark:text-gray-400'>
+                &quot;I feel shame and guilt after eating and gets upset. &quot;
+              </p>
+            </span>
+            <span className='px-4'>
+              <h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
+                Example #2
+              </h5>
+              <p className='font-bold text-gray-700 dark:text-gray-400'>
+                &quot;I feel intense anxiety and fear around food and eating,
+                which makes it difficult to enjoy social events and meals with
+                others.&quot;
+              </p>
+            </span>
+            <span className='px-4'>
+              <h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
+                Example #3
+              </h5>
+              <p className='font-bold text-gray-700 dark:text-gray-400'>
+                &quot;I feel frustrated and disappointed in myself when I
+                don&apos;t stick to my strict eating plan, and it impacts my
+                mood and productivity.&quot;
+              </p>
+            </span>
+          </div>
+          <br />
           <br />
           <Title type='h3'>
             Perception: The way we{' '}
@@ -203,23 +234,37 @@ export default function WhyAndHow() {
             and act accordingly. An individual with an eating disorder will have
             a distorted perception of themselves and those around them.
           </Paragraph>
-          <BackQuote>
-            Example #1: An underweight female looks in the mirror and sees an
-            obese figure.
-          </BackQuote>
-          <BackQuote>
-            {' '}
-            Example #2: A person with bulimia nervosa may perceive their binge
-            eating behaviors as being out of control, even if they occur
-            infrequently or are not actually excessive.
-          </BackQuote>
-          <BackQuote>
-            {' '}
-            Example #3: A person with binge eating disorder may perceive
-            themselves as being unable to control their food intake, despite
-            being able to stop or regulate their eating in other situations.
-          </BackQuote>
-
+          <div className='flex p-4 mb-4 text-sm text-blue-800 rounded-lg bg-blue-50 dark:bg-gray-800 dark:text-blue-400'>
+            <span className='px-4'>
+              <h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
+                Example #1
+              </h5>
+              <p className='font-bold text-gray-700 dark:text-gray-400'>
+                An underweight female looks in the mirror and sees an obese
+                figure.
+              </p>
+            </span>
+            <span className='px-4'>
+              <h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
+                Example #2
+              </h5>
+              <p className='font-bold text-gray-700 dark:text-gray-400'>
+                A person with bulimia nervosa may perceive their binge eating
+                behaviors as being out of control, even if they occur
+                infrequently or are not actually excessive.
+              </p>
+            </span>
+            <span className='px-4'>
+              <h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
+                Example #3
+              </h5>
+              <p className='font-bold text-gray-700 dark:text-gray-400'>
+                A person with binge eating disorder may perceive themselves as
+                being unable to control their food intake, despite being able to
+                stop or regulate their eating in other situations.
+              </p>
+            </span>
+          </div>
           <br />
           <a
             href='#'
