@@ -1,11 +1,59 @@
 import Feature from '@/components/UI/Feature';
 import Link from 'next/link';
-import React from 'react';
 import { BsBookFill, BsFillPatchQuestionFill } from 'react-icons/bs';
 
 import { IoIosBody } from 'react-icons/io';
 import { MdSportsHandball, MdFastfood } from 'react-icons/md';
 import { FaBrain } from 'react-icons/fa';
+
+const homeContent = {
+  title: 'What you need to know about Disordered Eating',
+  paragraph:
+    'Disordered eating is a term used to describe a range of abnormal eating behaviours that do not warrant the diagnosis of an eating disorder. To learn more about disordered eating, click on the sections below or use the navigation bar on the left.',
+  sections: [
+    {
+      title: 'What is Disordered Eating?',
+      content:
+        "Let's explore the definition of disordered eating and the continuum of eating together!",
+      icon: <BsBookFill size={20} color='#2563eb' />,
+      link: '/knowledge/de/whatis',
+    },
+    {
+      title: 'Why and How Do People Engage in Disordered Eating?',
+      content:
+        "Why and how do people engage in disordered eating? Let's deep dive into this further!",
+      icon: <BsFillPatchQuestionFill size={20} color='#2563eb' />,
+      link: '/knowledge/de/whyandhow',
+    },
+    {
+      title: 'Body Composition',
+      content: "How is our Body Composed? Let's explore!",
+      icon: <IoIosBody size={20} color='#2563eb' />,
+      link: '/knowledge/body/body',
+    },
+    {
+      title: 'Physical Activity & Exercise',
+      content:
+        'There are so many different types of exercise out there! What are they and which is best for me?',
+      icon: <MdSportsHandball size={20} color='#2563eb' />,
+      link: '/knowledge/body/exercise',
+    },
+    {
+      title: 'Nutrition and Nutrients',
+      content:
+        "Why do we eat? How should I choose my diet? Let's figure it out together!",
+      icon: <MdFastfood size={20} color='#2563eb' />,
+      link: '/knowledge/body/nutrition',
+    },
+    {
+      title: 'How Does Our Mind Influence Our Eating?',
+      content:
+        'Understand how our emotions, thinking patterns, and life situations all influence the way we eat.',
+      icon: <FaBrain size={20} color='#2563eb' />,
+      link: '/knowledge/mind/influence',
+    },
+  ],
+};
 
 export default function HomePage() {
   return (

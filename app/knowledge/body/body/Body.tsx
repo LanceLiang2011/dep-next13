@@ -6,7 +6,7 @@ import fat from '@/resources/imgs/fat-cell.png';
 import bone from '@/resources/imgs/bone.png';
 import muscle from '@/resources/imgs/muscle.png';
 import scalegif from '@/resources/imgs/scalegif.gif';
-import scaleHospital from '@/resources/imgs/scaleHospital.jpg';
+import scaleHospital from '@/resources/imgs/scale.png';
 import bmivsbody from '@/resources/imgs/bmivsbody.png';
 import HoverImage from '@/components/UI/HoverImage';
 import DESymptomsCheck from './DESymptomsCheck';
@@ -77,8 +77,8 @@ export default function Body() {
             </Paragraph>
             <Image
               src={scaleHospital}
-              height={300}
-              width={300}
+              height={240}
+              width={240}
               alt='a scle in hospital'
             />
           </div>
