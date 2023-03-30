@@ -134,6 +134,19 @@ export default function WhyAndHow() {
               - Example: &quot;My mom does not eat over 500 calories, therefore,
               I should not&quot;.
             </p>
+            <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
+              Our society is glorifies diet culture due to the fact that our
+              society is fat-phobic.
+            </li>
+            <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
+              Wanting to follow dietary advice from family members, peers,
+              people who one looks up to, people on social media, and societal
+              norms.
+            </li>
+            <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
+              Biological differences in the wiring of one’s brain which may lead
+              to larger fixations on food and body.
+            </li>
           </ul>
           <br />
           <br />
