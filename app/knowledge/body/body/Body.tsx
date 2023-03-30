@@ -77,9 +77,10 @@ export default function Body() {
             </Paragraph>
             <Image
               src={scaleHospital}
-              height={240}
-              width={240}
+              height={290}
+              width={290}
               alt='a scle in hospital'
+              className='mr-9'
             />
           </div>
           <br />
