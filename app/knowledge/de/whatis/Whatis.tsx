@@ -11,6 +11,7 @@ import train from '@/resources/imgs/cable-train.gif';
 import cargif2 from '@/resources/imgs/cargif2.gif';
 import cargif3 from '@/resources/imgs/cargif3.gif';
 import React from 'react';
+import KnowledgeCard from '@/components/Typograpjy/KnowledgeCard';
 
 export default function Whatis() {
   return (
@@ -120,11 +121,7 @@ export default function Whatis() {
 
           <br />
           <br />
-          <div className='max-w-2xl p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700'>
-            <h5 className='mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white'>
-              How are Eating Disorders Diagnosed?
-            </h5>
-
+          <KnowledgeCard title='How are Eating Disorders Diagnosed?'>
             <p className='mb-3 font-normal text-gray-700 dark:text-gray-400'>
               In Canada, Eating Disorders can be diagnosed by a psychiatrist,
               psychologist, or general practitioner based on a set of criteria
@@ -152,7 +149,8 @@ export default function Whatis() {
               </a>
               .
             </p>
-          </div>
+          </KnowledgeCard>
+
           <br />
           <a
             href='#'
