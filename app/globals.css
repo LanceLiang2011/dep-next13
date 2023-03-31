@@ -36,8 +36,16 @@
     @apply max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400;
   }
 
-  .main-logo {
+  .h1-font {
     font-family: 'Fraunces', serif;
+  }
+
+  .button-blue {
+    @apply p-10 px-16 bg-button-back text-button-text h1-font text-2xl hover:bg-bg-hover rounded;
+  }
+
+  .button-blue-sm {
+    @apply p-4 px-6 bg-button-back text-button-text h1-font hover:bg-bg-hover rounded;
   }
 }
 

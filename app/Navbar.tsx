@@ -36,7 +36,7 @@ export default function NavbarComponent() {
             width={60}
             alt='Flowbite Logo'
           />
-          <span className='main-logo self-center whitespace-nowrap text-2xl text-heading font-light  dark:text-white'>
+          <span className='h1-font self-center whitespace-nowrap text-2xl text-heading font-light  dark:text-white'>
             My Eating Journey
           </span>
         </Navbar.Brand>

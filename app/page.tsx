@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import homeImage from '../resources/imgs/HomeImg.webp';
-import Footer from './Footer';
 
 export default function Home() {
   return (
@@ -10,7 +9,6 @@ export default function Home() {
         alt='home image'
         src={homeImage}
       />
-      <Footer />
     </div>
   );
 }
