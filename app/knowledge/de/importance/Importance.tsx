@@ -10,7 +10,7 @@ export default function Importance() {
       <div className='flex justify-between px-4 mx-auto max-w-screen-xl '>
         <article className='w-full format format-sm sm:format-base lg:format-lg format-blue dark:format-invert'>
           <Title type='h1'>
-            The Importance of Understanding Disordered Eating
+            Significance of Understanding Disordered Eating
           </Title>
           <br />
           <Paragraph>

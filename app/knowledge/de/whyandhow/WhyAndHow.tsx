@@ -82,9 +82,7 @@ export default function WhyAndHow() {
     <main className='pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900'>
       <div className='flex justify-between px-4 mx-auto max-w-screen-xl '>
         <article className='w-full format format-sm sm:format-base lg:format-lg format-blue dark:format-invert'>
-          <Title type='h1'>
-            Why and How Do People Engage in Disordered Eating
-          </Title>
+          <Title type='h1'>Causes & Mechanisms of Disordered Eating</Title>
           <br />
           <Paragraph>
             From childhood, our society and Western culture engrave certain

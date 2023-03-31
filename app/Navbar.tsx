@@ -32,8 +32,8 @@ export default function NavbarComponent() {
           <Image
             src={logo}
             className='mr-4'
-            height={60}
-            width={60}
+            height={55}
+            width={55}
             alt='Flowbite Logo'
           />
           <span className='h1-font self-center whitespace-nowrap text-2xl text-heading font-light  dark:text-white'>

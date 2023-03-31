@@ -41,7 +41,7 @@
   }
 
   .button-blue {
-    @apply p-10 px-16 bg-button-back text-button-text h1-font text-2xl hover:bg-bg-hover rounded;
+    @apply p-8 px-14 bg-button-back text-button-text h1-font text-2xl hover:bg-bg-hover rounded;
   }
 
   .button-blue-sm {
