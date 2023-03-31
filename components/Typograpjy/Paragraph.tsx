@@ -10,7 +10,7 @@ export default function Paragraph({
 }) {
   return (
     <p
-      className={`mb-3 text-lg xl:text-xl font-light text-gray-600 dark:text-gray-400 ${className}`}
+      className={`mb-3 text-lg xl:text-xl font-light text-body dark:text-gray-200 ${className}`}
       {...rest}
     >
       {children}

@@ -1,11 +1,11 @@
 import React from 'react';
 
 const H1 =
-  'mb-4 text-4xl md:text-5xl font-extrabold text-sky-800 dark:text-white';
+  'mb-4 text-4xl md:text-5xl font-extrabold text-heading dark:text-white';
 const H2 =
-  'mb-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl dark:text-sky-50';
+  'mb-4 text-3xl font-extrabold leading-none tracking-tight text-subheading md:text-4xl dark:text-sky-50';
 const H3 =
-  'mb-4 text-2xl font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl dark:text-white';
+  'mb-4 text-2xl font-extrabold leading-none tracking-tight text-subheading md:text-3xl dark:text-white';
 const H4 =
   'mb-4 text-xl font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl dark:text-white';
 

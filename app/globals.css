@@ -15,7 +15,18 @@
     font-family: 'Open Sans', sans-serif;
   }
 
+  h3 {
+    @apply font-bold;
+    font-family: 'Open Sans', sans-serif;
+  }
+
   p {
+    @apply text-body;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  li {
+    @apply text-body;
     font-family: 'Open Sans', sans-serif;
   }
 }

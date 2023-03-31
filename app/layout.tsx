@@ -13,7 +13,7 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body>
+      <body className='px-2 md:px-10 lg:px-20'>
         <Navbar />
         <div className='mx-8'>{children}</div>
       </body>
