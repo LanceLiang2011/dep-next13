@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <Image
-        className='object-cover w-full h-full'
+        className='object-cover w-11/12 h-11/12'
         alt='home image'
         src={homeImage}
       />
