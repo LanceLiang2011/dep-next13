@@ -166,7 +166,9 @@ export default function GoalForm({ setGoals, fnToCall }: any) {
           required
         ></textarea>
         <br />
-        <Button type='submit'>Submit</Button>
+        <Button className=' bg-subheading hover:bg-button-back' type='submit'>
+          Submit
+        </Button>
       </form>
     </div>
   );

@@ -190,7 +190,9 @@ export default function MyThoughts() {
           click the button below to set your thinking pattern.
         </p>
         <Link href='/journal/thinkingpattern'>
-          <Button>Set my pattern</Button>
+          <Button className=' bg-subheading hover:bg-button-back'>
+            Set my pattern
+          </Button>
         </Link>
       </div>
     );

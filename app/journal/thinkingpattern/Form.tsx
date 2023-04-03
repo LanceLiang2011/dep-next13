@@ -220,7 +220,9 @@ function NewForm({ uid }: any) {
             required
           ></textarea>
         </div>
-        <Button type='submit'>Add</Button>
+        <Button className=' bg-subheading hover:bg-button-back' type='submit'>
+          Add
+        </Button>
       </form>
     </div>
   );
@@ -426,7 +428,9 @@ function OldPattern({ pattern }: any) {
           ></textarea>
         </div>
         <div className='flex gap-6'>
-          <Button type='submit'>Change Your Pattern</Button>
+          <Button className=' bg-subheading hover:bg-button-back' type='submit'>
+            Change Your Pattern
+          </Button>
           <Button onClick={handleDelete} color='failure' type='button'>
             Delette Your Pattern
           </Button>
