@@ -3,6 +3,7 @@ import Title from '@/components/Typograpjy/Title';
 import Image from 'next/image';
 import React from 'react';
 import foods from '@/resources/imgs/foods.jpg';
+import TopButton from '@/components/UI/TopButton';
 
 export default function Nutrition() {
   return (
@@ -189,14 +190,7 @@ export default function Nutrition() {
             combined with regular physical activity.
           </Paragraph>
           <br />
-          <a
-            href='#'
-            type='button'
-            className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
-          >
-            Top
-            <span className='sr-only'>Icon description</span>
-          </a>
+          <TopButton />
         </article>
       </div>
     </main>

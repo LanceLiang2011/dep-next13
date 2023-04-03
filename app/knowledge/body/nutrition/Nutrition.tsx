@@ -7,6 +7,7 @@ import foods from '@/resources/imgs/foods.jpg';
 import Badge from '@/components/Typograpjy/Badge';
 import DESymptomsCheck from './DESymptomsCheck';
 import NutrientsTable from './NutrientsTable';
+import TopButton from '@/components/UI/TopButton';
 
 export default function Nutrition() {
   return (
@@ -119,14 +120,7 @@ export default function Nutrition() {
             impact on your health over time.
           </Paragraph>
           <br />
-          <a
-            href='#'
-            type='button'
-            className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
-          >
-            Top
-            <span className='sr-only'>Icon description</span>
-          </a>
+          <TopButton />
         </article>
       </div>
     </main>
