@@ -1,11 +1,9 @@
 import Paragraph from '@/components/Typograpjy/Paragraph';
 import Title from '@/components/Typograpjy/Title';
-import UnderlineSubtitle from '@/components/Typograpjy/UnderlineSubtitle';
 import React from 'react';
 import fat from '@/resources/imgs/fat-cell.png';
 import bone from '@/resources/imgs/bone.png';
 import muscle from '@/resources/imgs/muscle.png';
-import scalegif from '@/resources/imgs/scalegif.gif';
 import scaleHospital from '@/resources/imgs/scale.png';
 import bmivsbody from '@/resources/imgs/bmivsbody.png';
 import HoverImage from '@/components/UI/HoverImage';
@@ -87,12 +85,7 @@ export default function Body() {
           <Title type='h3'>What weight represents?</Title>
           <div className='flex flex-wrap gap-4 items-center justify-between'>
             <Paragraph className='max-w-xl'>
-              <HoverImage src={scalegif} size={100}>
-                <span className='underline decoration-2 decoration-blue-400 dark:decoration-blue-600'>
-                  Weight
-                </span>
-              </HoverImage>{' '}
-              does a quick measurement used to represent how much mass an
+              Weight does a quick measurement used to represent how much mass an
               individual is. It does not take into consideration different
               sections or components of the body.{' '}
             </Paragraph>
@@ -152,7 +145,7 @@ export default function Body() {
           <Title type='h3'>What is body composition? </Title>
           <Paragraph>
             The term body composition is typically stated between doctors,
-            healthcare professionals, and those within the fitness industry (1).
+            healthcare professionals, and those within the fitness industry.
             Each person needs to have body fat, bone, and muscle to be able to
             have a functioning body. Body composition is a measurement that can
             allow professionals to understand what is going on within the body.

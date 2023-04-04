@@ -1,15 +1,5 @@
 import Paragraph from '@/components/Typograpjy/Paragraph';
 import Title from '@/components/Typograpjy/Title';
-import HoverImage from '@/components/UI/HoverImage';
-import React from 'react';
-import psychologist from '@/resources/imgs/types/psychologist.png';
-import psychotherapist from '@/resources/imgs/types/psychotherapist.png';
-import socialworker from '@/resources/imgs/types/social-worker.png';
-import ot from '@/resources/imgs/types/ot.png';
-import psychiatrist from '@/resources/imgs/types/psychiatrist.png';
-import gp from '@/resources/imgs/types/gp.png';
-import dietician from '@/resources/imgs/types/dietician.png';
-import nutritionist from '@/resources/imgs/types/nutritionist.png';
 import TopButton from '@/components/UI/TopButton';
 
 export default function Types() {
@@ -48,11 +38,7 @@ export default function Types() {
                 <tr className='bg-white border-b dark:bg-gray-800 dark:border-gray-700'>
                   <td className='px-6 py-4'>Mind</td>
                   <td className='px-6 py-4'>
-                    <HoverImage src={psychologist} size={120}>
-                      <span className=' font-bold underline decoration-2 decoration-blue-400 dark:decoration-blue-600'>
-                        Psychologist
-                      </span>
-                    </HoverImage>
+                    <span className=' font-bold'>Psychologist</span>
                   </td>
                   <td className='px-6 py-4'>
                     <ul className='my-list list-none p-0 m-0'>
@@ -89,11 +75,7 @@ export default function Types() {
                 <tr className='bg-white border-b dark:bg-gray-800 dark:border-gray-700'>
                   <td className='px-6 py-4'>Mind</td>
                   <td className='px-6 py-4'>
-                    <HoverImage src={psychotherapist} size={90}>
-                      <span className=' font-bold underline decoration-2 decoration-blue-400 dark:decoration-blue-600'>
-                        Psychotherapist
-                      </span>
-                    </HoverImage>
+                    <span className=' font-bold'>Psychotherapist</span>
                   </td>
                   <td className='px-6 py-4'>
                     <ul className='my-list list-none p-0 m-0'>
@@ -126,11 +108,7 @@ export default function Types() {
                 <tr className='bg-white border-b dark:bg-gray-800 dark:border-gray-700'>
                   <td className='px-6 py-4'>Mind</td>
                   <td className='px-6 py-4'>
-                    <HoverImage src={socialworker} size={120}>
-                      <span className=' font-bold underline decoration-2 decoration-blue-400 dark:decoration-blue-600'>
-                        Social Worker
-                      </span>
-                    </HoverImage>
+                    <span className=' font-bold'>Social Worker</span>
                   </td>
                   <td className='px-6 py-4'>
                     <ul className='my-list list-none p-0 m-0'>
@@ -159,11 +137,7 @@ export default function Types() {
                 <tr className='bg-white border-b dark:bg-gray-800 dark:border-gray-700'>
                   <td className='px-6 py-4'>Mind</td>
                   <td className='px-6 py-4'>
-                    <HoverImage src={ot} size={120}>
-                      <span className=' font-bold underline decoration-2 decoration-blue-400 dark:decoration-blue-600'>
-                        Occupational Therapist
-                      </span>
-                    </HoverImage>
+                    <span className=' font-bold'>Occupational Therapist</span>
                   </td>
                   <td className='px-6 py-4'>
                     <ul className='my-list list-none p-0 m-0'>
@@ -182,11 +156,7 @@ export default function Types() {
                 <tr className='bg-white border-b dark:bg-gray-800 dark:border-gray-700'>
                   <td className='px-6 py-4'>Mind / Doctor</td>
                   <td className='px-6 py-4'>
-                    <HoverImage src={psychiatrist} size={120}>
-                      <span className=' font-bold underline decoration-2 decoration-blue-400 dark:decoration-blue-600'>
-                        Psychiatrist
-                      </span>
-                    </HoverImage>
+                    <span className=' font-bold'>Psychiatrist</span>
                   </td>
                   <td className='px-6 py-4'>
                     <ul className='my-list list-none p-0 m-0'>
@@ -219,11 +189,7 @@ export default function Types() {
                 <tr className='bg-white border-b dark:bg-gray-800 dark:border-gray-700'>
                   <td className='px-6 py-4'>Doctor</td>
                   <td className='px-6 py-4'>
-                    <HoverImage src={gp} size={80}>
-                      <span className=' font-bold underline decoration-2 decoration-blue-400 dark:decoration-blue-600'>
-                        General Practioner
-                      </span>
-                    </HoverImage>
+                    <span className=' font-bold'>General Practioner</span>
                   </td>
                   <td className='px-6 py-4'>
                     <ul className='my-list list-none p-0 m-0'>
@@ -258,11 +224,7 @@ export default function Types() {
                 <tr className='bg-white border-b dark:bg-gray-800 dark:border-gray-700'>
                   <td className='px-6 py-4'>Food</td>
                   <td className='px-6 py-4'>
-                    <HoverImage src={dietician} size={120}>
-                      <span className=' font-bold underline decoration-2 decoration-blue-400 dark:decoration-blue-600'>
-                        Dietician
-                      </span>
-                    </HoverImage>
+                    <span className=' font-bold'>Dietician</span>
                   </td>
                   <td className='px-6 py-4'>
                     <ul className='my-list list-none p-0 m-0'>
@@ -290,11 +252,7 @@ export default function Types() {
                 <tr className='bg-white border-b dark:bg-gray-800 dark:border-gray-700'>
                   <td className='px-6 py-4'>Food</td>
                   <td className='px-6 py-4'>
-                    <HoverImage src={nutritionist} size={120}>
-                      <span className=' font-bold underline decoration-2 decoration-blue-400 dark:decoration-blue-600'>
-                        Nutritionist
-                      </span>
-                    </HoverImage>
+                    <span className=' font-bold'>Nutritionist</span>
                   </td>
                   <td className='px-6 py-4'>Not accredited.</td>
                   <td className='px-6 py-4'>

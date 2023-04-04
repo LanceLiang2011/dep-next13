@@ -7,9 +7,6 @@ import ActiveHoverImage from '@/components/UI/ActiveHoverImage';
 import car from '@/resources/imgs/car.png';
 import car2 from '@/resources/imgs/car2.png';
 import car3 from '@/resources/imgs/car3.png';
-import train from '@/resources/imgs/cable-train.gif';
-import cargif2 from '@/resources/imgs/cargif2.gif';
-import cargif3 from '@/resources/imgs/cargif3.gif';
 import React from 'react';
 import KnowledgeCard from '@/components/Typograpjy/KnowledgeCard';
 import TopButton from '@/components/UI/TopButton';
@@ -32,7 +29,7 @@ export default function Whatis() {
           <br />
           <Title type='h2'>
             The{' '}
-            <span className='text-transparent bg-clip-text bg-gradient-to-r hover:bg-gradient-to-l to-red-600 via-yellow-500 from-green-400'>
+            <span className='text-transparent bg-clip-text bg-gradient-to-r hover:bg-gradient-to-l to-[#5c464a] from-[#d8d0dd] via-[#9f7b82]'>
               Continuum
             </span>{' '}
             of Eating
@@ -45,7 +42,7 @@ export default function Whatis() {
           </Paragraph>
           <br />
 
-          <Title type='h3' className='text-green-500'>
+          <Title type='h3' className='text-[#d8d0dd]'>
             Healthy Eating
           </Title>
           <div className='flex flex-wrap gap-4 items-center justify-between'>
@@ -70,7 +67,7 @@ export default function Whatis() {
 
           <br />
 
-          <Title type='h3' className='text-yellow-500'>
+          <Title type='h3' className='text-[#9f7b82]'>
             Disordered Eating
           </Title>
           <div className='flex flex-wrap gap-4 items-center justify-between'>
@@ -96,7 +93,7 @@ export default function Whatis() {
 
           <br />
 
-          <Title type='h3' className='text-red-500'>
+          <Title type='h3' className='text-[#5c464a]'>
             Eating Disorder
           </Title>
           <div className='flex flex-wrap gap-4 items-center justify-between'>
