@@ -24,8 +24,8 @@ export default function NutrientsTable() {
               Proteins
             </th>
             <td className='bg-purple-50 px-6 py-4'>
-              Build and repair tissues, hormones, and enzymes as well as play a
-              role in one’s immune system function.
+              Builds and repairs tissues, hormones, and enzymes, as well as play
+              a role in one’s immune system function.
             </td>
           </tr>
           <tr className='bg-white dark:bg-gray-800'>
@@ -37,7 +37,7 @@ export default function NutrientsTable() {
             </th>
             <td className='bg-yellow-50 px-6 py-4'>
               Another important source of energy, helping with the absorption of
-              fat-soluble vitamins (vitamins A, D, E, and K). Fats also provide
+              fcertain vitamins (Vitamins A, D, E, and K). Fats also provide
               insulation and cushioning for organs, and hormone production.{' '}
             </td>
           </tr>
@@ -49,7 +49,7 @@ export default function NutrientsTable() {
               Vitamins
             </th>
             <td className='bg-green-50 px-6 py-4'>
-              Help regulate chemical processes in the body, as well as play a
+              Helps regulate chemical processes in the body, as well as play a
               role in maintaining a healthy immune system.
             </td>
           </tr>
@@ -61,7 +61,7 @@ export default function NutrientsTable() {
               Minerals
             </th>
             <td className='bg-gray-50 px-6 py-4'>
-              Help maintain healthy bones and teeth, as well as plays a role in
+              Helps maintain healthy bones and teeth, as well as plays a role in
               maintaining a healthy immune system.
             </td>
           </tr>
@@ -73,7 +73,7 @@ export default function NutrientsTable() {
               Water
             </th>
             <td className='bg-blue-50 px-6 py-4'>
-              Help regulates body temperature and maintains healthy skin.
+              Helps regulates body temperature and maintains healthy skin.
             </td>
           </tr>
         </tbody>

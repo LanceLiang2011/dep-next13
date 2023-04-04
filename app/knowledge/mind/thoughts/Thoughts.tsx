@@ -1,3 +1,4 @@
+import BackQuote from '@/components/Typograpjy/BackQuote';
 import Paragraph from '@/components/Typograpjy/Paragraph';
 import Title from '@/components/Typograpjy/Title';
 import TopButton from '@/components/UI/TopButton';
@@ -18,12 +19,11 @@ export default function Thoughts() {
             width={800}
           ></Image>
           <br />
-          <Title type='h2'>Understanding Thoughts </Title>
           <Paragraph>
             Individuals have 70 000 thoughts per day. Our brain uses these
-            thoughts to make interpretations about what certain things mean and
-            the world around us. Without thoughts, people would be hopelessly
-            lost.
+            thoughts to make interpretations about what certain things mean,
+            what situations are, and the world around us. Without thoughts,
+            people would be hopelessly lost.
           </Paragraph>
           <Paragraph>
             **Place Holder: AUTONOMIC THOUGHTS → ASSUMPTIONS → CORE BELIEFS**
@@ -66,11 +66,11 @@ export default function Thoughts() {
             positive or negative. When situations cause certain emotions,
             certain core beliefs will be triggers.
           </Paragraph>
-          <Paragraph>
+          <BackQuote>
             EXAMPLE: One of Sally&apos;s core beliefs is that she is ugly, and
             on days when Sally has a poor body image, this core belief will be
             heightened instead of the core belief that she is beautiful.{' '}
-          </Paragraph>
+          </BackQuote>
           <TopButton />
         </article>
       </div>

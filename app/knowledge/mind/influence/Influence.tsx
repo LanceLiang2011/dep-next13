@@ -12,13 +12,12 @@ export default function Influence() {
           <Title type='h1'>How Does Our Mind Influence Our Eating ?</Title>
           <br />
           <Paragraph>
-            Engaging in disordered eating behaviour/symptoms can be the
-            product/action of a situation that occurred or the product/action of
-            thoughts we have. Understanding how we each individually interpret
-            situations, how we individually think, how we show emotions, and how
-            these components can all influence behaviour/action, allows us to
-            better understand ourselves, and possibly change/stop engaging in
-            negative behaviours, like disordered eating.{' '}
+            Engaging in disordered eating behaviour can all stem from our mind.
+            Our eating behaviours are a product of our actions, based on our
+            emotions and thoughts based on the original situation. Understanding
+            how these four components with regard to our own experiences can
+            help us to better understand ourselves, and possibly change/stop
+            engaging in negative behaviours, like disordered eating.{' '}
           </Paragraph>
           <br />
           <Image

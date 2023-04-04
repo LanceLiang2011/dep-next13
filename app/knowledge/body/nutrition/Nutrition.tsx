@@ -18,7 +18,7 @@ export default function Nutrition() {
           <br />
           <DESymptomsCheck />
           <br />
-          <Title type='h2'>What is Nutrients and why it is important?</Title>
+          <Title type='h2'>What is Nutrients and Why is it important?</Title>
           <Paragraph>
             Nutrients are the substances found in food that are necessary for
             growth, maintenance, and repair of our bodies. There are six
@@ -40,15 +40,15 @@ export default function Nutrition() {
             </span>{' '}
             of nutrients from different food sources in order to maintain
             optimal health. A diet that is lacking in essential nutrients can
-            lead to nutrient deficiencies and health problems. On the other
-            hand, a diet that is balanced and nutritious can help prevent
-            chronic diseases and promote overall health and well-being.
+            lead to nutrient deficiencies and health problems. In contrast, a
+            diet that is balanced and nutritious can help prevent chronic
+            diseases and promote overall health and well-being.
           </Paragraph>
           <br />
           <Title type='h2'>Why do we eat?</Title>
           <Paragraph>
             We eat in order to provide our bodies with the energy and nutrients
-            required to maintain its proper functioning. The food we consume is
+            required to maintain its proper function. The food we consume is
             broken down in the digestive system into smaller components such as
             carbohydrates, proteins, and fats, which are then absorbed into the
             bloodstream and transported to cells throughout the body.
@@ -60,66 +60,7 @@ export default function Nutrition() {
             various functions.
           </Paragraph>
           <br />
-          <Title type='h2'>How lifestyle can influence nutrition?</Title>
-          <Paragraph>
-            Your lifestyle can greatly impact your dietary habits and choices,
-            and vice versa. Here are some ways in which they are interconnected:
-          </Paragraph>
-          <ul className='list-disc ml-8'>
-            <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-              <span className='text-transparent bg-clip-text bg-gradient-to-r to-red-600 from-pink-400 font-bold'>
-                Physical activity level
-              </span>
-              : People who are physically active may require more calories and
-              nutrients than sedentary individuals, and may benefit from a diet
-              that is higher in carbohydrates, proteins, and healthy fats.
-            </li>
-            <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-              <span className='text-transparent bg-clip-text bg-gradient-to-r to-blue-600 from-sky-400 font-bold'>
-                Time availability
-              </span>
-              : A busy lifestyle may lead to a reliance on convenient or fast
-              food, which is often high in calories, saturated and trans fats,
-              and added sugars. On the other hand, a diet that emphasizes whole,
-              unprocessed foods can complement a busy lifestyle by providing the
-              nutrients and energy needed to maintain health and well-being.
-            </li>
-            <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-              <span className='text-transparent bg-clip-text bg-gradient-to-r to-green-600 from-yellow-400 font-bold'>
-                Food environment
-              </span>
-              : People who live in areas with limited access to healthy food
-              options may find it more challenging to maintain a balanced diet.
-              A diet that emphasizes whole, unprocessed foods, along with
-              regular physical activity, can support good health even in
-              food-insecure environments.
-            </li>
-            <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-              <span className='text-transparent bg-clip-text bg-gradient-to-r to-pink-600 from-purple-400 font-bold'>
-                Personal preferences and cultural background
-              </span>
-              : Individual food preferences and cultural background can greatly
-              impact dietary habits. Incorporating culturally-specific foods
-              into a balanced diet can help individuals maintain their cultural
-              heritage and enjoyment of food.
-            </li>
-            <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-              <span className='text-transparent bg-clip-text bg-gradient-to-r to-red-600 from-orange-400 font-bold'>
-                Stress levels
-              </span>
-              : Stressful lifestyles can lead to unhealthy eating habits, such
-              as overeating, snacking on junk food, or skipping meals. A diet
-              that is rich in whole, unprocessed foods, along with
-              stress-management techniques, can support good health and
-              well-being.
-            </li>
-          </ul>
-          <Paragraph>
-            Making gradual, sustainable changes to your lifestyle and diet,
-            based on your individual needs and preferences, can have a positive
-            impact on your health over time.
-          </Paragraph>
-          <br />
+
           <TopButton />
         </article>
       </div>

@@ -18,12 +18,14 @@ export default function Situations() {
             height={400}
             width={800}
           ></Image>
+          <br />
           <Paragraph>
             In essence, a situation is just when something happens. Situations
             occur every day, varying in weight of importance. Situations
             initiate the flow of thoughts, emotions, and then behaviour. Two
             people can experience the same situation and have completely
-            different thoughts.
+            different thoughts, emotions, and behaviours based on that same
+            event.
           </Paragraph>
           <br />
           <Title type='h3'>
@@ -70,11 +72,11 @@ export default function Situations() {
                   Emotion:
                 </th>
                 <td className='px-6 py-4'>
-                  😢 Sad, upset with herself because she ate so much candy,
+                  Sad, upset with herself because she ate so much candy,
                   discontent with her body
                 </td>
                 <td className='px-6 py-4'>
-                  😄 Happy, content with her time with Molly
+                  Happy, content with her time with Molly
                 </td>
               </tr>
               <tr className='bg-white dark:bg-gray-800'>
