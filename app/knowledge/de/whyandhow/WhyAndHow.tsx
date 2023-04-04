@@ -161,12 +161,7 @@ export default function WhyAndHow() {
               <Image alt='Deb vs ED' src={debvsed} height={600} width={600} />
             </Tooltip>
           </div>
-          <Title type='h3'>
-            Behaviours: The way we{' '}
-            <span className='text-transparent bg-clip-text bg-gradient-to-r to-red-600 from-pink-400'>
-              act
-            </span>
-          </Title>
+          <Title type='h3'>Behaviours: The way we act</Title>
           <Paragraph>
             Behaviour is how someone acts in response to their environment
             internally; their thoughts and feelings and externally; other people
@@ -177,12 +172,7 @@ export default function WhyAndHow() {
           <ExampleTable examples={actExamples} />
           <br />
           <br />
-          <Title type='h3'>
-            Cognition: The way we{' '}
-            <span className='text-transparent bg-clip-text bg-gradient-to-r to-blue-600 from-sky-400'>
-              think
-            </span>
-          </Title>
+          <Title type='h3'>Cognition: The way we think</Title>
           <Paragraph>
             Cognition includes all the processes in which we accumulate
             knowledge. With eating disorders and disordered eating, individuals
@@ -192,12 +182,7 @@ export default function WhyAndHow() {
           <ExampleTable examples={cognitionExamples} />
           <br />
           <br />
-          <Title type='h3'>
-            Affect: The way we{' '}
-            <span className='text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400'>
-              feel
-            </span>
-          </Title>
+          <Title type='h3'>Affect: The way we feel</Title>
           <Paragraph>
             Affect is the outward expression of our feelings about ourselves and
             others through our moods and emotions. With eating disorders, an
@@ -211,12 +196,7 @@ export default function WhyAndHow() {
           <ExampleTable examples={affectExamples} />
           <br />
           <br />
-          <Title type='h3'>
-            Perception: The way we{' '}
-            <span className='text-transparent bg-clip-text bg-gradient-to-r to-indigo-800 from-purple-600'>
-              perceive
-            </span>
-          </Title>
+          <Title type='h3'>Perception: The way we perceive</Title>
           <Paragraph>
             Perception is the way we recognize, organize and interpret
             information from external stimuli. The way in which we perceive
