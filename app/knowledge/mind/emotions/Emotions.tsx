@@ -1,7 +1,7 @@
 import Paragraph from '@/components/Typograpjy/Paragraph';
 import Title from '@/components/Typograpjy/Title';
 import TopButton from '@/components/UI/TopButton';
-import mindInfluence from '@/resources/imgs/mind-influence.png';
+import mindInfluence from '@/resources/imgs/mind-influence-emotions.png';
 import Image from 'next/image';
 
 export default function Emotions() {

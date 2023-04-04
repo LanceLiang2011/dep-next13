@@ -101,7 +101,7 @@ export default function Body() {
               height={290}
               width={290}
               alt='a scle in hospital'
-              className='mr-9'
+              className='mr-9 rounded-3xl'
             />
           </div>
           <br />

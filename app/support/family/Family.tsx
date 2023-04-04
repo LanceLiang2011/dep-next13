@@ -2,18 +2,6 @@ import Paragraph from '@/components/Typograpjy/Paragraph';
 import Title from '@/components/Typograpjy/Title';
 import Image from 'next/image';
 import support from '@/resources/imgs/support.png';
-import HoverImage from '@/components/UI/HoverImage';
-import foodfear from '@/resources/imgs/support/foodfear.gif';
-import diet from '@/resources/imgs/support/diet.gif';
-import bodyimage from '@/resources/imgs/support/bodyimage.gif';
-import overeating from '@/resources/imgs/support/overeating.gif';
-import undereating from '@/resources/imgs/support/undereating.gif';
-import label from '@/resources/imgs/support/label.gif';
-import fasting from '@/resources/imgs/support/fasting.gif';
-import loseweight from '@/resources/imgs/support/loseweight.gif';
-import exercise from '@/resources/imgs/support/exercise.gif';
-import dissatisfaction from '@/resources/imgs/support/dissatisfaction.gif';
-import selfConfidence from '@/resources/imgs/support/self-confidence.png';
 import TopButton from '@/components/UI/TopButton';
 
 export default function Family() {
