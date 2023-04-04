@@ -6,10 +6,10 @@ import { MdFamilyRestroom, MdSupportAgent, MdFavorite } from 'react-icons/md';
 
 const content = {
   title: 'Support:',
-  para: 'Explore the topics below to gain insights into eating behaviors, the functioning of the mind, and how our bodies move and get fueled.',
+  para: 'Explore the different types of support, how individuals can support loved ones, and direct support to additional eating disorder and disordered eating information centres and hotline. Please note this web app does not provide actual support and is not monitored. If one requires support, please use the direct support link to the National Eating Disorder Information Centre (NEDIC).',
   btns: [
     { btn: 'Family Support', link: '/support/family' },
-    { btn: 'For Loved Ones', link: '/support/types' },
+    { btn: 'Types of Support', link: '/support/types' },
     { btn: 'Direct Support', link: '/support/direct' },
   ],
 };

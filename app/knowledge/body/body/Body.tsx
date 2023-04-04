@@ -46,12 +46,32 @@ export default function Body() {
             </HoverImage>
             . Each person needs to have body fat, bone, and muscle to be able to
             have a functioning body. What can influence these 3 significant
-            factors are genetics, age, height, exercise, sex/gender, and
-            lifestyle factors.{' '}
+            factors:
           </Paragraph>
+          <ul className=' list-disc'>
+            <li className=' pl-5 ml-5 text-lg xl:text-xl font-light text-body dark:text-gray-200'>
+              genetics
+            </li>
+            <li className=' pl-5 ml-5 text-lg xl:text-xl font-light text-body dark:text-gray-200'>
+              age
+            </li>
+            <li className=' pl-5 ml-5 text-lg xl:text-xl font-light text-body dark:text-gray-200'>
+              height
+            </li>
+            <li className=' pl-5 ml-5 text-lg xl:text-xl font-light text-body dark:text-gray-200'>
+              exercise
+            </li>
+            <li className=' pl-5 ml-5 text-lg xl:text-xl font-light text-body dark:text-gray-200'>
+              sex/gender
+            </li>
+            <li className=' pl-5 ml-5 text-lg xl:text-xl font-light text-body dark:text-gray-200'>
+              other lifestyle factors
+            </li>
+          </ul>
+          <br />
           <Paragraph>
             Body fat in society has become a very stigmatized component of an
-            individual&apos;s body. Yet, having body fat is important for
+            individual&apos;s body. Yet, having body fat is essential for
             survival. There are 2 types of body fat; non-fat mass and fat mass.
           </Paragraph>
           <FatTypeCompare />
@@ -63,8 +83,8 @@ export default function Body() {
             fats.
           </Paragraph>
           <br />
-          <Title type='h2'>Different Measurements of the Body</Title>
-          <Title type='h3'>What weight represents</Title>
+          <Title type='h2'>Different Ways to Measure Our Body</Title>
+          <Title type='h3'>What weight represents?</Title>
           <div className='flex flex-wrap gap-4 items-center justify-between'>
             <Paragraph className='max-w-xl'>
               <HoverImage src={scalegif} size={100}>
@@ -72,7 +92,7 @@ export default function Body() {
                   Weight
                 </span>
               </HoverImage>{' '}
-              is a quick measurement used to represent how much mass an
+              does a quick measurement used to represent how much mass an
               individual is. It does not take into consideration different
               sections or components of the body.{' '}
             </Paragraph>
@@ -110,8 +130,9 @@ export default function Body() {
               to assess an individual&apos;s body composition and does not take
               into consideration different components of the body. This can
               sometimes be a problematic measurement because those who could be
-              considered “healthy” might not be reflected within the BMI
-              measurement.{' '}
+              considered medically healthy might not be reflected within the BMI
+              measurement. For example, body builders tend to have a high BMI,
+              yet there body is considered medically healthy.
             </Paragraph>
             <Image
               src={bmivsbody}

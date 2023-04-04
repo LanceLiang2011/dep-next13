@@ -23,7 +23,7 @@ export default function ExerciseCompare() {
           </h5>
 
           <p className='mb-3 font-normal text-gray-700 dark:text-gray-400'>
-            Strength training (also known as resistance training) is a type of
+            Strength training (also known as resistance training), is a type of
             exercise that aims to build strength and endurance of our muscles.
             It is based on the principle that when we put resistance on our
             muscles, they will work to overcome the force and thereby become
@@ -47,11 +47,11 @@ export default function ExerciseCompare() {
           </h5>
 
           <p className='mb-3 font-normal text-gray-700 dark:text-gray-400'>
-            Cardiovascular training (also known as cardio) is a type of exercise
-            that conditions our our heart and lungs. Cardio involves rhythmic
-            and reptitive activities that increase your heart rate and push your
-            body to produce more oxygen for working muscles allowing it to work
-            longer.
+            Cardiovascular training (also known as cardio), is a type of
+            exercise that conditions our heart and lungs. This training involves
+            rhythmic and reptitive activities that increase your heart rate and
+            push your body to produce more oxygen for working muscles, allowing
+            it to work longer.
           </p>
         </div>
       </div>
@@ -72,7 +72,7 @@ export default function ExerciseCompare() {
           </h5>
 
           <p className='mb-3 font-normal text-gray-700 dark:text-gray-400'>
-            Flexibility training (also known as stretching) is a type of
+            Flexibility training (also known as stretching), is a type of
             exercise that aims to move your joints and muscles through their
             full range of motion. When our muscles are stretched, tension and
             stiffness can be released which increases our mobility and reduces

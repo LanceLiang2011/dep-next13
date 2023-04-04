@@ -19,9 +19,11 @@ export default function Types() {
         <article className='w-full format format-sm sm:format-base lg:format-lg format-blue dark:format-invert'>
           <Title type='h1'>Types of Support That Exist</Title>
           <Paragraph>
-            When looking for support, it is important to know what types of
-            support are available so you can find the support most beneficial to
-            YOU!
+            When looking for support, it can be difficult to know what each type
+            of health professional could provide. Below are the main types of
+            healthcare professionals that relate to disordered eating and eating
+            disorders. Please note that this is just an overview of what might
+            be possible for them to provide.
           </Paragraph>
           <br />
           <div className='relative overflow-x-auto'>
@@ -38,7 +40,7 @@ export default function Types() {
                     What their Profession Does/Accreditation
                   </th>
                   <th scope='col' className='px-6 py-3'>
-                    What they can help with
+                    What they may be able to help with
                   </th>
                 </tr>
               </thead>
@@ -53,26 +55,31 @@ export default function Types() {
                     </HoverImage>
                   </td>
                   <td className='px-6 py-4'>
-                    <ul className='list-disc list-inside'>
-                      <li>
-                        Have a Master&apos;s degree in Psychology, typically a
-                        Ph.D. also
+                    <ul className='my-list list-none p-0 m-0'>
+                      <li className='pl-5 ml-5 list-disc'>
+                        Master&apos;s degree in Psychology, typically a Ph.D.
+                        also
                       </li>
-                      <li>A regulated healthcare profession </li>
+                      <li className='pl-5 ml-5 list-disc'>
+                        Regulated healthcare profession.
+                      </li>
                     </ul>
                   </td>
                   <td className='px-6 py-4'>
-                    <ul className='list-disc list-inside'>
-                      <li>
-                        Able to diagnose mental health conditions/illnesses
+                    <ul className='my-list list-none p-0 m-0'>
+                      <li className='pl-5 ml-5 list-disc'>
+                        Able to diagnose mental health conditions/illnesses.
                       </li>
-                      <li>Develop treatment plans for DE</li>
-                      <li>
+                      <li className='pl-5 ml-5 list-disc'>
+                        Develop treatment plans for disordered eating.
+                      </li>
+                      <li className='pl-5 ml-5 list-disc'>
                         Develop treatment plans for other direct or indirect
-                        issues relating to DE
+                        issues relating to disordered eating.
                       </li>
-                      <li>
-                        Uses psychological tests to determine DE-related issues
+                      <li className='pl-5 ml-5 list-disc'>
+                        Uses psychological tests to determine disordered
+                        eating-related issues.
                       </li>
                     </ul>
                   </td>
@@ -89,21 +96,28 @@ export default function Types() {
                     </HoverImage>
                   </td>
                   <td className='px-6 py-4'>
-                    <ul className='list-disc list-inside'>
-                      <li>Will have a Master&apos;s of Psychotherapy</li>
-                      <li>A regulated healthcare profession</li>
+                    <ul className='my-list list-none p-0 m-0'>
+                      <li className='pl-5 ml-5 list-disc'>
+                        Master&apos;s of Psychotherapy.
+                      </li>
+                      <li className='pl-5 ml-5 list-disc'>
+                        Regulated healthcare profession.
+                      </li>
                     </ul>
                   </td>
                   <td className='px-6 py-4'>
-                    <ul className='list-disc list-inside'>
-                      <li>
-                        Can assist DE individuals in working through challenges
+                    <ul className='my-list list-none p-0 m-0'>
+                      <li className='pl-5 ml-5 list-disc'>
+                        Can assist disordered eating individuals in working
+                        through challenges.
                       </li>
-                      <li>
+                      <li className='pl-5 ml-5 list-disc'>
                         Mood and emotional regulation is typically worked
-                        through using a psychotherapist
+                        through using a psychotherapist.
                       </li>
-                      <li>Develop treatment plans for DE</li>
+                      <li className='pl-5 ml-5 list-disc'>
+                        Develop treatment plans for disordered eating.
+                      </li>
                     </ul>
                   </td>
                 </tr>
@@ -119,13 +133,24 @@ export default function Types() {
                     </HoverImage>
                   </td>
                   <td className='px-6 py-4'>
-                    Will have a Bachelor&apos;s degree in Social Work, but
-                    typically also have a Master&apos;s of Social Work
+                    <ul className='my-list list-none p-0 m-0'>
+                      <li className='pl-5 ml-5 list-disc'>
+                        Bachelor&apos;s degree in Social Work.
+                      </li>
+                      <li className='pl-5 ml-5 list-disc'>
+                        May also have a Master&apos;s of Social Work.
+                      </li>
+                    </ul>
                   </td>
                   <td className='px-6 py-4'>
-                    <ul className='list-disc list-inside'>
-                      <li>Typically facilitate group-related DE sessions</li>
-                      <li>Found in community based resources</li>
+                    <ul className='my-list list-none p-0 m-0'>
+                      <li className='pl-5 ml-5 list-disc'>
+                        Typically facilitate group-related disordered eating
+                        sessions.
+                      </li>
+                      <li className='pl-5 ml-5 list-disc'>
+                        Found in community based resources.
+                      </li>
                     </ul>
                   </td>
                 </tr>
@@ -141,11 +166,13 @@ export default function Types() {
                     </HoverImage>
                   </td>
                   <td className='px-6 py-4'>
-                    <ul className='list-disc list-inside'>
-                      <li>
-                        Have a Master&apos;s of Occupational Therapy degree
+                    <ul className='my-list list-none p-0 m-0'>
+                      <li className='pl-5 ml-5 list-disc'>
+                        Master&apos;s of Occupational Therapy.
                       </li>
-                      <li>A regulated healthcare profession</li>
+                      <li className='pl-5 ml-5 list-disc'>
+                        A regulated healthcare profession.
+                      </li>
                     </ul>
                   </td>
                   <td className='px-6 py-4'></td>
@@ -162,18 +189,27 @@ export default function Types() {
                     </HoverImage>
                   </td>
                   <td className='px-6 py-4'>
-                    <ul className='list-disc list-inside'>
-                      <li>Have a Medical school degree</li>
-                      <li>Additional psychiatry-related schooling</li>
+                    <ul className='my-list list-none p-0 m-0'>
+                      <li className='pl-5 ml-5 list-disc'>
+                        Medical school degree.
+                      </li>
+                      <li className='pl-5 ml-5 list-disc'>
+                        Additional psychiatry-related schooling.
+                      </li>
                     </ul>
                   </td>
                   <td className='px-6 py-4'>
-                    <ul className='list-disc list-inside'>
-                      <li>Assess an individuals DE</li>
-                      <li>Able to develop treatment plan for DE</li>
-                      <li>
+                    <ul className='my-list list-none p-0 m-0'>
+                      <li className='pl-5 ml-5 list-disc'>
+                        Assess an individuals disordered eating.
+                      </li>
+                      <li className='pl-5 ml-5 list-disc'>
+                        Able to develop treatment plan for disordered eating.
+                      </li>
+                      <li className='pl-5 ml-5 list-disc'>
                         Able to prescribe medications if necessary for other
-                        issues influencing DE (ex. Anxiety, depression, OCD)
+                        issues influencing disordered eating (ex. Anxiety,
+                        depression, Obsessive-compulsive disorder).
                       </li>
                     </ul>
                   </td>
@@ -190,20 +226,30 @@ export default function Types() {
                     </HoverImage>
                   </td>
                   <td className='px-6 py-4'>
-                    <ul className='list-disc list-inside'>
-                      <li>Medical school degree</li>
-                      <li>Typically family doctors</li>
+                    <ul className='my-list list-none p-0 m-0'>
+                      <li className='pl-5 ml-5 list-disc'>
+                        Medical school degree.
+                      </li>
+                      <li className='pl-5 ml-5 list-disc'>
+                        Typically family doctors.
+                      </li>
                     </ul>
                   </td>
                   <td className='px-6 py-4'>
-                    <ul className='list-disc list-inside'>
-                      <li>
-                        Typically not formally trained within ED or DE, but have
-                        some knowledge
+                    <ul className='my-list list-none p-0 m-0'>
+                      <li className='pl-5 ml-5 list-disc'>
+                        Typically not formally trained within eating disorder or
+                        disordered eating, but have some knowledge.
                       </li>
-                      <li>Good first person to go to, to seek help</li>
-                      <li>Understand signs and symptoms</li>
-                      <li>Can direct to other resources</li>
+                      <li className='pl-5 ml-5 list-disc'>
+                        An ideal first person to go to when seeking help.
+                      </li>
+                      <li className='pl-5 ml-5 list-disc'>
+                        Understand signs and symptoms.
+                      </li>
+                      <li className='pl-5 ml-5 list-disc'>
+                        Can direct to other resources.
+                      </li>
                     </ul>
                   </td>
                 </tr>
@@ -219,15 +265,23 @@ export default function Types() {
                     </HoverImage>
                   </td>
                   <td className='px-6 py-4'>
-                    <ul className='list-disc list-inside'>
-                      <li>Regulated profession in Ontario</li>
-                      <li>Obtained a 4-year degree in nutrition</li>
+                    <ul className='my-list list-none p-0 m-0'>
+                      <li className='pl-5 ml-5 list-disc'>
+                        Regulated profession in Ontario.
+                      </li>
+                      <li className='pl-5 ml-5 list-disc'>
+                        4-year degree in nutrition.
+                      </li>
                     </ul>
                   </td>
                   <td className='px-6 py-4'>
-                    <ul className='list-disc list-inside'>
-                      <li>Can prescribe dietary treatments for DE</li>
-                      <li>Provide medical nutrition therapy</li>
+                    <ul className='my-list list-none p-0 m-0'>
+                      <li className='pl-5 ml-5 list-disc'>
+                        Can prescribe dietary treatments for disordered eating.
+                      </li>
+                      <li className='pl-5 ml-5 list-disc'>
+                        Provide medical nutrition therapy.
+                      </li>
                     </ul>
                   </td>
                 </tr>
@@ -242,11 +296,16 @@ export default function Types() {
                       </span>
                     </HoverImage>
                   </td>
-                  <td className='px-6 py-4'>Not accredited</td>
+                  <td className='px-6 py-4'>Not accredited.</td>
                   <td className='px-6 py-4'>
-                    <ul className='list-disc list-inside'>
-                      <li>Can provide nutritional information</li>
-                      <li>Can address fears that relate to foods and DE</li>
+                    <ul className='my-list list-none p-0 m-0'>
+                      <li className='pl-5 ml-5 list-disc'>
+                        Can provide nutritional information.
+                      </li>
+                      <li className='pl-5 ml-5 list-disc'>
+                        Can address fears that relate to foods and disordered
+                        eating.
+                      </li>
                     </ul>
                   </td>
                 </tr>

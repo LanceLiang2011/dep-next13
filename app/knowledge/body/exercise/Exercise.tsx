@@ -1,6 +1,5 @@
 import Paragraph from '@/components/Typograpjy/Paragraph';
 import Title from '@/components/Typograpjy/Title';
-import UnderlineSubtitle from '@/components/Typograpjy/UnderlineSubtitle';
 import TopButton from '@/components/UI/TopButton';
 import React from 'react';
 import DESymptomsCheck from './DESymptomsCheck';
@@ -24,26 +23,24 @@ export default function Exercise() {
           </Paragraph>
           <Paragraph>
             Exercise requirements and capabilties are not a “one-size-fits-all”
-            type of ordeal and is different for everybody depending on their
-            body, mind and sprit. Think of it this way, when you go to the
-            doctor and you are given a prescription, does everyone else in this
-            world also have the same prescription? No. We all have our own
-            individualistic needs that are unique to who we are and what were
-            made of.{' '}
+            principle and is different for everybody depending on their body and
+            mind. Think of it this way, when you go to the doctor and you are
+            given a prescription, does everyone else have the same prescription?
+            No. We all have our own individualistic needs that are unique to who
+            we are and what were made of.{' '}
           </Paragraph>
           <Paragraph>
-            Understanding exercise and its important our everyday lives is
-            critical to adapting a healthy lifestyle that reflects our
-            individualist needs, preferences and desires. It is something that
-            should be used to empower and strengthen our bodies, not deplet or
-            weaken it.{' '}
+            Understanding exercise and its importance is critical to adapting a
+            healthy lifestyle that reflects our individualist needs, preferences
+            and desires. It is something that should be used to empower and
+            strengthen our bodies, not deplet or weaken it.{' '}
           </Paragraph>
           <br />
           <Title type='h2'>What Are The Different Types of Exercise? </Title>
           <Paragraph>
             Exercise looks and comes in many different forms. From going for a
-            walk, stretching on a yoga mat to lifting weights or doing a pilates
-            class, exercise is multidimensional and dynamic.{' '}
+            walk, stretching on a yoga mat to lifting weights, exercise is
+            multidimensional and dynamic.{' '}
           </Paragraph>
           <Paragraph>
             The three main types of exercise are strength, cardiovascular, and
@@ -85,7 +82,8 @@ export default function Exercise() {
                     Cardiovascular Training
                   </th>
                   <td className='px-6 py-4'>
-                    Walking, Running, Biking, HIIT, Skiing
+                    Walking, Running, Biking, high-intensity interval training
+                    (HIIT), Skiing
                   </td>
                 </tr>
                 <tr className='bg-white dark:bg-gray-800'>
@@ -118,13 +116,13 @@ export default function Exercise() {
             your body and finding what works best with you and your lifestyle.
             Ask yourself these questions…
           </Paragraph>
-          <form class='w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700'>
+          <form className='w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700'>
             <ol className='mb-3'>
               <label
                 htmlFor='what'
                 className='text-xl mb-3 font-light text-gray-600 dark:text-gray-400'
               >
-                What makes me feel good?
+                &#9312; What makes me feel good?
               </label>
               <input
                 type='text'
@@ -136,7 +134,7 @@ export default function Exercise() {
                 htmlFor='why'
                 className='text-xl mb-3 font-light text-gray-600 dark:text-gray-400'
               >
-                Why am I doing this?
+                &#9313; Why am I doing this?
               </label>
               <input
                 type='text'
@@ -148,7 +146,7 @@ export default function Exercise() {
                 htmlFor='where'
                 className='text-xl mb-3 font-light text-gray-600 dark:text-gray-400'
               >
-                Where is this going to get me?
+                &#9314; Where is this going to get me?
               </label>
               <input
                 type='text'
@@ -171,31 +169,26 @@ export default function Exercise() {
           <br />
           <Title type='h2'>Healthy Relationship with Exercise</Title>
           <Paragraph>
-            Finding a healthy realtionship with exercise can be challenging
+            Finding a healthy relationship with exercise can be challenging,
             especially as we grow and develop into adults and our values,
-            priorites and circumstances change. We may be develop anxious
-            thoughts around exercise such that we worry about our often we are
-            being activity and whether it is “good enough”. We can also develop
-            negative associations with certain types where we fear weightlifitng
-            will make us look a certain way and we avoid it.{' '}
+            priorites and circumstances change.
           </Paragraph>
           <Paragraph>
-            Everybody’s relationship with exercise is unique to who they are,
+            Everyone’s relationship with exercise is unique to who they are,
             their previous experiences and their self-perception. There is not a
-            one solution fits all however there are some simple practices that
-            can help facilciate a better relationship.{' '}
+            &quot;one-solution-fits-all&quot;, however, there are some simple
+            practices that can help facilciate a better relationship:
           </Paragraph>
           <ol className='mb-3 ml-8 list-decimal'>
             <li className='font-light text-gray-600 dark:text-gray-400'>
-              Focus on how exercise makes you feel rather than makes you look.
+              Focus on how exercise makes you feel, rather than makes you look.
             </li>
             <li className='font-light text-gray-600 dark:text-gray-400'>
-              Understand that your bodies and needs change over time and what
+              Understand that your bodies&apos; needs change over time, and what
               may worked for you in the past may not for the time being.
             </li>
             <li className='font-light text-gray-600 dark:text-gray-400'>
-              Listen to your body and be intuitive. If it needs to rest let it.
-              But if is is agitated and ready to move, get it moving!
+              Listen to your body and be intuitive.
             </li>
           </ol>
           <br />
