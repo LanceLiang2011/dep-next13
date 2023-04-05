@@ -71,7 +71,7 @@ export default function Thoughts() {
             on days when Sally has a poor body image, this core belief will be
             heightened instead of the core belief that she is beautiful.{' '}
           </BackQuote>
-          <TopButton />
+          <TopButton next='/knowledge/mind/emotions' />
         </article>
       </div>
     </main>

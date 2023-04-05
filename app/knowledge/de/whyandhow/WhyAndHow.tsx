@@ -207,7 +207,7 @@ export default function WhyAndHow() {
           </Paragraph>
           <ExampleTable examples={perceiveExamples} />
           <br />
-          <TopButton />
+          <TopButton next='knowledge/de/when' />
         </article>
       </div>
     </main>

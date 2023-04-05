@@ -65,7 +65,7 @@ export default function When() {
             larger issue at hand.
           </InfoQuote>
           <br />
-          <TopButton />
+          <TopButton next='knowledge/de/importance' />
         </article>
       </div>
     </main>

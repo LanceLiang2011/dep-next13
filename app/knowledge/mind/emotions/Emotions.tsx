@@ -112,7 +112,7 @@ export default function Emotions() {
             </li>
           </ol>
           <br />
-          <TopButton />
+          <TopButton next='/knowledge/mind/behaviours' />
         </article>
       </div>
     </main>

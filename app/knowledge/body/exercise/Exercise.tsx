@@ -192,7 +192,7 @@ export default function Exercise() {
             </li>
           </ol>
           <br />
-          <TopButton />
+          <TopButton next='/knowledge/body/nutrition' />
         </article>
       </div>
     </main>

@@ -150,7 +150,7 @@ export default function Whatis() {
           </KnowledgeCard>
 
           <br />
-          <TopButton />
+          <TopButton next='knowledge/de/whyandhow' />
         </article>
       </div>
     </main>

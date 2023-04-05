@@ -99,7 +99,7 @@ export default function Situations() {
             </tbody>
           </table>
           <br />
-          <TopButton />
+          <TopButton next='knowledge/mind/thoughts' />
         </article>
       </div>
     </main>

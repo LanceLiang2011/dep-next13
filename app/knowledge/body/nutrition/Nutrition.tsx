@@ -60,8 +60,7 @@ export default function Nutrition() {
             various functions.
           </Paragraph>
           <br />
-
-          <TopButton />
+          <TopButton next='/knowledge/body/diet' />
         </article>
       </div>
     </main>

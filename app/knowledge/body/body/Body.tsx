@@ -156,7 +156,7 @@ export default function Body() {
             measures body fat, bone, and muscle.{' '}
           </Paragraph>
           <br />
-          <TopButton />
+          <TopButton next='/knowledge/body/exercise' />
         </article>
       </div>
     </main>

@@ -65,7 +65,7 @@ export default function Behaviours() {
             could also influence your actions moving forward.
           </Paragraph>
           <br />
-          <TopButton />
+          <TopButton next='/knowledge' />
         </article>
       </div>
     </main>

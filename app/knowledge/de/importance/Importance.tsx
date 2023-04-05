@@ -45,7 +45,7 @@ export default function Importance() {
             improve one&apos;s relationship with food, and one&apos;s body.
           </InfoQuote>
           <br />
-          <TopButton />
+          <TopButton next='/knowledge' />
         </article>
       </div>
     </main>

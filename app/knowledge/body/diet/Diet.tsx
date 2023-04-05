@@ -236,7 +236,7 @@ export default function Nutrition() {
           </Paragraph>
           <br />
 
-          <TopButton />
+          <TopButton next='/knowledge' />
         </article>
       </div>
     </main>

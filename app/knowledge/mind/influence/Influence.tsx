@@ -27,7 +27,7 @@ export default function Influence() {
             width={800}
           ></Image>
           <br />
-          <TopButton />
+          <TopButton next='/knowledge/mind/situations' />
         </article>
       </div>
     </main>
