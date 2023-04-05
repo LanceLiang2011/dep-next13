@@ -5,7 +5,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useRouter } from 'next/navigation';
 
 // ? stateless import
-import logo from '../../resources/imgs/my_eating_journey_symbol_logo.webp';
+import logo from '../../resources/imgs/my_eating_journey_symbol_logo.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import { BsGoogle } from 'react-icons/bs';
