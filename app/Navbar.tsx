@@ -8,7 +8,7 @@ import { useRouter } from 'next/navigation';
 import { auth, logout } from '@/library/firebase';
 import { Toaster } from 'react-hot-toast';
 import { Navbar } from 'flowbite-react';
-import logo from '../resources/imgs/my_eating_journey_symbol_logo.webp';
+import logo from '../resources/imgs/my_eating_journey_symbol_logo.png';
 
 export default function NavbarComponent() {
   const unselectedButton =
