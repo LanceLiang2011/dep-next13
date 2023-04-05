@@ -4,7 +4,7 @@ import Intro from './Intro';
 
 export default function GoalSetup() {
   return (
-    <div className='flex flex-wrap justify-between gap-20'>
+    <div className='flex justify-between gap-20'>
       <Intro />
       <Form />
     </div>
