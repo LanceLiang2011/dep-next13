@@ -201,7 +201,7 @@ export default function MyThoughts() {
   return (
     <div className='w-full px-8 sm:px-12 lg:px-16 xl:px-40'>
       <Button
-        className='my-12'
+        className=' my-12 bg-subheading hover:bg-button-back'
         onClick={(e) => setAddNew((current) => !current)}
       >
         {addNew ? 'Check Your Thoughts' : 'Add New Thought'}
@@ -820,6 +820,11 @@ export default function MyThoughts() {
           </>
         </div>
       )}
+      <Link href='/journal/thinkingpattern'>
+        <Button className=' bg-subheading hover:bg-button-back'>
+          Set my pattern
+        </Button>
+      </Link>
     </div>
   );
 }

@@ -69,7 +69,7 @@ function NewForm({ uid }: any) {
     setMindReading('');
     setEmotional('');
     toast.success('Pattern Added Successfully!');
-    router.push('/journal/goalssetup');
+    router.push('/journal/thoughts');
   };
 
   return (
