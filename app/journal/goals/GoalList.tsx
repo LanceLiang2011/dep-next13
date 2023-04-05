@@ -20,7 +20,7 @@ export default function GoalList({ setGoals, goals }: any) {
       if (goalsToSet.length === 0) router.push('/journal/goalssetup');
     };
     getUserGoals();
-  }, [user, setGoals]);
+  }, [user, setGoals, router]);
 
   return (
     <div className='flex flex-col gap-6 max-w-xl break-words'>
