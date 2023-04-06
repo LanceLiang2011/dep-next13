@@ -29,10 +29,10 @@ export default function Signup() {
   const router = useRouter();
 
   // ?handler
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!name) alert('Please enter name');
-    registerWithEmailAndPassword(name, email, password);
+    await registerWithEmailAndPassword(name, email, password);
     router.push('/journal');
   };
 

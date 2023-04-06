@@ -31,9 +31,9 @@ export default function Login() {
   const router = useRouter();
 
   // ?handlers
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    logInWithEmailAndPassword(email, password);
+    await logInWithEmailAndPassword(email, password);
     router.push('/journal');
   };
   // ! Return
