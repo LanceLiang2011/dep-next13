@@ -118,12 +118,13 @@ export default function WhyAndHow() {
               Depression, Obsessive Compulsive Disorder)
             </li>
             <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-              Life stressors (Death, divorces, relationship changes, changes in
-              careers, school, job)
+              Life stressors (Death, divorces, ending of relationships, changes
+              in careers, schools and jobs)
             </li>
             <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
-              Lack of life control, so controlling food intake and body
-              appearance
+              Feels a lack of control within one&apos;s life, therefore
+              controlling food intake and body appearance aids this lack of
+              control
             </li>
             <li className='text-lg font-light text-gray-600 dark:text-gray-400'>
               Mirroring others&apos; behaviours (Family members, friends, peers,
@@ -157,9 +158,7 @@ export default function WhyAndHow() {
           </Paragraph>
           <br />
           <div className='mb-20'>
-            <Tooltip content='Refine this later'>
-              <Image alt='Deb vs ED' src={debvsed} height={600} width={600} />
-            </Tooltip>
+            <Image alt='Deb vs ED' src={debvsed} height={600} width={600} />
           </div>
           <Title type='h3'>Behaviours: The way we act</Title>
           <Paragraph>
