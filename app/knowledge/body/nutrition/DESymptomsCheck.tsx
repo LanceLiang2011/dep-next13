@@ -7,23 +7,21 @@ import React from 'react';
 
 export default function DESymptomsCheck() {
   return (
-    <Tooltip content='**Have hover over the Symptom part with a disclaimer**'>
-      <KnowledgeCard
-        title='          Common Disordered Eating Symptoms Relating to Food Intake and
+    <KnowledgeCard
+      title='          Common Disordered Eating Symptoms Relating to Food Intake and
           Nutrition'
-      >
-        <ul className='unordered-list'>
-          <li>Unusual food fears</li>
-          <li>Unusual ways of actually consuming food</li>
-          <li>Unusual diet regimes</li>
-          <li>Overeating</li>
-          <li>Undereating</li>
-          <li>Bingeing</li>
-          <li>Arbitrary food labeling</li>
-          <li>Constantly dieting</li>
-          <li>Fasting</li>
-        </ul>
-      </KnowledgeCard>
-    </Tooltip>
+    >
+      <ul className='unordered-list'>
+        <li>Unusual food fears</li>
+        <li>Unusual ways of actually consuming food</li>
+        <li>Unusual diet regimes</li>
+        <li>Overeating</li>
+        <li>Undereating</li>
+        <li>Bingeing</li>
+        <li>Arbitrary food labeling</li>
+        <li>Constantly dieting</li>
+        <li>Fasting</li>
+      </ul>
+    </KnowledgeCard>
   );
 }
