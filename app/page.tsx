@@ -11,12 +11,12 @@ export default function Home() {
           alt="home image"
           src={homeImage}
         />
-        <p className="tagline absolute bottom-0 w-full text-center bg-opacity-30 bg-button-back text-2xl font-bold text-[#85696e] p-2">
+        {/* <p className="tagline absolute bottom-0 w-full text-center bg-opacity-30 bg-button-back text-2xl font-bold text-[#85696e] p-2">
           empowering your journey to healthier eating habits and positive body
           image
-        </p>
+        </p> */}
       </div>
-      <br />
+      {/* <br />
       <Paragraph className="">
         At &quot;My Eating Journey,&quot; we are dedicated to empowering
         individuals throughout their journey to a healthier relationship with
@@ -33,7 +33,7 @@ export default function Home() {
         range of educational content, personalized journaling programs, and
         support resources to guide and empower users on their journey towards
         healthier eating habits and overall well-being.
-      </Paragraph>
+      </Paragraph> */}
     </div>
   );
 }
