@@ -46,7 +46,7 @@ export default function Home() {
                 exercise, mindfulness, and self-care.
               </p>
               <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                &quot;My Eating Journey&quot is a personalized web app designed
+                &quot;My Eating Journey&quot; is a personalized web app designed
                 to support individuals in developing a positive and healthy
                 relationship with food and body image. Offering a range of
                 educational content, personalized journaling programs, and
