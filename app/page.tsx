@@ -56,7 +56,7 @@ export default function Home() {
             </div>
             <div className="flex justify-end mt-4">
               <button
-                className="bg-blue-500 text-white px-4 py-2 rounded-md mr-2"
+                className="bg-subheading text-white px-4 py-2 rounded-md mr-2"
                 onClick={onClick}
               >
                 I Understood!
