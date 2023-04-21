@@ -2,8 +2,20 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import homeImage from "../resources/imgs/my_eating_journey_home_page.png";
+import SectionHome from "@/components/UI/SectionHome";
+import Title from "@/components/Typograpjy/Title";
 
 export default function Home() {
+  const content = {
+    title: null,
+    para: null,
+    btns: [
+      { btn: "Learn", link: "/knowledge" },
+      { btn: "Journal", link: "/journal" },
+      { btn: "Support", link: "/support" },
+    ],
+  };
+
   const [isModalVisible, setIsModalVisible] = useState(true);
 
   const onClick = () => {
@@ -18,10 +30,17 @@ export default function Home() {
     <React.Fragment>
       <div className="relative">
         <Image
-          className="object-cover w-11/12 h-11/12"
+          className="object-cover w-7/12 h-7/12 mx-auto"
           alt="home image"
           src={homeImage}
         />
+        <br />
+        <Title className=" text-center mx-auto mt-12">
+          Empowering Your Journey to Healthier Eating Habits
+        </Title>
+      </div>
+      <div className=" w-7/12 mx-auto">
+        <SectionHome content={content} />
       </div>
       {isModalVisible && (
         <div className="fixed inset-0 flex items-center justify-center text-center z-50">
@@ -31,8 +50,7 @@ export default function Home() {
           ></div>
           <div className="bg-white dark:bg-gray-800 rounded-lg p-6 w-11/12 md:w-3/4 lg:w-1/2 z-20">
             <h2 className="text-xl font-semibold mb-4">
-              Empowering your journey to healthier eating habits and positive
-              body
+              Empowering Your Journey to Healthier Eating Habits
             </h2>
             <div className="space-y-6">
               <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
@@ -56,7 +74,7 @@ export default function Home() {
             </div>
             <div className="flex justify-end mt-4">
               <button
-                className="bg-subheading text-white px-4 py-2 rounded-md mr-2"
+                className="bg-subheading text-white px-4 py-2 rounded-md mx-auto"
                 onClick={onClick}
               >
                 Get Started

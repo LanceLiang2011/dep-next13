@@ -41,11 +41,11 @@
   }
 
   .button-blue {
-    @apply p-8 px-14 bg-button-back text-button-text h1-font text-2xl hover:bg-bg-hover rounded;
+    @apply p-8 px-14 bg-heading text-white hover:text-button-text h1-font text-2xl hover:bg-button-back rounded;
   }
 
   .button-blue-sm {
-    @apply p-4 px-6 bg-button-back text-button-text h1-font hover:bg-bg-hover rounded;
+    @apply p-4 px-6 bg-heading text-white hover:text-button-text h1-font hover:bg-button-back rounded;
   }
 
   .tagline {
