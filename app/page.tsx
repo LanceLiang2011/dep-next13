@@ -24,7 +24,7 @@ export default function Home() {
         />
       </div>
       {isModalVisible && (
-        <div className="fixed inset-0 flex items-center justify-center z-50">
+        <div className="fixed inset-0 flex items-center justify-center text-center z-50">
           <div
             className="fixed inset-0 bg-black opacity-30 z-0"
             onClick={onClose}
@@ -59,7 +59,7 @@ export default function Home() {
                 className="bg-subheading text-white px-4 py-2 rounded-md mr-2"
                 onClick={onClick}
               >
-                I Understood!
+                Get Started
               </button>
             </div>
           </div>
