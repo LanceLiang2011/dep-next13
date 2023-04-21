@@ -46,12 +46,12 @@ export default function Home() {
                 exercise, mindfulness, and self-care.
               </p>
               <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                A personalized web app designed to support individuals in
-                developing a positive and healthy relationship with food and
-                body image. Offering a range of educational content,
-                personalized journaling programs, and support resources to guide
-                and empower users on their journey towards healthier eating
-                habits and overall well-being.
+                &quot;My Eating Journey&quot is a personalized web app designed
+                to support individuals in developing a positive and healthy
+                relationship with food and body image. Offering a range of
+                educational content, personalized journaling programs, and
+                support resources to guide and empower users on their journey
+                towards healthier eating habits and overall well-being.
               </p>
             </div>
             <div className="flex justify-end mt-4">
