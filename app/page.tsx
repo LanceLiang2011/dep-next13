@@ -35,7 +35,7 @@ export default function Home() {
           src={homeImage}
         />
         <br />
-        <h1 className=" mb-4 text-3xl md:text-4xl font-extrabold text-heading dark:text-white text-center mx-auto mt-12">
+        <h1 className=" mb-4 text-2xl md:text-3xl font-extrabold text-heading dark:text-white text-center mx-auto mt-12">
           Empowering Your Journey to Healthier Eating Habits
         </h1>
       </div>
