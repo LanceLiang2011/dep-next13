@@ -59,6 +59,14 @@ export default function Home() {
               Empowering Your Journey to Healthier Eating Habits
             </h2>
             <div className="space-y-6">
+              <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400 font-bold">
+                &quot;My Eating Journey&quot; is a personalized web app designed
+                to support individuals in developing a positive and healthy
+                relationship with food and body image. Offering a range of
+                educational content, personalized journaling programs, and
+                support resources to guide and empower users on their journey
+                towards healthier eating habits and overall well-being.
+              </p>
               <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
                 At &quot;My Eating Journey&quot;, we are dedicated to empowering
                 individuals throughout their journey to a healthier relationship
@@ -68,14 +76,6 @@ export default function Home() {
                 empower our users throughout their eating journey to achieve a
                 more fulfilling life through an understanding of nutrition,
                 exercise, mindfulness, and self-care.
-              </p>
-              <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                &quot;My Eating Journey&quot; is a personalized web app designed
-                to support individuals in developing a positive and healthy
-                relationship with food and body image. Offering a range of
-                educational content, personalized journaling programs, and
-                support resources to guide and empower users on their journey
-                towards healthier eating habits and overall well-being.
               </p>
             </div>
             <div className="flex justify-end mt-4">
