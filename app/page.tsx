@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import homeImage from "../resources/imgs/my_eating_journey_home_page.png";
 import SectionHome from "@/components/UI/SectionHome";
-import Title from "@/components/Typograpjy/Title";
+import Link from "next/link";
 
 export default function Home() {
   const content = {
@@ -35,12 +35,18 @@ export default function Home() {
           src={homeImage}
         />
         <br />
-        <h1 className=" mb-4 text-2xl md:text-3xl font-extrabold text-heading dark:text-white text-center mx-auto mt-12">
+        <h1 className=" text-2xl md:text-3xl font-extrabold text-heading dark:text-white text-center mx-auto mt-12">
           Empowering Your Journey to Healthier Eating Habits
         </h1>
       </div>
-      <div className=" w-7/12 mx-auto">
-        <SectionHome content={content} />
+      <div className=" w-7/12 mx-auto my-12">
+        <div className="flex justify-between gap-2">
+          {content.btns.map((btn) => (
+            <Link key={btn.btn} className="button-blue" href={btn.link}>
+              {btn.btn}
+            </Link>
+          ))}
+        </div>
       </div>
       {isModalVisible && (
         <div className="fixed inset-0 flex items-center justify-center text-center z-50">
